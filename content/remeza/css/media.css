@@ -1,0 +1,82 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	
+}
+/* !!!!!!Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+	.content h2 {
+		font-size: 25px;
+		line-height: 1;
+	}
+	.bannerimg img {
+		width:100%;
+	}
+	.navbar-header img {
+    padding-left: 60px;
+    padding-right: 0px;
+	}
+	.content p {
+	margin-top:0px;
+	}
+	.content h2 {
+	margin-top: 10px;
+	}
+	.content h3 {
+		font-size: 40px;
+	}
+	.content h4 {
+		font-size: 20px;
+		padding-top: 21px;
+	}
+	.btn-default {
+		font-size: 20px;
+	}
+	.big-special {
+		font-size: 25px;
+	}
+	.big-special img {
+		margin:5px 0;
+	}
+	.slider {
+		margin-top: 20px;
+	}
+	.slider h2 {
+		font-size: 25px;
+		line-height: 1;
+		margin-bottom: 20px;
+	}
+	.text-footer h3 {
+		font-size: 30px;
+	}
+	.slider img {
+		width:280px;
+	}
+	.navbar-header img {
+	margin-right: 0px;
+	}
+	.header h2 {
+		margin: 0;
+	}
+	.navbar-nav>li:focus, .navbar-nav>li:hover {
+	background: none;
+	}
+	.drop h4 {
+		color:#000;
+	}
+	.special {
+		margin-top: 0px;
+	}
+	.first-special, .second-special, .big-special {
+		margin-top: 0;
+	}
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 500px) {
+	
+}
+
+
