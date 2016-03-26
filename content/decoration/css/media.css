@@ -1,0 +1,122 @@
+
+
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.navbar-brand {
+    margin-right: 0px;
+	}
+	.contacts .btn {
+		margin-left: 0px;
+	}
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.navbar-default .navbar-nav>li>a {
+    font-size: 13px;
+    padding-left: 6px;
+    padding-right: 6px;
+	}
+	.navbar-default .navbar-right>li>a .phonebtn {
+		width: 150px;
+	}
+	.contacts .btn {
+		padding: 3px 10px;
+		font-size: 20px;
+	}
+	.contacts blockquote {
+    margin-left: 20px;
+	}
+	.offer .btn {
+		font-size: 16px;
+		padding: 5px;
+	}
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+	.navbar-default .navbar-right>li>a .phonebtn {
+		display: none;
+	}
+	.navbar-default .navbar-collapse {
+	background-color: rgba(169, 47, 117, 0.5);
+	text-align: center;
+	margin-top: 5px;
+	border:none;
+	}
+	.callback input {
+	margin-bottom: 20px;
+	}
+	.palette .media-left {
+    padding-right: 20px;
+	}
+	.palette .media-right {
+    padding-left: 20px;
+	}
+	.payment .btn-default {
+		margin-bottom: 20px;
+	}
+	.jumbotron-inner {
+		padding: 20px;
+	}
+	.jumbotron-inner h2 {
+	font-size: 4vh;
+	}
+	.jumbotron-inner p {
+	font-size: 3vh;
+	}
+	.process .container>p {
+	    font-size: 16px;
+	    margin-top: 40px;
+	    padding-bottom: 0px;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 500px) {
+	.contacts .btn, .offer .btn {
+		font-size: 16px;
+	}
+	
+	.process .selector {
+		width: 290px;
+	}
+	.process .selector a {
+		width: 143px;
+	}
+	.offer .btn {
+		font-size: 13px;
+	}
+	.contacts blockquote p {
+		font-size: 16px;
+	}
+	.footer {
+		font-size: 10px;
+	}
+	.footer a{
+		padding-top: 10px;
+		font-size: 10px;
+	}
+	.principes .media-object {
+		width: 50px;
+	}
+	.offer form {
+		width: 100%;
+		margin-left: 0px;
+	}
+	.contacts form {
+		width: 100%;
+		margin-left: 0px;
+	}
+	.media-left, .media-right {
+		display: none;
+	}
+	.media-body {
+		padding: 10px;
+	}
+	.mediavisible {
+		display: inherit;
+	}
+}
