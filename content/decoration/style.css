@@ -353,13 +353,14 @@ h3 {
 	color: #9a206b;
 }
 .process .selector {
-	/*display:block;*/
+	display:inline-block;
 	width: 340px;
 	height: 35px;
 	background: #9a206b;
 	border-radius: 10px;
 	padding: 0;
 	margin-bottom: 40px;
+	text-align: center;
 }
 .process .selector a {
 	display: inline-block;
@@ -373,7 +374,7 @@ h3 {
 	margin: 2px;
 	padding-top: 3px;
 }
-.process .selector a:active {
+.process .selector a:active, .process .selector .active {
 	background-image: linear-gradient(to top, #2d226c 0%, #251e53 100%);
 }
 .process .selector a:first-child {
