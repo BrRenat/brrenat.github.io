@@ -77,7 +77,7 @@ sleep(2);
 if($error=="no")
 {
 //Отправка письма админу о новом комментарии
-$to = "renat0014@gamil.com";//Ваш e-mail адрес
+$to = "renat0014@gmail.com";//Ваш e-mail адрес
 $mes = "Человек по имени $posName отправил Вам сообщение из формы обратной связи Вашего сайта: \n\n$posText";
 
 $from = $posEmail;
