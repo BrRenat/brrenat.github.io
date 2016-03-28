@@ -2,15 +2,40 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=1024, initial-scale=1, maximum-scale=6">
 	<title>Decoration pro</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	<link rel="stylesheet" href="css/media.css" type="text/css" />
+	<link rel="stylesheet" href="css/remodal.css">
+ 	<link rel="stylesheet" href="css/remodal-default-theme.css">
 </head>
 <body>
-<section class="jumbotron">
-			<nav class="navbar navbar-default">
+<!-- всплывающая обратная связь -->
+	<div class="remodal" data-remodal-id="modal" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+		<div class="remodalBorder">
+			<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+				<form id="form7" method="post" enctype="multipart/form-data">
+				  <div class="form-group">
+				  	<h4>напишите нам</h4>
+				    <label for="#">Ваше имя</label>
+				    <input type="name" class="form-control" placeholder="" name="name" required>
+				  </div>
+				  <div class="form-group">
+				    <label for="#">Ваш телефон</label>
+				    <input type="phone" class="form-control" id="#" placeholder="" name="phone" required>
+				  </div>
+				  <div class="form-group">
+				    <label for="#">Фото объекта</label>
+				    <!-- <input type="file" name="file"> -->
+				    <button class="btn-small">прикрепить файл</button>
+				  </div>
+				  <button type="submit" class="btn btn-default">оставить заявку</button>
+				</form>
+			</div>
+		</div>
+
+<nav class="navbar navbar-default" id="nav">
 				<div class="container">
 					<div class="navbar-header">
 			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -19,7 +44,7 @@
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
 			      </button>
-			      <a class="navbar-brand" href="#"><img src="img/head-logo.png" alt=""></a>
+			      <a class="navbar-brand" href="#"><img src="img/big-logo.png" alt=""></a>
 			    </div>
 
 			     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -30,14 +55,15 @@
 								 <li><a href="#portfolio">Наши работы</a></li>
 								 <li><a href="#contacts">контакты</a></li>
 							</ul>
-							 <ul class="nav navbar-nav navbar-right">
-				        <li><a href="#"><img src="img/phone-icon.png" alt="">8 (495) 226-25-65<img class="phonebtn" src="img/phonebtn.png" alt=""></a></li>
+							 <ul class="nav navbar-nav navbar-right text-center">
+				        <li><img src="img/phone-icon.png" alt=""><a href="tel:84952262565">8 (495) 226-25-65</a></li>
+				        <li><a href="#modal"><img class="phonebtn" src="img/phonebtn.png" alt=""></a></li>
 				      </ul>
 			     </div>
-
 			  </div>
-
-			</nav><!-- end navbar -->
+</nav><!-- end navbar -->
+<section class="jumbotron">
+			
 			<div class="container">
 				<div class="item">
 								<div class="jumbotron-inner text-center">
@@ -48,6 +74,7 @@
 					    </div>
 				</div>
 </section>
+
 <div id="services" class="services">
 	<h3>услуги</h3>
 	<div class="divider"></div>
@@ -158,10 +185,10 @@
 		<div class="row">
 		<h3>Закажи прямо сейчас</h3>
 			<div class="col-sm-12">
-				<form class="navbar-form text-center" role="search" action="mail.php" method="post" enctype="text/plain">
+				<form class="navbar-form text-center" id="form" role="search" method="post" enctype="text/plain">
 				  <div class="form-group">
-				    <input type="text" class="form-control" placeholder="Ваше имя" name="name">
-				    <input type="text" class="form-control" placeholder="+7 (999) 999-99-99" name="phone">
+				    <input type="text" class="form-control" placeholder="Ваше имя" name="name" required>
+				    <input type="tel" class="form-control" placeholder="+7 (999) 999-99-99" name="phone" required>
 				  </div>
 				  <button type="submit" class="btn btn-default">Позвоните мне!</button>
 				</form>
@@ -265,10 +292,10 @@
 		<div class="row">
 		<h3>Закажи прямо сейчас</h3>
 			<div class="col-sm-12">
-				<form class="navbar-form text-center" role="search">
+				<form class="navbar-form text-center" id="form2" role="search" method="post" enctype="text/plain">
 				  <div class="form-group">
-				    <input type="text" class="form-control" placeholder="Ваше имя">
-				    <input type="text" class="form-control" placeholder="+7 (999) 999-99-99">
+				    <input type="text" class="form-control" placeholder="Ваше имя" name="name" required>
+				    <input type="tel" class="form-control" placeholder="+7 (999) 999-99-99" name="phone" required>
 				  </div>
 				  <button type="submit" class="btn btn-default">Позвоните мне!</button>
 				</form>
@@ -390,10 +417,10 @@
 		<div class="row">
 		<h3>стать нашим клиентом</h3>
 			<div class="col-sm-12">
-				<form class="navbar-form text-center" role="search">
+				<form class="navbar-form text-center" id="form3" role="search" method="post" enctype="text/plain">
 				  <div class="form-group">
-				    <input type="text" class="form-control" placeholder="Ваше имя">
-				    <input type="text" class="form-control" placeholder="+7 (999) 999-99-99">
+				    <input type="text" class="form-control" placeholder="Ваше имя" name="name" required>
+				    <input type="tel" class="form-control" placeholder="+7 (999) 999-99-99" name="phone" required>
 				  </div>
 				  <button type="submit" class="btn btn-default">Позвоните мне!</button>
 				</form>
@@ -453,56 +480,74 @@
 	<div class="divider"></div>
 	<div class="container text-center">
 		<div class="selector">
-				<a href="#">кратко</a>
-				<a href="#" class="active">подробно</a>
+				<button href="#" id="hider">кратко</button>
+				<button class="active" href="#" id="shower">подробно</button>
 		</div>
 	</div>
-	<div class="container text-center">
+	<div class="container text-center" id='fuck'>
 		<div class="row">
 			<div class="col-sm-4">
 				<img src="img/1.png" alt="">
 				<h4>Вы оставляете <br>заявку</h4>
-				<p>Наш менеджер перезванивает вам в течение 5 минут и договаривается о встрече. Желательно организовать встречу непосредственно на площадке, где будет проводиться ваше мероприятие</p>
+				<div>
+				<p class="proc">Наш менеджер перезванивает вам в течение 5 минут и договаривается о встрече. Желательно организовать встречу непосредственно на площадке, где будет проводиться ваше мероприятие</p>
+				</div>
 			</div>
 			<div class="col-sm-4">
 				<img src="img/2.png" alt="">
 				<h4>Создание концепции <br> оформления</h4>
-				<p>На основе полученных данных дизайнер-декоратор генерирует общую концепцию оформления мероприятия, разрабатывает и обсуждает с вами предварительный дизайн-проект оформления</p>
+				<div>
+				<p class="proc">На основе полученных данных дизайнер-декоратор генерирует общую концепцию оформления мероприятия, разрабатывает и обсуждает с вами предварительный дизайн-проект оформления</p>
+				</div>
 			</div>
 			<div class="col-sm-4">
 				<img src="img/3.png" alt="">
 				<h4>Конструкторское <br> решение</h4>
-				<p>По разработанному дизайн-проекту готовятся чертежи декораций, конструкций, интерьерных композиций, рассчитывается необходимое количество декоративных материалов</p>
+				<div>
+				<p class="proc">По разработанному дизайн-проекту готовятся чертежи декораций, конструкций, интерьерных композиций, рассчитывается необходимое количество декоративных материалов</p>
+				</div>
 			</div>
 			<div class="col-sm-4 pull-right">
 				<img src="img/4.png" alt="">
 				<h4>Закупка <br> материалов</h4>
-				<p>Мы осуществляем закупку качественных материалов у проверенных поставщиков и производителей. Если сумма расходов окажется большей, чем предполагалось, мы предложим вам альтернативные варианты</p>
+				<div>
+				<p class="proc">Мы осуществляем закупку качественных материалов у проверенных поставщиков и производителей. Если сумма расходов окажется большей, чем предполагалось, мы предложим вам альтернативные варианты</p>
+				</div>
 			</div>
 			<div class="col-sm-4 pull-right">
 				<img src="img/5.png" alt="">
 				<h4>Изготовление <br> элементов оформления</h4>
-				<p>Наличие собственной производственной базы  позволяет нам контролировать процесс изготовления и гарантировать качество каждого элемента для будущего оформления</p>
+				<div>
+				<p class="proc">Наличие собственной производственной базы  позволяет нам контролировать процесс изготовления и гарантировать качество каждого элемента для будущего оформления</p>
+				</div>
 			</div>
 			<div class="col-sm-4 pull-right">
 				<img src="img/6.png" alt="">
 				<h4>Доставка <br> на площадку</h4>
-				<p>Важно, чтобы при доставке элементы оформления сохранили свой презентабельный вид, прочность и целостность конструкции.Поэтому доставка организуется исключительно нашей командой</p>
+				<div>
+				<p class="proc">Важно, чтобы при доставке элементы оформления сохранили свой презентабельный вид, прочность и целостность конструкции.Поэтому доставка организуется исключительно нашей командой</p>
+				</div>
 			</div>
 			<div class="col-sm-4">
 				<img src="img/7.png" alt="">
 				<h4>Монтажные <br> работы</h4>
-				<p>На монтаже работает опытная бригада из 2-4 человек, при необходимости мы подключаем сертифицированных промышленных альпинистов. Работы производятся с учетом особенностей площадки, прочностных характеристик поверхностей-оснований</p>
+				<div>
+				<p class="proc">На монтаже работает опытная бригада из 2-4 человек, при необходимости мы подключаем сертифицированных промышленных альпинистов. Работы производятся с учетом особенностей площадки, прочностных характеристик поверхностей-оснований</p>
+				</div>
 			</div>
 			<div class="col-sm-4">
 				<img src="img/8.png" alt="">
 				<h4>Контроль <br> качества</h4>
-				<p>Каждая площадка проверяется на готовность и принимается лично директором «Московского Декоратора» — профессиональным дизайнером-декоратором с 15-летним опытом оформления и управления</p>
+				<div>
+				<p class="proc">Каждая площадка проверяется на готовность и принимается лично директором «Московского Декоратора» — профессиональным дизайнером-декоратором с 15-летним опытом оформления и управления</p>
+				</div>
 			</div>
 			<div class="col-sm-4">
 				<img src="img/9.png" alt="">
 				<h4>Площадка оформлена <br> «под ключ»</h4>
-				<p>Помещение будет готово к встрече гостей до их прихода: все конструкции, декорации, композиции проверены на устойчивость, учтены все «мелочи», без которых невозможно идеальное оформление</p>
+				<div>
+				<p class="proc">Помещение будет готово к встрече гостей до их прихода: все конструкции, декорации, композиции проверены на устойчивость, учтены все «мелочи», без которых невозможно идеальное оформление</p>
+				</div>
 			</div>
 
 		</div>
@@ -541,10 +586,10 @@
 		<div class="row">
 		<h3>не откладывай на завтра! звони!</h3>
 			<div class="col-sm-12">
-				<form class="navbar-form text-center" role="search">
+				<form class="navbar-form text-center" id="form4" role="search" method="post" enctype="text/plain">
 				  <div class="form-group">
-				    <input type="text" class="form-control" placeholder="Ваше имя">
-				    <input type="text" class="form-control" placeholder="+7 (999) 999-99-99">
+				    <input type="text" class="form-control" placeholder="Ваше имя" name="name" required>
+				    <input type="tel" class="form-control" placeholder="+7 (999) 999-99-99" name="phone" required>
 				  </div>
 				  <button type="submit" class="btn btn-default">Позвоните мне!</button>
 				</form>
@@ -558,18 +603,18 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6">
-				<form>
+				<form id="form5">
 				  <div class="form-group">
 				    <label for="№">Ваше имя</label>
-				    <input type="name" class="form-control" id="№" placeholder="">
+				    <input type="text" class="form-control" placeholder="" name="name" required>
 				  </div>
 				  <div class="form-group">
 				    <label for="№">Ваш телефон</label>
-				    <input type="tel" class="form-control" id="№" placeholder="">
+				    <input type="tel" class="form-control" placeholder="" name="phone" required>
 				  </div>
 				  <div class="form-group">
-				    <label for="№">Несколько слов о мероприятии</label>
-				    <textarea name="message" placeholder='НАПРИМЕР: Нам нужно оформить новогодний корпоратив в стиле бразильской вечеринки на 100 человек. Площадь помещения около 200 кв.м. Ориентировочная дата: 25 декабря.'></textarea>
+				    <label >Несколько слов о мероприятии</label>
+				    <textarea type="text" name="text" required placeholder='НАПРИМЕР: Нам нужно оформить новогодний корпоратив в стиле бразильской вечеринки на 100 человек. Площадь помещения около 200 кв.м. Ориентировочная дата: 25 декабря.'></textarea>
 
 				  </div>
 				  <button type="submit" class="btn btn-default">расчитать стоимость</button>
@@ -591,25 +636,25 @@
 	<h4>Оплатить заказ Вы можете наличными или любым другим способом:</h4>
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-3 col-xs-6">
-				<button type="button" class="btn btn-default">
+			<div class="col-sm-6">
+				<div class="payimg">
 				  <img src="img/sber.png" alt="">
-				</button>
+				</div><p>4276 4000 4811 1844</p>
 			</div>
-			<div class="col-sm-3 col-xs-6">
-				<button type="button" class="btn btn-default">
+			<div class="col-sm-6">
+				<div class="payimg">
 				  <img src="img/webmoney.png" alt="">
-				</button>
+				</div><p>R142945334504</p>
 			</div>
-			<div class="col-sm-3 col-xs-6">
-				<button type="button" class="btn btn-default">
+			<div class="col-sm-6">
+				<div class="payimg">
 				  <img src="img/qiwi.png" alt="">
-				</button>
+				</div><p>8 916 018 37 08</p>
 			</div>
-			<div class="col-sm-3 col-xs-6">
-				<button type="button" class="btn btn-default">
+			<div class="col-sm-6">
+				<div class="payimg">
 				  <img src="img/yandex.png" alt="">
-				</button>
+				</div><p>4100 1177 1197 867</p>
 			</div>
 		</div>
 	</div>
@@ -622,21 +667,21 @@
 			<div class="col-sm-6">
 				<img src="img/big-logo.png" alt="">
 				<blockquote>
-					<p>8 (495) 226-25-65</p>
-					<p>8 (985) 226-25-65</p>
+					<p><a href="tel:84952262565">8 (495) 226-25-65</a></p>
+					<p><a href="tel:84952262565">8 (985) 226-25-65</a></p>
 					<p>decoration.pro@mail.ru</p>
 				</blockquote>
 			</div>
 			<div class="col-sm-6">
-				<form>
+				<form id="form6">
 				  <div class="form-group">
 				  	<h4>напишите нам</h4>
 				    <label for="#">Ваше имя</label>
-				    <input type="name" class="form-control" id="#" placeholder="">
+				    <input type="name" class="form-control" placeholder="" name="name" required>
 				  </div>
 				  <div class="form-group">
 				    <label for="#">Ваш телефон</label>
-				    <input type="password" class="form-control" id="#" placeholder="">
+				    <input type="phone" class="form-control" id="#" placeholder="" name="phone" required>
 				  </div>
 				  <div class="form-group">
 				    <label for="#">Фото объекта</label>
@@ -657,18 +702,49 @@
 		</div>
 	</div>
 </div>
-
 <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="js/remodal.min.js"></script>
+<script src="js/script.js"></script>
 <script type="text/javascript" src="jquery.countdown.js"></script>
 <script type="text/javascript" src="jquery.countdown-ru.js"></script>
 <script type="text/javascript">
-$(function () {
-	var austDay = new Date();
-	austDay = new Date("March 30, 2016 01:15:00");
-	$('#defaultCountdown').countdown({until: austDay});
-});
+	$(function () {
+		var austDay = new Date();
+		austDay = new Date("March 30, 2016 01:15:00");
+		$('#defaultCountdown').countdown({until: austDay});
+	});
+	</script>
+<script>
+	var div = document.getElementById('nav');
+	$(window).scroll(function(){
+		var top = $(this).scrollTop();
+		console.log(top);
+		
+		if (top > 1000) {
+		div.classList.add('navbar-fixed-top');
+	} else {
+		div.classList.remove('navbar-fixed-top');
+	}
+	});
 </script>
+<script>
+	$( "#hider" ).click(function() {
+	  $( ".proc" ).hide( 2000 , function() {
+	    // Use arguments.callee so we don't need a named function
+	    $( this ).prev().hide( 2000, arguments.callee );
+	  });
+	  $( "#hider" ).addClass("active");
+	  $( "#shower" ).removeClass("active");
+	});
+	$( "#shower" ).click(function() {
+	  $( ".proc" ).show( 2000 );
+	  $( "#hider" ).removeClass("active");
+	  $( "#shower" ).addClass("active");
+	});
+</script>
+
+
 </body>
 </html>

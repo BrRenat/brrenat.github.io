@@ -10,6 +10,9 @@
 	.contacts .btn {
 		margin-left: 0px;
 	}
+	.navbar .container {
+		padding: 0;
+	}
 }
 
 
