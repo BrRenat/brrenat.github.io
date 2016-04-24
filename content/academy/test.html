@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1024, initial-scale=1, maximum-scale=6">
+	<title>Document</title>
+	<!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/test.css" type="text/css" />
+	<link rel="stylesheet" href="css/media.css" type="text/css" />
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script defer src="js/bootstrap.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="js/test.js"></script>
+</head>
+<body>
+<div id="wrapper">
+<div class="container">
+		<div class="test" ng-app="myApp" ng-controller="myCtrl">
+			<div class="title">
+				<div class="number">{{Number[count]}}</div>
+				<div class="district">{{District[count]}}</div>
+				<div class="text">{{Text[count]}}</div>
+			</div>
+			<div class="content">
+				<div id="item1" ng-click="toggle1()"><img src="img/thumb/{{Img[count][0]}}.jpg" alt=""><div class="active" ng-show="myVar1"></div></div>
+				<div id="item2" ng-click="toggle2()"><img src="img/thumb/{{Img[count][1]}}.jpg" alt=""><div class="active" ng-show="myVar2"></div>
+			</div>
+			<a href="" id="next" ng-click="toggle3(count)" ng-init="count=0"><img src="img/button.png" alt="">{{Alert}}</a>
+		</div>	
+</div>
+</div>
+</div>
+</body>
+</html>

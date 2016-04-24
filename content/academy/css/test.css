@@ -68,7 +68,7 @@
 }
 .test a{
 	position: absolute;
-	bottom:45px;
+	bottom:-350px;
 	left:50%;
 	margin-left: -90px;
 }
@@ -89,7 +89,6 @@
 	background: url(../img/target.png);
 	margin-left: 50px;
 	margin-top: -180px;
-	display: none;
 }
 
 
