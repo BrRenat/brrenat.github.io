@@ -27,7 +27,10 @@
 				<div id="item1" ng-click="toggle1()"><img src="img/thumb/{{Img[count][0]}}.jpg" alt=""><div class="active" ng-show="myVar1"></div></div>
 				<div id="item2" ng-click="toggle2()"><img src="img/thumb/{{Img[count][1]}}.jpg" alt=""><div class="active" ng-show="myVar2"></div>
 			</div>
-			<a href="" id="next" ng-click="toggle3(count)" ng-init="count=0"><img src="img/button.png" alt="">{{Alert}}</a>
+			<a href="" id="next" ng-click="toggle3(count)" ng-init="count=0"><img src="img/button.png" alt="">{{End}}</a>
+			<div id="alert" ng-show="myVar3" ng-click="toggle4()">
+				Выберите вариант ответа
+			</div>
 		</div>	
 </div>
 </div>

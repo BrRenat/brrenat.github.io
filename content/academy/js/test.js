@@ -6,6 +6,7 @@ var app = angular.module('myApp', []);
     $scope.Img = [["thumb1","thumb2"],["thumb2","thumb1"]];
 		$scope.myVar1 = false;
 		$scope.myVar2 = false;
+		$scope.myVar3 = false;
     $scope.toggle1 = function() {
         $scope.myVar1 = !$scope.myVar1;
         $scope.myVar2 = $scope.myVar2 = false;
@@ -20,10 +21,17 @@ var app = angular.module('myApp', []);
         $scope.count = count + 1;
         $scope.myVar1 = false;
         $scope.myVar2 = false;
-        $scope.Alert = ""
-    	} else {
-    		$scope.Alert = "Ошибка";
-    	} 
+        $scope.Alert = "";
+         if ($scope.count === 1) {
+    		$scope.End = "Последний вопрос";
     };
-	});
+    	} else {
+    		$scope.myVar3 = true;
+    	};
+    	
+    };
+    $scope.toggle4 = function() {
+        $scope.myVar3 = false;
+    };
+});
 

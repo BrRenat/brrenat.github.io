@@ -12,6 +12,7 @@
 	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 	<script defer src="js/bootstrap.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="js/test.js"></script>
 </head>
 <body>
 <header>
@@ -52,17 +53,20 @@
 		<div class="present">
 			Пройдите тест до конца и получите подарок от стилистов Академии Моды и Стиля
 		</div>
-		<div class="test">
+		<div class="test" ng-app="myApp" ng-controller="myCtrl">
 			<div class="title">
-				<div class="number">1</div>
-				<div class="district">статистика</div>
-				<div class="text">КАКОЙ КЛАТЧ ПОДХОДИТ ПО СТИЛИСТИКЕ К ПРЕДСТАВЛЕННОМУ ОБРАЗУ? </div>
+				<div class="number">{{Number[count]}}</div>
+				<div class="district">{{District[count]}}</div>
+				<div class="text">{{Text[count]}}</div>
 			</div>
 			<div class="content">
-				<div id="item1"><img src="img/thumb/thumb1.jpg" alt=""></div>
-				<div id="item2"><img src="img/thumb/thumb2.jpg" alt=""></div>
+				<div id="item1" ng-click="toggle1()"><img src="img/thumb/{{Img[count][0]}}.jpg" alt=""><div class="active" ng-show="myVar1"></div></div>
+				<div id="item2" ng-click="toggle2()"><img src="img/thumb/{{Img[count][1]}}.jpg" alt=""><div class="active" ng-show="myVar2"></div>
 			</div>
-			<a href=""><img src="img/button.png" alt=""></a>
+			<a href="" id="next" ng-click="toggle3(count)" ng-init="count=0"><img src="img/button.png" alt="">{{End}}</a>
+			<div id="alert" ng-show="myVar3" ng-click="toggle4()">
+				Выберите вариант ответа
+			</div>
 		</div>
 	</div>
 </div>

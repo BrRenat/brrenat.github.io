@@ -146,9 +146,3 @@ header {
 	padding-top: 65px;
 	text-align: center;
 }
-.desktable {
-	position: absolute;
-	bottom:0;
-	left:50%;
-	margin-left: -457px;
-}
