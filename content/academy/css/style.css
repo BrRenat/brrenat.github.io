@@ -1,0 +1,154 @@
+@font-face {
+	font-family:"Roboto"
+	src:url(../fonts/roboto-regular.ttf);
+}
+@font-face {
+	font-family:"Roboto Light"
+	src:url(../fonts/roboto-light.ttf);
+}
+@font-face {
+	font-family:"Gothic"
+	src:url(../fonts/GOTHIC.TTF);
+}
+@font-face {
+	font-family:"PFDinDisplayPro"
+	src:url(../fonts/PFDinDisplayPro-ExtraThin.ttf);
+}
+*:focus {
+	outline: none;
+}
+header {
+	background: url(../img/header_bg.png) bottom repeat-x;
+	padding: 10px;
+}
+.top {	
+	background: url(../img/top_bg.jpg);
+		background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.top .container {
+	position: relative;
+}
+.top h1 {
+	text-transform: uppercase;
+	color: #c2357a;
+	margin: 0;
+	padding: 0;
+	font-size: 3vh;
+	line-height: 1.5;
+	font-family: Roboto;
+	margin-top: 100px;
+	display: inline-block;
+	text-align: center;
+}
+
+.top ul {
+	padding: 0;
+	margin: 60px 0px;
+	display: inline-block;
+	z-index: 4;
+	position: relative;
+}
+.top ul li{
+	font-size: 2vh;
+	font-family: Roboto Light;
+	color: #000;
+	list-style-type: none;
+	padding: 5px 0px;
+}
+.top ul li:before {
+    content: url(../img/point.png)
+}
+.top p {
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	text-align: right;
+	font-size: 11px;
+	color: #6e6e6e;
+	margin-right: 40px;
+	font-family: Gothic;
+	opacity: 0.9;
+	z-index: 2;
+}
+.top img {
+	width: auto;
+	height: 50vh;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+}
+.middle {
+	background: url(../img/middle_bg.jpg);
+		background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  padding-bottom: 30px;
+}
+.middle h1 {
+	font-size: 3vh;
+	font-family: Roboto;
+	color: #5e5e5e;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 60px;
+	line-height: 1.5;
+}
+.middle h1 span {
+	font-size: 2vh;
+	color: #fff;
+	background: #5e5e5e;
+	padding: 0 45px;
+}
+.middle ul {
+	width: 50%;
+  margin: 30px auto;
+}
+.middle ul li{
+	font-size: 2vh;
+	font-family: Roboto Light;
+	color: #c2357a;
+	list-style-type: square;
+	padding: 5px 0px;
+}
+.middle ul li span{
+	color: #000;
+}
+.middle p {
+	width: 50%;
+	font-size: 2vh;
+	font-family: Roboto Light;
+	margin: 0px auto;
+}
+.middle img {
+	display: block;
+	margin: 10px auto;
+}
+.bottom {
+	background: url(../img/bottom_bg.jpg);
+		background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  position: relative;
+}
+.present {
+	display: block;
+	width: 245px;
+	height: 131px;
+	background: url(../img/present.png);
+	margin: 20px auto;
+}
+.present {
+	color: #fff;
+	padding-top: 65px;
+	text-align: center;
+}
+.desktable {
+	position: absolute;
+	bottom:0;
+	left:50%;
+	margin-left: -457px;
+}
