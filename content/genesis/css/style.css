@@ -1,0 +1,181 @@
+@font-face {
+	font-family: "CasperBold";
+	src:url(../fonts/Casper_Bold.ttf);
+}
+@font-face {
+	font-family: "CasperItalic";
+	src:url(../fonts/Casper_Italic.ttf);
+}
+@font-face {
+	font-family: "ArialMT";
+	src:url(../fonts/arial_rounded_mt_bold.TTF);
+}
+*:focus {
+	outline: none;
+}
+body {
+	max-width: 1920px;
+}
+#header {
+	display: block;
+	background: url(../img/header_bg.jpg);
+	background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 700px;
+}
+#header .container {
+    position: relative;
+    height: 100%;	
+}
+.navbar-default {
+    background: none;
+    border: none;
+}
+.navbar-default .navbar-nav>li>a {
+	font-family: CasperBold;
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover  {
+	background: none;
+	color: #fff;
+	text-decoration: underline;
+}
+.navbar-default .navbar-brand {
+	color: #fff;
+	font-size: 20px;
+	font-family: CasperBold;
+	text-align: center;
+}
+.navbar-default .navbar-brand img {
+	margin-top: 35px;
+	margin-bottom: 10px;
+}
+.navbar-nav {
+	margin-top: 80px;
+	margin-left: 50px;
+}
+.navbar-right li p {
+	font-family: ArialMT;
+	color: #fff;
+	font-size: 33px;
+}
+.navbar-default .navbar-right>li>a {
+	text-transform: none;
+	font-family: CasperItalic;
+	color: #fff324;
+	font-size: 24px;
+	text-decoration: underline;
+}
+.navbar-right {
+	position: absolute;
+	top:-40px;
+	right:0px;
+}
+.head_content {
+	width: 70%;
+	position: absolute;
+	bottom: 10%;
+}
+.big_text {
+	height: 30%;
+}
+.headtext {
+	font-size: 35px;
+	color: #fff;
+	font-family: CasperItalic;
+	margin-top: 30px;
+}
+.btngroup {
+	position: absolute;
+	top: 7%;
+	right: -270px;
+}
+.btngroup .btn {
+	margin: 0px 10px;
+}
+.btngroup .btn-primary {
+	color: #9e4ecd;
+    background-color: #fff;
+    border:none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: CasperBold;
+	padding: 10px 25px;
+	text-transform: uppercase;
+}
+.btngroup .btn-primary:active:focus {
+	background-color: #fff;
+    color: #9e4ecd;
+    border-color: #122b40;
+    box-shadow: inset 0 3px 5px rgba(0,0,0,.4);
+}
+.btngroup .btn-default {
+	color: #fff;
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: CasperBold;
+	padding: 10px 25px;
+	text-transform: uppercase;
+}
+.btngroup .btn-default:active:focus {
+	background: none;
+    color: #fff;
+    border-color: #fff;
+    box-shadow: inset 0 3px 5px rgba(0,0,0,.4);
+}
+#services .btn-primary {
+	color: #9e4ecd;
+    background-color: #fff;
+    border:none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: CasperBold;
+	padding: 10px 25px;
+	text-transform: uppercase;
+}
+#portfolio {
+	background: #f3eef1;
+}
+#portfolio h1, #news h1 {
+	font-family: CasperItalic;
+	font-size: 44px;
+	color: #c60083;
+	display: inline-block;
+	margin-top: 130px;
+	margin-bottom: 50px;
+}
+
+#portfolio a.more, #news a.more{
+	font-family: CasperBold;
+	font-size: 16px;
+	color: #c60083;
+	margin-left: 50px;
+}
+#portfolio .dropdown {
+	display: inline-block;
+	float: right;
+	margin-top: 130px;
+}
+#portfolio .btn-primary{
+	background: none;
+	border:2px solid #c60083;
+	border-radius: 30px;
+	color: #c60083;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-family: CasperBold;
+	padding: 10px 25px;
+}

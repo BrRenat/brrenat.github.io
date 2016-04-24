@@ -1,0 +1,136 @@
+
+/* ---- grid ---- */
+
+.grid {
+  background: #EEE;
+  width: 100%;
+  max-width:1920px;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+  width: 20%;
+}
+
+.grid-item {
+  height: 120px;
+  float: left;
+  background: #D26;
+  position: relative;
+}
+.grid-item a {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: underline;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  z-index: 2;
+}
+.grid-item a:hover {
+  text-decoration: none;
+}
+
+.grid-item--width1 { width:  33.333%; }
+.grid-item--width2 { width:  40%; }
+.grid-item--width3 { width:  60%; }
+.grid-item--width4 { width:  50%; }
+.grid-item--width5 { width:  35%; }
+.grid-item--width6 { width:  30%; }
+
+.grid-item--height1 { height: 35vh; }
+.grid-item--height2 { height: 20vh; }
+
+/*.grid-item--height1 { height: 440px; }
+.grid-item--height2 { height: 220px; }*/
+
+.grid-item.service {
+  background: url(../img/thumb/service.jpg) 100% 100% no-repeat;
+  background-size: cover;
+}
+.grid-item.market {
+  background: url(../img/thumb/market.jpg) 100% 100% no-repeat;
+  background-size: cover;
+}
+.grid-item.outside {
+  background: url(../img/thumb/outside.jpg) 100% 100% no-repeat;
+  background-size: cover;
+}
+.grid-item.smi {
+  background: url(../img/thumb/smi.jpg) 100% 100% no-repeat;
+  background-size: cover;;
+}
+.grid-item.infograph {
+  background: url(../img/thumb/infograph.jpg) 100% 100% no-repeat;
+  background-size: cover;
+}
+.grid-item.pillarce {
+  background: url(../img/thumb/pillarce.jpg) 100% 100% no-repeat;
+  background-size: cover;
+}
+.grid-item.press {
+  background: url(../img/thumb/press.jpg) 100% 100% no-repeat;
+  background-size: cover;
+}
+.grid-item.typograf {
+  background: url(../img/thumb/typograf.jpg) 100% 100% no-repeat;
+  background-size: cover;
+}
+.grid-item.pr {
+  background: url(../img/thumb/pr.jpg) 100% 100% no-repeat;
+  background-size: cover;
+}
+.grid-item.design {
+  background: url(../img/thumb/design.jpg) 100% 100% no-repeat;
+  background-size: cover;
+}
+.grid-item.cinema {
+  background: url(../img/thumb/cinema.jpg) 100% 100% no-repeat;
+  background-size: cover;
+}
+.grid-item.promo {
+  background: url(../img/thumb/promo.jpg) 100% 100% no-repeat;
+  background-size: cover;
+}
+.grid-item.internet {
+  background: url(../img/thumb/internet.jpg) 100% 100% no-repeat;
+  background-size: cover;
+}
+.grid-item.more {
+  background: url(../img/thumb/more.jpg) 100% 100% no-repeat;
+  background-size: cover;
+}
+.pink:after {
+  background: #b10e0e;
+}
+.yellow:after {
+  background: #dfcd00;
+}
+.green:after {
+  background: #379d26;
+}
+.grid-item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0;
+  -webkit-transition: 0.2s ease;
+}
+.grid-item:hover::after {
+  opacity: 0.9;
+  cursor: pointer;
+}
