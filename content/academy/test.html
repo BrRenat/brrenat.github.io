@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1024, initial-scale=1, maximum-scale=6">
+	<title>Document</title>
+	<!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/test.css" type="text/css" />
+	<link rel="stylesheet" href="css/media.css" type="text/css" />
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script defer src="js/bootstrap.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body>
+<div id="wrapper">
+<div class="container">
+		<div class="test" ng-app="myApp" ng-controller="myCtrl">
+			<div class="title">
+				<div class="number">{{Number[count]}}</div>
+				<div class="district">{{District[count]}}</div>
+				<div class="text">{{Text[count]}}</div>
+			</div>
+			<div class="content">
+				<div id="item1"><img src="img/thumb/{{Img[count][0]}}.jpg" alt=""></div>
+				<div id="item2"><img src="img/thumb/{{Img[count][1]}}.jpg" alt=""></div>
+			</div>
+			<a href="" id="next" ng-click="count = count + 1" ng-init="count=0"><img src="img/button.png" alt=""></a>
+		</div>	
+</div>
+</div>
+</div>
+<script>
+	var app = angular.module('myApp', []);
+	app.controller('myCtrl', function($scope) {
+    $scope.Number = ["1","2"];
+    $scope.District = ["статистика","раздел2"];
+    $scope.Text = ["КАКОЙ КЛАТЧ ПОДХОДИТ ПО СТИЛИСТИКЕ К ПРЕДСТАВЛЕННОМУ ОБРАЗУ? ","Text 2"];
+    $scope.Img = [["thumb1","thumb2"],["thumb2","thumb1"]];
+	});
+
+</script>
+
+
+
+
+
+
+</body>
+</html>
