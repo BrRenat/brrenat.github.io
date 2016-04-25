@@ -21,6 +21,9 @@ header {
 	background: url(../img/header_bg.png) bottom repeat-x;
 	padding: 10px;
 }
+header.gray{
+	background: url(../img/header_bg_gray.png) bottom repeat-x;
+}
 .top {	
 	background: url(../img/top_bg.jpg);
 		background-repeat: no-repeat;
@@ -145,4 +148,150 @@ header {
 	color: #fff;
 	padding-top: 65px;
 	text-align: center;
+}
+#test_complete {
+	background: url(../img/test_complete.jpg);
+		background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  padding-top: 50px;
+}
+#test_complete h1 {
+	margin: 0;
+	text-align: center;
+	color: #cb0262;
+	font-family: Roboto;
+	font-size: 35px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+#test_complete p {
+	text-align: center;
+	font-family: Roboto;
+	font-size: 25px;
+}
+.form-control {
+	width: 500px;
+	height: 50px;
+	margin: 0 auto;
+	background: none;
+	border:2px solid #cb0262;
+}
+.btn {
+	border-radius: 0;
+	width: 500px;
+	height: 50px;
+	background: #cb0262;
+	color: #fff;
+	font-family: Roboto;
+	font-size: 30px;
+	text-transform: uppercase;
+	margin: 20px auto;
+	display: block;
+}
+#form {
+	padding-bottom: 50px;
+}
+#lesson {
+	background: url(../img/lesson_bg.jpg);
+		background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  padding-top: 20px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+#lesson>p {
+	color: #6c6c6c;
+	font-family: Roboto;
+	font-size: 15px;
+	padding-top: 10px;
+}
+.lesson_content {
+	background: url(../img/razvorot.png);
+		background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  width: 60%;
+  height: auto;
+}
+.lesson_left, .lesson_right {
+	display: inline-block;
+	height: 100%;
+	width: 50%;
+	padding: 40px 0px;
+}
+.lesson_left h1 {
+	color: white;
+	font-family: Roboto;
+	font-size: 25px;
+	background: #6c6c6c;
+	text-transform: uppercase;
+	padding: 5px;
+	width: 80%;
+	margin: 0px auto;
+	margin-bottom: 5px;
+}
+.lesson_left h2 {
+	color: black;
+	font-family: Roboto;
+	font-size: 25px;
+	text-transform: uppercase;
+	margin: 0;
+}
+.lesson_left p {
+	color: #676767;
+	font-family: Roboto;
+	font-size: 15px;
+	width: 80%;
+	margin: 0 auto;
+	text-align: left;
+	padding: 10px 0px;
+}
+footer {
+	padding: 20px 0px;
+	color: #676767;
+}
+#thx {
+	background: url(../img/social_bg.jpg);
+		background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  padding: 100px
+}
+#thx h1 {
+	font-family: Roboto; 
+	color: #cb0262;
+	text-transform: uppercase;
+	font-size: 40px;
+	display: block;
+	width: 400px;
+	text-align: center;
+}
+#thx p {
+	font-family: Roboto; 
+	color: #000;
+	text-transform: uppercase;
+	font-size: 16px;
+	display: block;
+	width: 400px;
+	text-align: center;
+	padding: 20px 0px;
+}
+#social {
+	background: #cb0262;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	padding: 50px;
+}
+#social p {
+	font-family: Roboto;
+	font-size: 30px;
+	color: #fff;
+	margin-bottom: 20px;
+}
+#social a {
+	margin: 0 50px;
 }

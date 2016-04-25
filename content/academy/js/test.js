@@ -4,6 +4,7 @@ var app = angular.module('myApp', []);
     $scope.District = ["статистика","раздел2"];
     $scope.Text = ["КАКОЙ КЛАТЧ ПОДХОДИТ ПО СТИЛИСТИКЕ К ПРЕДСТАВЛЕННОМУ ОБРАЗУ? ","Text 2"];
     $scope.Img = [["thumb1","thumb2"],["thumb2","thumb1"]];
+    $scope.Next = "Следующий вопрос";
 		$scope.myVar1 = false;
 		$scope.myVar2 = false;
 		$scope.myVar3 = false;
@@ -22,12 +23,14 @@ var app = angular.module('myApp', []);
         $scope.myVar1 = false;
         $scope.myVar2 = false;
         $scope.Alert = "";
-         if ($scope.count === 1) {
-    		$scope.End = "Последний вопрос";
-    };
-    	} else {
-    		$scope.myVar3 = true;
-    	};
+        if ($scope.count === 1) {
+    		$scope.Next = "Получить результаты теста";
+        } else if ($scope.count === 2){
+            $scope.Next = "Получить результаты теста 2";
+        };
+    	}  else {
+            $scope.myVar3 = true;
+        };
     	
     };
     $scope.toggle4 = function() {
