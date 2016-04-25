@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
 	<link rel="stylesheet" href="css/grid.css" type="text/css" />
@@ -10,13 +11,17 @@
 	<script src="js/masonry.pkgd.min.js"></script>
 	<script src="js/masonry-docs.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.tubular.1.0.js"></script>
-	<!-- <link rel="stylesheet" href="css/media.css" type="text/css" /> -->
+	<link rel="stylesheet" href="css/owl.carousel.css" />
+	<script src="js/owl.carousel.js"></script>
+	<!-- <script src="js/jquery.tubular.1.0.js"></script> -->
+	<link rel="stylesheet" href="css/media.css" type="text/css" />
 </head>
-<body>
 <script>
-	$().ready(function() { $('#header').tubular({videoId: 'qEazNcUeCxU'}); // where idOfYourVideo is the YouTube ID. });
+	$(document).ready(function(){
+  $('.owl-carousel').owlCarousel();
+});
 </script>
+<body>
 <div id="header">
 	<div class="container">
 		<nav class="navbar navbar-default">
@@ -62,7 +67,13 @@
 <div id="services">
 	<div class="grid">
 	  <div class="grid-sizer"></div>
-	  <div class="grid-item grid-item--width1 grid-item--height1 service pink"><a href="#">Услуги</a></div>
+	  <div class="grid-item grid-item--width1 grid-item--height1 service pink"><a href="#">Услуги</a>
+
+	  </div>
+		
+
+
+
 	  <div class="grid-item grid-item--width1 grid-item--height1 market pink"><a href="#">Реклама в торговых центрах</a></div>
 	  <div class="grid-item grid-item--width1 grid-item--height1 outside yellow"><a href="#">Наружная реклама</a></div>
 
@@ -85,71 +96,127 @@
 </div>
 <div id="portfolio">
 	<div class="container">
-		<h1>Работы</h1>
-		<a class="more" href="#">смотреть все <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>
-		<div class="dropdown">
-		  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-		    Инфографика
-		    <span class="caret"></span>
-		  </button>
-		  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-		    <li><a href="#">1</a></li>
-		    <li><a href="#">2</a></li>
-		    <li><a href="#">3</a></li>
-		  </ul>
+		<div class="row">
+			<div class="col-sm-offset-1 col-sm-5">
+				<h1>Работы<a class="more" href="#">смотреть все <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a></h1>
+			</div>
+			<div class="col-sm-5 text-center">	
+				<div class="dropdown">
+				  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				    Инфографика
+				    <span class="caret"></span>
+				  </button>
+				  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+				    <li><a href="#">Инфографика1</a></li>
+				    <li><a href="#">Инфографика2</a></li>
+				    <li><a href="#">Инфографика3</a></li>
+				  </ul>
+				</div>
+			</div>	
 		</div>
+	</div>
+	<div class="owl-carousel">
+	  <div><img src="img/thumb/1.jpg" alt=""></div>
+	  <div><img src="img/thumb/2.jpg" alt=""></div>
+	  <div><img src="img/thumb/3.jpg" alt=""></div>
+	  <div><img src="img/thumb/4.jpg" alt=""></div>
 	</div>
 </div>
 <div id="news">
 	<div class="container">
-		<h1>Новости</h1>
-		<a class="more" href="#">читать все <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>
+		<div class="row">
+			<div class="col-sm-offset-1 col-sm-5">
+				<header>
+					<h1>Новости<a class="more" href="#">читать все <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a></h1>
+					
+				</header>
+				<div class="news_content">
+					<h2>H&M и Цукерберг: как россияне разыграли мировые СМИ </h2>
+					<p>Авторами самого громкого пранка на 1 апреля оказались российские рекламщики</p>
+				</div>
+				<div class="news_content">
+					<h2>Завод КАРАТ представил дизайн в стиле Пакмана </h2>
+					<p>Производитель плавленных сыров представил новый дизайн и коммуникационную...</p>
+				</div>
+			</div>
+			<div class="col-sm-5">
+				<h1 class="vote_title">Опрос</h1>
+				<div class="vote">
+					&nbsp;
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
+<div id="about">
+	<div class="container">
+		<img src="img/about.jpg" alt="" class="about_bg">
+		<div class="row">
+			<div class="col-sm-9">
+				<h1>О нас</h1>
+				<a class="more" href="#">подробнее <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>
+				<p>Компания работает на российском рынке с 1999 года. Мы предлагаем нашим клиентам уникальные условия для размещения рекламы, предоставляя возможность эксклюзивного контакта с избранной аудиторией. Более 15 лет мы  успешно развиваем и расширяем свою сеть присутствия в лучших местах отдыха премиум-сегмента.</p>
+				<a class="btn btn-default" href="#" role="button">пригласить в тендер</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="bottom_nav">		
+<img class="women" src="img/women.png" alt="">		
+	<div class="container">
+			<h1>genesis <br>media group</h1>
+			<div class="btngroup">
+				<input class="btn btn-default" type="text" placeholder="имя/организация">
+				<input class="btn btn-default" type="text" placeholder="номер телефона">
+				<div class="dropdown pull-right">
+							  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							    УСЛУГА
+							    <span class="caret"></span>
+							  </button>
+							  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+							    <li><a href="#">УСЛУГА1</a></li>
+							    <li><a href="#">УСЛУГА2</a></li>
+							    <li><a href="#">УСЛУГА3</a></li>
+							  </ul>
+				</div>
+				<input class="btn btn-default" type="text" placeholder="email">
+				<a class="btn btn-primary" href="#" role="button">отправьте заявку</a>
+			</div>
+			<div class="bottom_text">
+				<h2>Наталья Смирнова</h2>
+				<p>Менеджер по работе с ключевыми клиентами</p>
+			</div>
+	</div>
+</div>
+<div id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="leftside">
+				<img src="img/logo.png" alt="">
+				<p>©  "Fresh Promotion" 2016г.</p>
+				<span>Сделано с любовью в PARUS AGENCY</span>
+			</div>
+			<div class="footernav">
+				<ul>
+					<li><a href="#">Услуги</a></li>
+					<li><a href="#">Портфолио</a></li>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Статьи</a></li>
+					<li><a href="#">Отзывы</a></li>
+				</ul>
+			</div>
+			<div class="rightside pull-right">
+				<p>989-33-77</p>
+				<a href="#">заказать звонок</a>
+				<p><span>г.Самара, пр.Мальцева 1</span></p>
+				<a href="#">fresh-promotion@yandex.ru</a>
+			</div>
+		</div>
+	</div>	
+</div>
 </body>
-
-
-
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 
-<div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 1 }'>
-		  <div class="grid-item pink"><img src="img/thumb/service.jpg" alt=""><a href="#">Услуги</a></div>
-		  <div class="grid-item pink"><img src="img/thumb/market.jpg" alt=""><a href="#">Реклама в торговых центрах</a></div>
-		  <div class="grid-item yellow"><img src="img/thumb/outside.jpg" alt=""><a href="#">Наружная реклама</a></div>
-		  <div class="grid-item yellow"><img src="img/thumb/smi.jpg" alt=""><a href="#">Реклама в СМИ</a></div>
-		  <div class="grid-item pink"><img src="img/thumb/infograph.jpg" alt=""><a href="#">Инфографика</a></div>
-		  <div class="grid-item green"><img src="img/thumb/pillarce.jpg" alt=""><a href="#">Реклама на пилларсах</a></div>
-		  <div class="grid-item yellow"><img src="img/thumb/press.jpg" alt=""><a href="#">Реклама в прессе</a></div>
-		  <div class="grid-item pink"><img src="img/thumb/typograf.jpg" alt=""><a href="#">Типография</a></div>
-		  <div class="grid-item green"><img src="img/thumb/pr.jpg" alt=""><a href="#">PR-компания</a></div>
-		  <div class="grid-item pink"><img src="img/thumb/design.jpg" alt=""><a href="#">Дизайн</a></div>
-		  <div class="grid-item yellow"><img src="img/thumb/cinema.jpg" alt=""><a href="#">Реклама в кинотеатрах</a></div>
-		  <div class="grid-item green"><img src="img/thumb/promo.jpg" alt=""><a href="#">BTL и промоакции</a></div>
-		  <div class="grid-item pink"><img src="img/thumb/internet.jpg" alt=""><a href="#">Реклама в интернете</a></div>
-		  <div class="grid-item pink"><img src="img/thumb/more.jpg" alt=""><a class="btn btn-primary" href="#" role="button">подробнее об услугах</a></div>
-	  </div> -->

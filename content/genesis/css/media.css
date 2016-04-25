@@ -4,122 +4,78 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-	.navbar-brand {
-    margin-right: 0px;
-	}
-	.contacts .btn {
-		margin-left: 0px;
-	}
-	.navbar .container {
-		padding: 0;
+	.navbar-nav {
+	     margin-left: 0px; 
 	}
 }
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+	.navbar-nav {
+    	margin-top: 110px;
+	}
 	.navbar-default .navbar-nav>li>a {
-    font-size: 13px;
-    padding-left: 6px;
-    padding-right: 6px;
+	    padding: 10px;
 	}
-	.navbar-default .navbar-right>li>a .phonebtn {
-		width: 150px;
+	#portfolio a.more, #news a.more, #about a.more {
+	    margin-left: 0px;
+	    display: block;
 	}
-	.contacts .btn {
-		padding: 3px 10px;
-		font-size: 20px;
+	.footernav ul {
+	    padding-left: 50px;
 	}
-	.contacts blockquote {
-    margin-left: 20px;
-	}
-	.offer .btn {
-		font-size: 16px;
-		padding: 5px;
+	.about_bg {
+	    top: 160px;
 	}
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
-	.navbar-default .navbar-right>li>a .phonebtn {
-		display: none;
+	.head_content .btngroup {
+	    right: 30px;
+	}
+	.navbar-toggle {
+		margin-top: 75px;
+    	margin-right: 40px;
 	}
 	.navbar-default .navbar-collapse {
-	background-color: rgba(169, 47, 117, 0.5);
-	text-align: center;
-	margin-top: 5px;
-	border:none;
+    	background: url(../img/header_bg.jpg);
+    	z-index: 10;
+    	position: absolute;
+    	width: 100%;
+    	top: 155px;
 	}
-	.callback input {
-	margin-bottom: 20px;
+	.navbar-nav {
+    	margin-top: 10px;
 	}
-	.palette .media-left {
-    padding-right: 20px;
+	.navbar-right {
+		position: relative;
+    	top: 0px;
 	}
-	.palette .media-right {
-    padding-left: 20px;
+	.navbar-right>li {
+		float: left;
 	}
-	.payment .btn-default {
-		margin-bottom: 20px;
+	.leftside {
+		margin-left: 60px;
 	}
-	.jumbotron-inner {
-		padding: 20px;
+	.footernav ul {
+	    padding-left: 50px;
 	}
-	.jumbotron-inner h2 {
-	font-size: 4vh;
-	}
-	.jumbotron-inner p {
-	font-size: 3vh;
-	}
-	.process .container>p {
-	    font-size: 16px;
-	    margin-top: 40px;
-	    padding-bottom: 0px;
+	.rightside {
+	    float: none !important;
+	    display: block;
+	    text-align: center;
 	}
 }
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 500px) {
-	.contacts .btn, .offer .btn {
-		font-size: 16px;
+@media only screen and (max-width : 540px) {
+	.leftside {
+		display: block;
+		text-align: center;
+		margin-left: 0;
 	}
-	
-	.process .selector {
-		width: 290px;
-	}
-	.process .selector a {
-		width: 143px;
-	}
-	.offer .btn {
-		font-size: 13px;
-	}
-	.contacts blockquote p {
-		font-size: 16px;
-	}
-	.footer {
-		font-size: 10px;
-	}
-	.footer a{
-		padding-top: 10px;
-		font-size: 10px;
-	}
-	.principes .media-object {
-		width: 50px;
-	}
-	.offer form {
-		width: 100%;
-		margin-left: 0px;
-	}
-	.contacts form {
-		width: 100%;
-		margin-left: 0px;
-	}
-	.media-left, .media-right {
-		display: none;
-	}
-	.media-body {
-		padding: 10px;
-	}
-	.mediavisible {
-		display: inherit;
+	.footernav {
+		margin-left: 22%;
 	}
 }
