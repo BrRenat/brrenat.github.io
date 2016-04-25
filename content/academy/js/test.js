@@ -25,8 +25,9 @@ var app = angular.module('myApp', []);
         $scope.Alert = "";
         if ($scope.count === 1) {
     		$scope.Next = "Получить результаты теста";
+
         } else if ($scope.count === 2){
-            $scope.Next = "Получить результаты теста 2";
+            window.location.href = '../test-complete.html';
         };
     	}  else {
             $scope.myVar3 = true;
