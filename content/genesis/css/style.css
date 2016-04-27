@@ -1,14 +1,34 @@
 @font-face {
-	font-family: "CasperBold";
-	src:url(../fonts/Casper_Bold.ttf);
+	font-family: "Casper";
+	src:url(../fonts/Casper.ttf);
+	font-style: normal;
+	font-weight: normal;
 }
 @font-face {
-	font-family: "CasperItalic";
+	font-family: "Casper";
+	src:url(../fonts/Casper_Bold.ttf);
+	font-style: normal;
+	font-weight: bold;
+}
+@font-face {
+	font-family: "Casper";
 	src:url(../fonts/Casper_Italic.ttf);
+	font-style: italic;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "Casper";
+	src:url(../fonts/Casper_Bold_Italic.ttf);
+	font-style: italic;
+	font-weight: bold;
 }
 @font-face {
 	font-family: "ArialMT";
 	src:url(../fonts/arial_rounded_mt_bold.TTF);
+}
+@font-face {
+	font-family: "Helvetica1";
+	src:url(../fonts/Helvetica.otf);
 }
 *:focus {
 	outline: none !important;
@@ -62,7 +82,9 @@ body {
     border: none;
 }
 .navbar-default .navbar-nav>li>a {
-	font-family: CasperBold;
+	font-family: Casper;
+	font-weight: bold;
+	font-style: normal;
 	font-size: 16px;
 	color: #fff;
 	text-transform: uppercase;
@@ -79,7 +101,9 @@ body {
 .navbar-default .navbar-brand {
 	color: #fff;
 	font-size: 20px;
-	font-family: CasperBold;
+	font-family: Casper;
+	font-weight: bold;
+	font-style: normal;
 	text-align: center;
 }
 .navbar-default .navbar-brand img {
@@ -97,7 +121,9 @@ body {
 }
 .navbar-default .navbar-right>li>a {
 	text-transform: none;
-	font-family: CasperItalic;
+	font-family: Casper;
+	font-weight: normal;
+	font-style: italic;
 	color: #fff324;
 	font-size: 24px;
 	text-decoration: underline;
@@ -131,11 +157,13 @@ body {
 	right: 0;
 }
 .btn {
-	margin: 0px 4px;
+	margin: 10px 4px;
 	border-radius: 20px;
   padding: 10px 20px;
-  font-size: 1.5vw;
-  font-family: CasperBold;
+  font-size: 16px;
+  font-family: Casper;
+  font-weight: bold;
+  font-style: normal;
 	padding: 10px 25px;
 	text-transform: uppercase;
 }
@@ -161,6 +189,16 @@ body {
     border-color: #fff;
     box-shadow: inset 0 3px 5px rgba(0,0,0,.4);
 }
+.breadcrumb {
+	color: red;
+	font-family: Casper;
+	font-weight: normal;
+	font-style: normal;
+	text-align: left;
+}
+
+
+
 #services .btn-primary {
 	color: #9e4ecd;
     background-color: #fff;
@@ -174,7 +212,7 @@ body {
 }
 #portfolio, #news, #about {
 	background: #f3eef1;
-	padding-top: 8vw;
+	padding-top: 80px;
 }
 #portfolio h1, #news h1, #about h1 {
 	font-family: CasperItalic;
@@ -342,13 +380,14 @@ input:focus:-ms-input-placeholder      {color: transparent; transition: color 0.
 }
 #footer p {
 	color: #fff;
-	font-family: CasperBold;
+	font-family: Casper;
+	font-weight: bold;
+	font-style: normal;
 	font-size: 16px;
 	margin: 20px 0px;
 }
 #footer span {
 	color: #fff;
-	font-family: CasperBold;
 	font-size: 12px;
 	opacity: 0.3;
 }
@@ -371,7 +410,9 @@ input:focus:-ms-input-placeholder      {color: transparent; transition: color 0.
 }
 .footernav ul a{
 	color: #fff;
-	font-family: CasperBold;
+	font-family: Casper;
+	font-weight: normal;
+	font-style: italic;
 	font-size: 16px;
 	text-decoration: underline;
 }
@@ -387,19 +428,26 @@ input:focus:-ms-input-placeholder      {color: transparent; transition: color 0.
 	margin: 0;
 }
 #footer .rightside p span{
-	font-family: CasperItalic;
+	font-family: Casper;
+	font-weight: normal;
+	font-style: italic;
 	font-size: 16px;
 }
 #footer .rightside a {
-	font-family: CasperItalic;
+	font-family: Casper;
+	font-weight: normal;
+	font-style: italic;
 	font-size: 16px;
 	color: #c60082;
 	text-decoration: underline;
 }
 
 
-.main_news h1 {
-	font-family: CasperItalic;
+#wrapper h1 {
+	font-family: Casper;
+	font-style: italic;
+	font-weight: normal;
+	margin: 40px 0px;
 	font-size: 48px;
 	color: #c60082;
 	text-align: center;
@@ -414,37 +462,24 @@ input:focus:-ms-input-placeholder      {color: transparent; transition: color 0.
 .main_news .thumbnail h3 {
 	margin: 10px 0px;
 	color: #6d6d6d;
-	font-family: CasperBold;
+	font-family: Casper;
+	font-weight: normal;
+	font-style: normal;
 	font-size: 16px;
 	text-transform: uppercase;
 }
 .main_news .thumbnail p {
 	color: #000;
-	font-family: CasperItalic;
+	font-family: Casper;
+	font-weight: bold;
+	font-style: italic;
 	font-size: 22px;
 }
 .owl_item {
 	position: relative;
 }
-.owl_active {
-	display: none;
-	width: 75%;
-	height: 50%;
-	background: #c60083;
-	position: absolute;
-	top: 8%;
-	left:12%;
-}
-.owl_active p {
-	font-family: CasperBold;
-	font-size: 16px;
-	color: #fff;
-	margin-left: 40px;
-	margin-top: 40%;
-	width: 60%;
-}
 .owl_item:hover .owl_active {
-	display: block;
+	outline: 4px solid #c60082;
 }
 .owl_item:hover .caption p {
 	color: #c60082;
@@ -452,8 +487,10 @@ input:focus:-ms-input-placeholder      {color: transparent; transition: color 0.
 .breadcrumb {
     background:none;
 }
-.full_news h1 {
-	font-family: CasperItalic;
+#wrapper.full_news h1 {
+	font-family: Casper;
+	font-weight: bold;
+	font-style: italic;
 	font-size: 36px;
 	color: #c60082;
 	text-align: center;
@@ -461,15 +498,54 @@ input:focus:-ms-input-placeholder      {color: transparent; transition: color 0.
 .full_news .thumbnail {
 	border:none;
 }
-.full_news .thumbnail h1 {
-	font-family: CasperBold;
+.full_news .thumbnail h3 {
+	font-family: Casper;
+	font-weight: normal;
+	font-style: normal;
+	color: #6d6d6d;
+	font-size: 22px;
+	text-transform: uppercase;
+}
+.full_news .thumbnail p{
+	font-family: Helvetica1;
 	color: #6d6d6d;
 	font-size: 22px;
 }
-.full_news .thumbnail p {
-	font-family: CasperBold;
-	color: #6d6d6d;
+.full_news_nav {
+	display: inline-block;
+	margin-bottom: 50px;
+	float: right;
+}
+.full_news_nav a {
+	font-family: Casper;
+	font-weight: bold;
+	font-style: italic;
+	color: #c60082;
 	font-size: 22px;
+}
+.full_news_nav a span{
+	text-decoration: underline;
+	color: #000;
+}
+a.social {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background: transparent url(../img/social.png) no-repeat;
+	background-position: left top;
+	margin: 0px 10px
+}
+a.social:hover {
+	background: transparent url(../img/social_active.png) no-repeat;
+}
+.full_news_nav a:nth-child(3) {
+	background-position: -40px top;
+}
+.full_news_nav a:nth-child(4) {
+	background-position: -80px top;
+}
+.btl {
+	padding-bottom: 100px;
 }
 .btl_head {
 	background: url(../img/btl/btl.jpg);
@@ -477,5 +553,115 @@ input:focus:-ms-input-placeholder      {color: transparent; transition: color 0.
     background-position: center center;
     background-size: cover;
     display: block;
-    height: 641px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.btl_head .btngroup {
+	display: inline-block;
+	margin: 0px auto;
+	margin-top: 50vh;
+	margin-bottom: 10vh;
+}
+.btl_head .btn-primary {
+	background: none;
+	color: #fff;
+	text-decoration: underline;
+}
+.btl_head .btn-default {
+	background: #fff;
+	color: #c60082;
+	
+}
+.btl_head .btn-primary span {
+	padding: 0 10px;
+	font-weight: normal;
+	opacity: 0.9;
+}
+.btl_item {
+	position: relative;
+	display: block;
+	height: 230px;
+}
+.btl_item_top {
+	width: 98px;
+	height: 89px;
+	background-color: white;
+	border: 1px solid #c2c2c2;
+	border-radius: 10px;
+	position: absolute;
+	top:-40px;
+	left:50%;
+	margin-left: -49px;
+}
+.btl_item_top img {
+	margin: 18px;
+}
+.btl_item_main {
+	width: 100%;
+	height: 167px;
+	background-color: white;
+	background-image: linear-gradient(to top, #f3cb00 0%, #ebebeb 0%, white 100%);
+	border: 1px solid #c2c2c2;
+	border-radius: 10px;
+	position: absolute;
+	top:45px;
+	text-align: center;
+}
+.btl_item_main a {
+	color: #000;
+	font-family: Casper;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 25px;
+	position: absolute;
+	left: 0;
+	bottom: 20px;
+	width: 100%;
+}
+.btl_item:hover .btl_item_main a {
+	text-decoration: none;
+	color: #c60082;
+}
+.btl_item:hover .btl_item_main {
+	box-shadow: inset 2px 3.5px 14px 3px rgba(0, 0, 0, 0.3);
+}
+.btl p {
+	/*font-family: Helvetica1;*/
+	color: #000;
+	font-size: 22px;
+	padding-bottom: 20px;
+}
+.btl p span {
+	color: #c60082;
+}
+
+.portfolio_nav {
+	list-style: none;
+	display: inline-block;
+	padding: 0;
+}
+.portfolio_nav li{
+	float: left;
+	margin: 20px 0;
+	padding: 0;
+}
+.navbar-default1 .navbar-nav1>li>a {
+	font-family: Helvetica;
+	font-size: 24px;
+	color: #000;
+	padding: 10px;
+	padding-bottom: 10px;
+}
+.navbar-nav1.portfolio_nav li a.active {
+	border-bottom: 2px solid #c60082;
+}
+.navbar-nav1.portfolio_nav li a:hover {
+	border-bottom: 2px solid #c60082;
+	text-decoration: none;
+}
+.navbar-default1 .navbar-toggle .icon-bar {
+    background-color: #c60082;
+}
+.navbar-default1 .navbar-toggle {
+    border-color: #c60082;
 }
