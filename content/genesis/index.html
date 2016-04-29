@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/normalize.css" type="text/css" />
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
 	<link rel="stylesheet" href="css/grid.css" type="text/css" />
@@ -13,13 +14,23 @@
 	<script src="js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="css/owl.carousel.css" />
 	<script src="js/owl.carousel.js"></script>
+	<script src="js/modernizr.custom.97074.js"></script>
 	<!-- <script src="js/jquery.tubular.1.0.js"></script> -->
 	<link rel="stylesheet" href="css/media.css" type="text/css" />
 </head>
 <script>
 	$(document).ready(function(){
-  $('.owl-carousel').owlCarousel();
-});
+		if ($(window).width() <= '540'){
+			     	$(".owl-carousel").owlCarousel({
+						items: 1
+					});
+					
+			     } else {
+			     	$(".owl-carousel").owlCarousel({
+						items: 4
+					});
+			     };
+	});
 </script>
 <body>
 <div id="header">
@@ -52,134 +63,253 @@
 		    </div>
 		  </div>
 		</nav>
-		
-		<div class="head_content">
-			<div class="btngroup">
-				<a class="btn btn-primary" href="#" role="button">подробнее об услугах</a>
-				<a class="btn btn-default" href="#" role="button">работы</a>
-		</div>	
-			<img class="big_text"src="img/text.png" alt="">
-			<p class="headtext">предлагает весь спектр рекламных услуг в Самаре. Всю подробную информацию о каждой услуге вы можете найти на нашем сайте</p>
-		</div>
+		<p class="headtext">
+			<span class="btngroup"><a class="btn btn-primary" href="#" role="button">подробнее об услугах</a>
+			<a class="btn btn-default" href="#" role="button">работы</a></span>
+			<img class="big_text"src="img/text.png" alt=""><br>
+			предлагает весь спектр рекламных услуг в Самаре. Всю подробную информацию о каждой услуге вы можете найти на нашем сайте</p>
 	</div>
 </div>
 </div>
 <div id="services">
-	<div class="grid">
-	  <div class="grid-sizer"></div>
-	  <div class="grid-item grid-item--width1 grid-item--height1 service pink"><a href="#">Услуги</a></div>
-	  <div class="grid-item grid-item--width1 grid-item--height1 market pink"><a href="#">Реклама в торговых центрах</a></div>
-	  <div class="grid-item grid-item--width1 grid-item--height1 outside yellow"><a href="#">Наружная реклама</a></div>
+	<ul id="da-thumbs" class="da-thumbs grid">
+                    <li class="grid-sizer"></li>
+                    <li class="grid-item grid-item--width1 grid-item--height1">
+                        <a href="#">
+                        	<img class="service" src="img/thumb/service.jpg" />
+                            <div class="orange"><span>Услуги</span></div>
+                            <object type="image/svg+xml" data="img/svg/agreement.svg" class="svg1"></object>
+                            <object type="image/svg+xml" data="img/svg/analysis.svg" class="svg4"></object>
+                            <object type="image/svg+xml" data="img/svg/hourglass.svg" class="svg7"></object>
+                        </a>
+                    </li>
+                    <li class="grid-item grid-item--width1 grid-item--height1">
+                        <a href="#">
+                            <img class="market" src="img/thumb/market.jpg" />
+                            <div class="pink"><span>Реклама в торговых центрах</span></div>
+                            <object type="image/svg+xml" data="img/svg/businessmen.svg" class="svg1"></object>
+                            <object type="image/svg+xml" data="img/svg/handshake.svg" class="svg4"></object>
+                        </a>
+                    </li>
+                    <li class="grid-item grid-item--width1 grid-item--height1">
+                        <a href="#">
+                            <img class="outside" src="img/thumb/outside.jpg" />
+                            <div class="yellow"><span>Наружная реклама</span></div>
+                            <object type="image/svg+xml" data="img/svg/hot-drink.svg" class="svg1"></object>
+                            <object type="image/svg+xml" data="img/svg/target.svg" class="svg2"></object>
+                        </a>
+                    </li>
+                    <li class="grid-item grid-item--width2 grid-item--height2">
+                        <a href="#">
+                            <img class="smi" src="img/thumb/smi.jpg" />
+                            <div class="yellow"><span>Реклама в СМИ</span></div>
+                            <object type="image/svg+xml" data="img/svg/pie-chart.svg" class="svg4"></object>
+                            <object type="image/svg+xml" data="img/svg/briefcase.svg" class="svg6"></object>
+                        </a>
+                    </li>
+                    <li class="grid-item grid-item--width3 grid-item--height2">
+                        <a href="#">
+                            <img class="infograph" src="img/thumb/infograph.jpg" />
+                            <div class="pink"><span>Инфографика</span></div>
+                            <object type="image/svg+xml" data="img/svg/pie-chart.svg" class="svg4"></object>
+                            <object type="image/svg+xml" data="img/svg/tactics.svg" class="svg6"></object>
+                            <object type="image/svg+xml" data="img/svg/international.svg" class="svg6"></object>
+                        </a>
+                    </li>
+                    <li class="grid-item grid-item--width4 grid-item--height2">
+                        <a href="#">
+                            <img class="pillarce" src="img/thumb/pillarce.jpg" />
+                            <div class="green"><span>Реклама на пилларсах</span></div>
+                            <object type="image/svg+xml" data="img/svg/pie-chart.svg" class="svg4"></object>
+                            <object type="image/svg+xml" data="img/svg/lightbulb.svg" class="svg1"></object>
+                            <object type="image/svg+xml" data="img/svg/stapler.svg" class="svg1"></object>
+                        </a>
+                    </li>
+                    <li class="grid-item grid-item--width4 grid-item--height2">
+                        <a href="#">
+                            <img class="press" src="img/thumb/press.jpg" />
+                            <div class="yellow"><span>Реклама в прессе</span></div>
+                            <object type="image/svg+xml" data="img/svg/identity.svg" class="svg4"></object>
+                            <object type="image/svg+xml" data="img/svg/success.svg" class="svg6"></object>
+                        </a>
+                    </li>
+                    <li class="grid-item grid-item--width5 grid-item--height1">
+                        <a href="#">
+                            <img class="typograf" src="img/thumb/typograf.jpg" />
+                            <div class="pink"><span>Типография</span></div>
+                            <object type="image/svg+xml" data="img/svg/agreement.svg" class="svg1"></object>
+                            <object type="image/svg+xml" data="img/svg/prize.svg" class="svg4"></object>
+                            <object type="image/svg+xml" data="img/svg/clock.svg" class="svg7"></object>
+                        </a>
+                    </li>
+                    <li class="grid-item grid-item--width6 grid-item--height1">
+                        <a href="#">
+                            <img class="pr" src="img/thumb/pr.jpg" />
+                            <div class="green"><span>PR-компания</span></div>
+                            <object type="image/svg+xml" data="img/svg/agreement.svg" class="svg1"></object>
+                            <object type="image/svg+xml" data="img/svg/analysis.svg" class="svg4"></object>
+                        </a>
+                    </li>
+                    <li class="grid-item grid-item--width5 grid-item--height1">
+                        <a href="#">
+                            <img class="design" src="img/thumb/design.jpg" />
+                            <div class="orange"><span>Дизайн</span></div>
+                            <object type="image/svg+xml" data="img/svg/hot-drink.svg" class="svg1"></object>
+                            <object type="image/svg+xml" data="img/svg/target.svg" class="svg2"></object>
+                        </a>
+                    </li>
+                    <li class="grid-item grid-item--width4 grid-item--height2">
+                        <a href="#">
+                            <img class="cinema" src="img/thumb/cinema.jpg" />
+                            <div class="yellow"><span>Реклама в кинотеатрах</span></div>
+                            <object type="image/svg+xml" data="img/svg/identity.svg" class="svg4"></object>
+                            <object type="image/svg+xml" data="img/svg/success.svg" class="svg6"></object>
+                        </a>
+                    </li>
+                    <li class="grid-item grid-item--width4 grid-item--height2">
+                        <a href="#">
+                            <img class="promo" src="img/thumb/promo.jpg" />
+                            <div class="green"><span>BTL и промоакции</span></div>
+                            <object type="image/svg+xml" data="img/svg/identity.svg" class="svg4"></object>
+                            <object type="image/svg+xml" data="img/svg/success.svg" class="svg6"></object>
+                        </a>
+                    </li>
+                    <li class="grid-item grid-item--width3 grid-item--height3">
+                        <a href="#">
+                            <img class="internet" src="img/thumb/internet.jpg" />
+                            <div class="orange"><span>Реклама в интернете</span></div>
+                            <object type="image/svg+xml" data="img/svg/agreement.svg" class="svg1"></object>
+                            <object type="image/svg+xml" data="img/svg/analysis.svg" class="svg4"></object>
+                            <object type="image/svg+xml" data="img/svg/hourglass.svg" class="svg7"></object>
+                        </a>
+                    </li>
+                    <li class="grid-item grid-item--width2 grid-item--height3">
+                        <a href="#">
+                            <img class="more" src="img/thumb/more.jpg" />
+                            <div class="pink"><span>подробнее об услугах</span></div>
+                            <object type="image/svg+xml" data="img/svg/hot-drink.svg" class="svg1"></object>
+                            <object type="image/svg+xml" data="img/svg/target.svg" class="svg2"></object>
+                        </a>
+                    </li>
+    </ul>
+	<script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+	        <script type="text/javascript">
+	            $(function () {
 
-	  <div class="grid-item grid-item--width2 grid-item--height2 smi yellow"><a href="#">Реклама в СМИ</a></div>
-	  <div class="grid-item grid-item--width3 grid-item--height2 infograph pink"><a href="#">Инфографика</a></div>
+	                $(' #da-thumbs > li ').hoverdir();
 
-	  <div class="grid-item grid-item--width4 grid-item--height2 pillarce green"><a href="#">Реклама на пилларсах</a></div>
-	  <div class="grid-item grid-item--width4 grid-item--height2 press yellow"><a href="#">Реклама в прессе</a></div>
-
-	  <div class="grid-item grid-item--width5 grid-item--height1 typograf pink"><a href="#">Типография</a></div>
-	  <div class="grid-item grid-item--width6 grid-item--height1 pr green"><a href="#">PR-компания</a></div>
-	  <div class="grid-item grid-item--width5 grid-item--height1 design pink"><a href="#">Дизайн</a></div>
-
-	  <div class="grid-item grid-item--width4 grid-item--height2 cinema yellow"><a href="#">Реклама в кинотеатрах</a></div>
-	  <div class="grid-item grid-item--width4 grid-item--height2 promo green"><a href="#">BTL и промоакции</a></div>
-
-	  <div class="grid-item grid-item--width3 grid-item--height1 internet pink"><a href="#">Реклама в интернете</a></div>
-	  <div class="grid-item grid-item--width2 grid-item--height1 more pink"><a class="btn btn-primary" href="#" role="button">подробнее об услугах</a></div>
-	</div>
+	            });
+	</script>
 </div>
-<div id="portfolio">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-offset-1 col-sm-5">
-				<h1>Работы<a class="more" href="#">смотреть все <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a></h1>
-			</div>
-			<div class="col-sm-5 text-center">	
-				<div class="dropdown">
-				  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-				    Инфографика
-				    <span class="caret"></span>
-				  </button>
-				  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-				    <li><a href="#">Инфографика1</a></li>
-				    <li><a href="#">Инфографика2</a></li>
-				    <li><a href="#">Инфографика3</a></li>
-				  </ul>
+<div id="wrapper">
+	<div class="index_title graybg">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="index_title_header">
+						<h2>Работы</h2>
+						<a href="">Смотреть все<span>&rarr;</span></a>
+					</div>
 				</div>
-			</div>	
+				<div class="col-sm-6">
+					<select class="form-control">
+					  <option>ИНФОГРАФИКА</option>
+					  <option>ИНФОГРАФИКА1</option>
+					  <option>ИНФОГРАФИКА2</option>
+					</select>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="owl-carousel">
-	  <div><img src="img/thumb/1.jpg" alt=""></div>
-	  <div><img src="img/thumb/2.jpg" alt=""></div>
-	  <div><img src="img/thumb/3.jpg" alt=""></div>
-	  <div><img src="img/thumb/4.jpg" alt=""></div>
+		  <div><img src="img/thumb/1.jpg" alt=""></div>
+		  <div><img src="img/thumb/2.jpg" alt=""></div>
+		  <div><img src="img/thumb/3.jpg" alt=""></div>
+		  <div><img src="img/thumb/4.jpg" alt=""></div>
 	</div>
-</div>
-<div id="news">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-offset-1 col-sm-5">
-				<header>
-					<h1>Новости<a class="more" href="#">читать все <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a></h1>
-					
-				</header>
-				<div class="news_content">
-					<h2>H&M и Цукерберг: как россияне разыграли мировые СМИ </h2>
-					<p>Авторами самого громкого пранка на 1 апреля оказались российские рекламщики</p>
+	<div class="index_title">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="index_title_header">
+						<h2>Новости</h2>
+						<a href="">Читать все<span>&rarr;</span></a>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="news_content">
+								<h2>H&M и Цукерберг: как россияне разыграли мировые СМИ </h2>
+								<p>Авторами самого громкого пранка на 1 апреля оказались российские рекламщики</p>
+							</div>
+						</div>
+						<div class="col-sm-12">
+							<div class="news_content">
+								<h2>Завод КАРАТ представил дизайн в стиле Пакмана </h2>
+								<p>Производитель плавленных сыров представил новый дизайн и коммуникационную...</p>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="news_content">
-					<h2>Завод КАРАТ представил дизайн в стиле Пакмана </h2>
-					<p>Производитель плавленных сыров представил новый дизайн и коммуникационную...</p>
-				</div>
-			</div>
-			<div class="col-sm-5">
-				<h1 class="vote_title">Опрос</h1>
-				<div class="vote">
-					&nbsp;
+				<div class="col-sm-6">
+					<div class="index_title_header">
+						<h2><span>Опрос</span></h2>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="vote"></div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
-<div id="about">
-	<div class="container">
-		<img src="img/about.jpg" alt="" class="about_bg">
-		<div class="row">
-			<div class="col-sm-9">
-				<h1>О нас</h1>
-				<a class="more" href="#">подробнее <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>
-				<p>Компания работает на российском рынке с 1999 года. Мы предлагаем нашим клиентам уникальные условия для размещения рекламы, предоставляя возможность эксклюзивного контакта с избранной аудиторией. Более 15 лет мы  успешно развиваем и расширяем свою сеть присутствия в лучших местах отдыха премиум-сегмента.</p>
-				<a class="btn btn-default" href="#" role="button">пригласить в тендер</a>
+	<div class="index_title graybg">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<h2>О нас&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+					<a href="">ПОДРОБНЕЕ<span>&rarr;</span></a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-8">
+				<img class="about" src="img/about.jpg" alt="">
+					<p class="about">Компания работает на российском рынке с 1999 года. Мы предлагаем нашим клиентам уникальные условия для размещения рекламы, предоставляя возможность эксклюзивного контакта с избранной аудиторией. Более 15 лет мы  успешно развиваем и расширяем свою сеть присутствия в лучших местах отдыха премиум-сегмента.</p>
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
 <div id="bottom_nav">		
-<img class="women" src="img/women.png" alt="">		
 	<div class="container">
-			<h1>genesis <br>media group</h1>
-			<div class="btngroup">
-				<input class="btn btn-default" type="text" placeholder="имя/организация">
-				<input class="btn btn-default" type="text" placeholder="номер телефона">
-				<div class="dropdown pull-right">
-							  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-							    УСЛУГА
-							    <span class="caret"></span>
-							  </button>
-							  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-							    <li><a href="#">УСЛУГА1</a></li>
-							    <li><a href="#">УСЛУГА2</a></li>
-							    <li><a href="#">УСЛУГА3</a></li>
-							  </ul>
-				</div>
-				<input class="btn btn-default" type="text" placeholder="email">
-				<a class="btn btn-primary" href="#" role="button">отправьте заявку</a>
-			</div>
-			<div class="bottom_text">
-				<h2>Наталья Смирнова</h2>
-				<p>Менеджер по работе с ключевыми клиентами</p>
-			</div>
+		<h2>genesis <br>media group</h2>
+		<span class="btngroupfooter">
+			<form class="form-inline">
+			  <div class="form-group">
+			    <input type="text" class="form-control" id="" placeholder="НОМЕР ТЕЛЕФОНА">
+			  </div>
+			  <div class="form-group">
+			    <input type="text" class="form-control" id="" placeholder="ИМЯ/ОРГАНИЗАЦИЯ">
+			  </div>
+			</form>
+			<form class="form-inline">
+			  <div class="form-group">
+			    <input type="email" class="form-control" id="" placeholder="EMAIL">
+			  </div>
+			  <div class="form-group">
+			    <select class="form-control">
+				  <option>УСЛУГА</option>
+				  <option>УСЛУГА1</option>
+				  <option>УСЛУГА2</option>
+				  <option>УСЛУГА3</option>
+				  <option>УСЛУГА4</option>
+				</select>
+			  </div>
+			</form>
+			<button type="submit" class="form-control pull-right">ОТПРАВЬТЕ ЗАЯВКУ</button>
+			
+			
+		</span>
 	</div>
 </div>
 <div id="footer">

@@ -6,21 +6,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
-	<link rel="stylesheet" href="css/grid.css" type="text/css" />
 	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
-	<script src="js/masonry.pkgd.min.js"></script>
-	<script src="js/masonry-docs.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="css/owl.carousel.css" />
-	<script src="js/owl.carousel.js"></script>
-	<!-- <script src="js/jquery.tubular.1.0.js"></script> -->
 	<link rel="stylesheet" href="css/media.css" type="text/css" />
+	<link rel="stylesheet" href="css/remodal.css">
+ 	<link rel="stylesheet" href="css/remodal-default-theme.css">
+ 	<script src="js/remodal.min.js"></script>
 </head>
-<script>
-	$(document).ready(function(){
-  $('.owl-carousel').owlCarousel();
-});
-</script>
 <body>
 <div id="header_min">
 	<div class="container">
@@ -47,14 +39,14 @@
 		      </ul>
 		      <ul class="nav navbar-nav navbar-right">
 		        <li><p>989-33-77</p></li>
-		        <li><a href="#">Заказать звонок</a></li>
+		        <li><a href="#modal1">Заказать звонок</a></li>
 		      </ul>
 		    </div>
 		  </div>
 		</nav>
 	</div>
 </div>
-<div id="wrapper"class="btl">
+<div id="wrapper" class="btl">
 	<div class="container">
 		<div class="row">
 			<ol class="breadcrumb">
@@ -65,9 +57,9 @@
 		</div>
 	</div>
 			<div class="btl_head">
-				<div class="btngroup">
+				<div class="btlgroup">
 					<a class="btn btn-primary" href="#" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>Узнайте цены</a>
-					<a class="btn btn-default" href="#" role="button">Заказать услугу</a>
+					<a class="btn btn-default" href="#modal" role="button">Заказать услугу</a>
 				</div>	
 			</div>
 	<div class="container">
@@ -213,12 +205,46 @@
 			</div>
 			<div class="rightside pull-right">
 				<p>989-33-77</p>
-				<a href="#">заказать звонок</a>
+				<a href="#modal1">заказать звонок</a>
 				<p><span>г.Самара, пр.Мальцева 1</span></p>
 				<a href="#">fresh-promotion@yandex.ru</a>
 			</div>
 		</div>
 	</div>	
+</div>
+<div class="remodal" data-remodal-id="modal1" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+	<div class="remodalBorder">
+			<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+			<form id="form" method="post" enctype="multipart/form-data">
+				  <div class="form-group">
+				  	<h4>МЫ ВАМ ПЕРЕЗВОНИМ</h4>
+				    <label for="#">Ваше имя</label>
+				    <input type="name" class="form-control" placeholder="" name="name" required>
+				  </div>
+				  <div class="form-group">
+				    <label for="#">Ваш телефон</label>
+				    <input type="phone" class="form-control" id="#" placeholder="" name="phone" required>
+				  </div>
+			<button type="submit" class="btn btn-default text-center">оставить заявку</button>
+		</form>
+	</div>
+</div>
+<div class="remodal" data-remodal-id="modal" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+	<div class="remodalBorder">
+			<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+			<form id="form" method="post" enctype="multipart/form-data">
+				  <div class="form-group">
+				  	<h4>ЗАКАЖИТЕ УСЛУГУ</h4>
+				    <label for="#">Ваше имя</label>
+				    <input type="name" class="form-control" placeholder="" name="name" required>
+				  </div>
+				  <div class="form-group">
+				    <label for="#">Ваш телефон</label>
+				    <input type="phone" class="form-control" id="#" placeholder="" name="phone" required>
+				  </div>
+			<button type="submit" class="btn btn-default text-center">оставить заявку</button>
+		</form>
+	</div>
 </div>
 </body>
 </html>

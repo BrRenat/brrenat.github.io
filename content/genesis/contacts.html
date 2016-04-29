@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/media.css" type="text/css" />
+	<link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
+	<script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
+</head>
+<body>
+<div id="header_min">
+	<div class="container">
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""><span>genesis media group</span></a>
+		    </div>
+
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li class="active"><a href="#">Главная</a></li>
+		        <li><a href="#">услуги</a></li>
+		        <li><a href="#">портфолио</a></li>
+		        <li><a href="#">о компании</a></li>
+		        <li><a href="#">новости</a></li>
+		        <li><a href="#">контакты</a></li>
+		      </ul>
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><p>989-33-77</p></li>
+		        <li><a href="#">Заказать звонок</a></li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+	</div>
+</div>
+<div id="wrapper" id="portfolio" class="text-center">
+	<div class="container">
+		<div class="row">
+			<ol class="breadcrumb">
+			  <li><a href="#">Главная</a></li>
+			  <li class="active">Контакты</li>
+			</ol>
+			<h1>Контакты</h1>
+			<div class="contacts">
+				<p>Телефон:<span>989-33-77</span></p>
+				<p>Адрес:<span>г. Самара, ул. Ульяновская, <b>52</b>(ТЦ Галактика, <b>9</b> этаж, офис <b>11</b>)</span></p>
+				<p>E-mail:<span><a href="#">fresh-promotion@yandex.ru</a></span></p>
+			</div>
+			<div class="full_news_nav contacts">
+				<a href="" class="social"></a>
+				<a href="" class="social"></a>
+				<a href="" class="social"></a><br>
+			</div>
+		</div>
+	</div>
+</div>
+<div id='map' style='width: 100%; height: 500px;' />
+<script>
+L.mapbox.accessToken = 'pk.eyJ1IjoiYnJyZW5hdCIsImEiOiJjaW5pbGN2d2owMDNtd2RseXV2MTM1cWRmIn0.Z2EiCqAUqqVqVbrqCg7GfQ';
+var map = L.mapbox.map('map', 'mapbox.streets')
+    .setView([53.197086,50.117306], 16);
+    map.scrollWheelZoom.disable();
+var myLayer = L.mapbox.featureLayer().addTo(map);
+
+var geoJson = [{
+    "type": "Feature",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [50.117306,53.197086]
+    },
+    "properties": {
+        "title": "Genesis Media Group",
+        description: 'ул. Ульяновская, 52',
+        "icon": {
+            "iconUrl": "img/map_point.png",
+            "iconSize": [152, 71], // size of the icon
+            "iconAnchor": [0, 71], // point of the icon which will correspond to marker's location
+            "popupAnchor": [76, -50], // point from which the popup should open relative to the iconAnchor
+            "className": "dot"
+        }
+    }
+}];
+
+// Set a custom icon on each marker based on feature properties.
+myLayer.on('layeradd', function(e) {
+    var marker = e.layer,
+        feature = marker.feature;
+
+    marker.setIcon(L.icon(feature.properties.icon));
+});
+
+// Add features to the map.
+myLayer.setGeoJSON(geoJson);
+</script>
+
+</div>
+<div id="bottom_nav">
+	<div class="container">
+			<h3>Оставьте заявку</h3>
+			<span class="btngroupfooter">
+			<form class="form-inline">
+			  <div class="form-group">
+			    <input type="text" class="form-control" id="" placeholder="НОМЕР ТЕЛЕФОНА">
+			  </div>
+			  <div class="form-group">
+			    <input type="text" class="form-control" id="" placeholder="ИМЯ/ОРГАНИЗАЦИЯ">
+			  </div>
+			</form>
+			<form class="form-inline">
+			  <div class="form-group">
+			    <input type="email" class="form-control" id="" placeholder="EMAIL">
+			  </div>
+			  <div class="form-group">
+			    <input type="text" class="form-control" id="" placeholder="ТЕМА СООБЩЕНИЯ">
+			  </div>
+			</form>
+			<form class="form-inline">
+			  <div class="form-group">
+			    <input type="text" class="form-control bigtext" id="" placeholder="">
+			  </div>
+			</form>
+			<button type="submit" class="form-control pull-right">ОТПРАВИТЬ</button>
+			</span>
+	</div>
+</div>
+<div id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="leftside">
+				<img src="img/logo.png" alt="">
+				<p>©  "Fresh Promotion" 2016г.</p>
+				<span>Сделано с любовью в PARUS AGENCY</span>
+			</div>
+			<div class="footernav">
+				<ul>
+					<li><a href="#">Услуги</a></li>
+					<li><a href="#">Портфолио</a></li>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Статьи</a></li>
+					<li><a href="#">Отзывы</a></li>
+				</ul>
+			</div>
+			<div class="rightside pull-right">
+				<p>989-33-77</p>
+				<a href="#">заказать звонок</a>
+				<p><span>г.Самара, пр.Мальцева 1</span></p>
+				<a href="#">fresh-promotion@yandex.ru</a>
+			</div>
+		</div>
+	</div>	
+</div>
+</body>
+</html>
