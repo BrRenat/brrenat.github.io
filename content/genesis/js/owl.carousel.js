@@ -2698,9 +2698,9 @@
 	 * @todo Rename `slideBy` to `navBy`
 	 */
 	Navigation.Defaults = {
-		nav: false,
+		nav: true,
 		navRewind: true,
-		navText: [ 'prev', 'next' ],
+		navText: [ '<span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>', '<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>' ],
 		navSpeed: false,
 		navElement: 'div',
 		navContainer: false,
@@ -2714,7 +2714,7 @@
 		dotData: false,
 		dotsSpeed: false,
 		dotsContainer: false,
-		controlsClass: 'owl-controls'
+		controlsClass: 'owl-controls hidden-xs'
 	}
 
 	/**
