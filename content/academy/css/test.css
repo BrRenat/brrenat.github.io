@@ -13,7 +13,7 @@
 }
 .test {
 	background: url(../img/table.png) bottom center no-repeat;
-	height: 500px;
+	height: 540px;
 	position: relative;
 }
 .title {
@@ -26,7 +26,7 @@
 }
 .number {
 	display: block;
-	width: 30px;
+	width: 55px;
 	height: 100px;
 	background: #373737;
 	font-size: 46px;
@@ -34,19 +34,22 @@
 	font-family: PFDinDisplayPro;
 	float: left;
 	padding-top: 15px;
+	text-align: center;
 }
 .district {
 	display: inline-block;
 	height: 100px;
 	width: 20px;
-	font-size: 17px;
+	text-align: center;
+	font-size: 15px;
 	color: #373737;
 	font-family: Gothic;
 	writing-mode:tb-rl;
 	float: left;
 	-webkit-transform: rotate(180deg); 
 	transform: rotate(180deg);
-	padding: 10px 0px;
+	padding: 0px;
+	text-transform: uppercase;
 }
 .text {
 	height: 100px;
@@ -68,13 +71,13 @@
 #item1 {
 	position: absolute;
 	margin-top: 30px;
-	margin-left: 100px;
+	/*margin-left: 100px;*/
 }
 #item2 {
 	position: absolute;
 	right:0;
 	margin-top: 30px;
-	margin-right: 100px;
+	/*margin-right: 100px;*/
 }
 .test a{
 	position: absolute;
@@ -97,8 +100,8 @@
 	width: 146px;
 	height: 146px;
 	background: url(../img/target.png);
-	margin-left: 50px;
-	margin-top: -180px;
+	margin-left: 76px;
+	margin-top: -220px;
 	opacity: 0.8;
 }
 #alert {

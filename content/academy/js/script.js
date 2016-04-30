@@ -10,7 +10,8 @@ $(document).ready(function () {
             data: formNm.serialize(),
             success: function (data) {
                 // Вывод текста результата отправки
-                $(formNm).html(data); 
+                $(formNm).html(data);
+
             },
             error: function (jqXHR, text, error) {
                 // Вывод текста ошибки отправки
@@ -19,5 +20,4 @@ $(document).ready(function () {
         });
         return false;
     });
-    
 });
