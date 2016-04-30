@@ -25,7 +25,7 @@ header.gray{
 	background: url(../img/header_bg_gray.png) bottom repeat-x;
 }
 body {
-	min-width:1024px;
+	/*min-width:1024px;*/
 }
 .top {	
 	background: url(../img/top_bg.jpg);

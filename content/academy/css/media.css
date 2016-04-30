@@ -1,125 +1,103 @@
-
-
-
-
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-	.navbar-brand {
-    margin-right: 0px;
-	}
-	.contacts .btn {
-		margin-left: 0px;
-	}
-	.navbar .container {
-		padding: 0;
-	}
+	
 }
-
-
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-	.navbar-default .navbar-nav>li>a {
-    font-size: 13px;
-    padding-left: 6px;
-    padding-right: 6px;
-	}
-	.navbar-default .navbar-right>li>a .phonebtn {
-		width: 150px;
-	}
-	.contacts .btn {
-		padding: 3px 10px;
-		font-size: 20px;
-	}
-	.contacts blockquote {
-    margin-left: 20px;
-	}
-	.offer .btn {
-		font-size: 16px;
-		padding: 5px;
-	}
+	
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
-	.navbar-default .navbar-right>li>a .phonebtn {
-		display: none;
+	.title {
+		width: 100%;
+		position: relative;
+		left:0px;
+		margin-left: 0px;
 	}
-	.navbar-default .navbar-collapse {
-	background-color: rgba(169, 47, 117, 0.5);
-	text-align: center;
-	margin-top: 5px;
-	border:none;
+	.number {
+		width: 45px;
+		height: 100px;
+		font-size: 30px;
+		padding-top: 25px;
 	}
-	.callback input {
-	margin-bottom: 20px;
+	.text {
+		width: 100%;
 	}
-	.palette .media-left {
-    padding-right: 20px;
+	.content {
+		width: 100%;
+		left:0px;
+		margin-left: 0px;
 	}
-	.palette .media-right {
-    padding-left: 20px;
+	.test img {
+		width: 250px;
 	}
-	.payment .btn-default {
-		margin-bottom: 20px;
-	}
-	.jumbotron-inner {
-		padding: 20px;
-	}
-	.jumbotron-inner h2 {
-	font-size: 4vh;
-	}
-	.jumbotron-inner p {
-	font-size: 3vh;
-	}
-	.process .container>p {
-	    font-size: 16px;
-	    margin-top: 40px;
-	    padding-bottom: 0px;
+	.active {
+		margin-left: 50px;
+		margin-top: -190px;
 	}
 }
-
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 500px) {
-	.contacts .btn, .offer .btn {
-		font-size: 16px;
+	header {
+		text-align: center;
 	}
-	
-	.process .selector {
-		width: 290px;
+	.top {
+		text-align: center;
 	}
-	.process .selector a {
-		width: 143px;
+	.middle h1 {
+		margin: 0;
+		margin-top: 30px;
 	}
-	.offer .btn {
-		font-size: 13px;
-	}
-	.contacts blockquote p {
-		font-size: 16px;
-	}
-	.footer {
-		font-size: 10px;
-	}
-	.footer a{
-		padding-top: 10px;
-		font-size: 10px;
-	}
-	.principes .media-object {
-		width: 50px;
-	}
-	.offer form {
+	.middle ul {
 		width: 100%;
+	}
+	.middle img {
+		width: 100%;
+	}
+	.middle p {
+		width: 100%;
+	}
+	.title {
+		width: 300px;
+		position: relative;
+		left:0px;
 		margin-left: 0px;
 	}
-	.contacts form {
-		width: 100%;
+	.number {
+		width: 45px;
+		height: 100px;
+		font-size: 30px;
+		padding-top: 25px;
+	}
+	.text {
+		width: 300px;
+	}
+	.content {
+		width: 300px;
+		left:0px;
 		margin-left: 0px;
 	}
-	.media-left, .media-right {
-		display: none;
+	#item1 {
+		position: inherit;
+		margin-top: 30px;
 	}
-	.media-body {
-		padding: 10px;
+	#item2 {
+		position: inherit;
+		right:0;
+		margin-top: 30px;
 	}
-	.mediavisible {
-		display: inherit;
+	.test a {
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+    margin-left: -125px;
+    top:428px;
+	}
+	.test img {
+		width: 300px;
+	}
+	.active {
+		margin-left: 76px;
+		margin-top: -220px;
 	}
 }
