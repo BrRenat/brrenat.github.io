@@ -112,28 +112,30 @@ myLayer.setGeoJSON(geoJson);
 	<div class="container">
 			<h3>Оставьте заявку</h3>
 			<span class="btngroupfooter">
-			<form class="form-inline">
-			  <div class="form-group">
-			    <input type="text" class="form-control" id="" placeholder="НОМЕР ТЕЛЕФОНА">
-			  </div>
-			  <div class="form-group">
-			    <input type="text" class="form-control" id="" placeholder="ИМЯ/ОРГАНИЗАЦИЯ">
-			  </div>
-			</form>
-			<form class="form-inline">
-			  <div class="form-group">
-			    <input type="email" class="form-control" id="" placeholder="EMAIL">
-			  </div>
-			  <div class="form-group">
-			    <input type="text" class="form-control" id="" placeholder="ТЕМА СООБЩЕНИЯ">
-			  </div>
-			</form>
-			<form class="form-inline">
-			  <div class="form-group">
-			    <input type="text" class="form-control bigtext" id="" placeholder="">
-			  </div>
-			</form>
-			<button type="submit" class="form-control pull-right">ОТПРАВИТЬ</button>
+				<form id="main_form" role="search" method="post" enctype="text/plain">
+					<div class="form-inline">
+					  <div class="form-group">
+					    <input type="tel" class="form-control" name="phone" placeholder="НОМЕР ТЕЛЕФОНА" required>
+					  </div>
+					  <div class="form-group">
+					    <input type="text" class="form-control" name="name" placeholder="ИМЯ/ОРГАНИЗАЦИЯ" required>
+					  </div>
+					</div>
+					<div class="form-inline">
+					  <div class="form-group">
+					    <input type="email" class="form-control" name="email" placeholder="EMAIL" required>
+					  </div>
+					  <div class="form-group">
+					    <input type="text" class="form-control" name="title" placeholder="ТЕМА СООБЩЕНИЯ" required>
+					  </div>
+					</div>
+					<div class="form-inline">
+					  <div class="form-group">
+					    <textarea type="text" class="form-control bigtext" name="text" placeholder="" required></textarea>
+					  </div>
+					</div>
+					<button type="submit" class="form-control pull-right">ОТПРАВИТЬ</button>
+				</form>
 			</span>
 	</div>
 </div>
@@ -185,5 +187,6 @@ myLayer.setGeoJSON(geoJson);
 			</div>
 </div>
 <script src="js/remodal.min.js"></script>
+<script src="js/mail.js"></script>
 </body>
 </html>

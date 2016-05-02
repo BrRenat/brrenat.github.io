@@ -10,6 +10,7 @@
  	<link rel="stylesheet" href="css/remodal-default-theme.css">
  	<link rel="stylesheet" href="css/owl.carousel.css" />
  	<link rel="stylesheet" href="css/media.css" type="text/css" />
+ 	<link rel="stylesheet" href="css/imageviewer.css" type="text/css" />
 	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 </head>
@@ -55,10 +56,14 @@
 			</ol>
 			<h1>Отзывы</h1>
 			<div class="feedbacks owl-carousel1">
-			  <div><img src="img/feedback/thumb1.jpg" alt=""></div>
-			  <div><img src="img/feedback/thumb2.jpg" alt=""></div>
-			  <div><img src="img/feedback/thumb3.jpg" alt=""></div>
-			  <div><img src="img/feedback/thumb1.jpg" alt=""></div>
+			  <div class="slideitem"><img class="gallery-items" src="img/feedback/thumb1.jpg" alt=""></div>
+			  <div class="slideitem"><img class="gallery-items" src="img/feedback/thumb2.jpg" alt=""></div>
+			  <div class="slideitem"><img class="gallery-items" src="img/feedback/thumb3.jpg" alt=""></div>
+			  <div class="slideitem"><img class="gallery-items" src="img/feedback/thumb1.jpg" alt=""></div>
+			  <div class="slideitem"><img class="gallery-items" src="img/feedback/thumb1.jpg" alt=""></div>
+			  <div class="slideitem"><img class="gallery-items" src="img/feedback/thumb2.jpg" alt=""></div>
+			  <div class="slideitem"><img class="gallery-items" src="img/feedback/thumb3.jpg" alt=""></div>
+			  <div class="slideitem"><img class="gallery-items" src="img/feedback/thumb1.jpg" alt=""></div>
 			</div>
 			<div class="feedbacks owl-carousel2">
 					<div class="feedback">
@@ -129,5 +134,13 @@
 <script src="js/remodal.min.js"></script>
 <script src="js/owl.carousel.js"></script>
 <script src="js/owl.custom.item.js"></script>
+<script src="js/imageviewer.js"></script>
+<script type="text/javascript">
+	$('.slideitem').click(function (){
+	    var viewer = ImageViewer();
+	    var imgSrc = $('.gallery-items',this).attr("src");
+	    viewer.show(imgSrc);
+	});
+</script>
 </body>
 </html>

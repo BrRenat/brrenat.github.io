@@ -210,6 +210,10 @@
 }
 .remodal .btn:hover{
   background: #C94141;
+  color: #fff;
+}
+.remodal .btn-default:active:focus {
+  border-color: #C94141;
 }
 
 @media only screen and (min-width: 440px) {

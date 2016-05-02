@@ -4,15 +4,63 @@
   height: 600px;
   position: relative;
   padding: 0;
+  margin-bottom: 0px;
 }
 .da-thumbs li {
   float: left;
   position: relative;
 }
+.da-thumbs li.service {
+  background: url(../img/thumb/service.jpg) right bottom no-repeat;
+}
+.da-thumbs li.market {
+  background: url(../img/thumb/market.jpg) right bottom no-repeat;
+}
+.da-thumbs li.outside {
+  background: url(../img/thumb/outside.jpg) right bottom no-repeat;
+}
+.da-thumbs li.smi {
+  background: url(../img/thumb/smi.jpg) right bottom no-repeat;
+}
+.da-thumbs li.infograph {
+  background: url(../img/thumb/infograph.jpg) right bottom no-repeat;
+}
+.da-thumbs li.pillarce {
+  background: url(../img/thumb/pillarce.jpg) right bottom no-repeat;
+}
+.da-thumbs li.press {
+  background: url(../img/thumb/press.jpg) right bottom no-repeat;
+}
+.da-thumbs li.typograpf {
+  background: url(../img/thumb/typograpf.jpg) right bottom no-repeat;
+}
+.da-thumbs li.pr {
+  background: url(../img/thumb/pr.jpg) right bottom no-repeat;
+}
+.da-thumbs li.design {
+  background: url(../img/thumb/design.jpg) right bottom no-repeat;
+}
+.da-thumbs li.cinema {
+  background: url(../img/thumb/cinema.jpg) right bottom no-repeat;
+}
+.da-thumbs li.promo {
+  background: url(../img/thumb/promo.jpg) right bottom no-repeat;
+}
+.da-thumbs li.internet {
+  background: url(../img/thumb/internet.jpg) right bottom no-repeat;
+}
+.da-thumbs li.more {
+  background: url(../img/thumb/more.jpg) right bottom no-repeat;
+}
 .da-thumbs li a,
 .da-thumbs li a img {
   display: block;
   position: relative;
+}
+.da-thumbs li a span.img {
+  display: block;
+  position: relative;
+  height: 100%;
 }
 .da-thumbs li a {
   overflow: hidden;
@@ -86,11 +134,14 @@
 .grid-item--width5 { width:  35%; }
 .grid-item--width6 { width:  30%; }
 
+.grid-item--height1 { height: 21vh; }
+.grid-item--height2 { height: 12vh; }
+.grid-item--height3 { height: 22vh; }
 
-.grid-item--height1 { height: 350px; }
+/*.grid-item--height1 { height: 350px; }
 .grid-item--height2 { height: 180px; }
 .grid-item--height3 { height: 300px; }
-
+*/
 
 .grid-item img {
   height: 100%;
