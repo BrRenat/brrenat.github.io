@@ -219,3 +219,19 @@
   position: relative;
   z-index: 1;
 }
+.owl-nav {
+  font-size: 7vw;
+  position: relative;
+}
+.owl-prev {
+  display: inline-block;
+  position: absolute; 
+  left:0; 
+  top:-150px;
+}
+.owl-next {
+  display: inline-block;
+  position: absolute;
+  right:0;
+  top:-150px;
+}

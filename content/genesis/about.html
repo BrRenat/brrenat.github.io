@@ -9,10 +9,8 @@
 	<link rel="stylesheet" href="css/media.css" type="text/css" />
 	<link rel="stylesheet" href="css/remodal.css">
  	<link rel="stylesheet" href="css/remodal-default-theme.css">
-	<link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
-	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+ 	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
 </head>
 <body>
 <div id="header_min">
@@ -52,89 +50,51 @@
 		<div class="row">
 			<ol class="breadcrumb">
 			  <li><a href="#">Главная</a></li>
-			  <li class="active">Контакты</li>
+			  <li class="active">О компании</li>
 			</ol>
-			<h1>Контакты</h1>
-			<div class="contacts">
-				<p>Телефон:<span>989-33-77</span></p>
-				<p>Адрес:<span>г. Самара, ул. Ульяновская, <b>52</b>(ТЦ Галактика, <b>9</b> этаж, офис <b>11</b>)</span></p>
-				<p>E-mail:<span><a href="#">fresh-promotion@yandex.ru</a></span></p>
-			</div>
-			<div class="full_news_nav contacts">
-				<a href="" class="social"></a>
-				<a href="" class="social"></a>
-				<a href="" class="social"></a><br>
-			</div>
+			<h1>О компании</h1>
 		</div>
 	</div>
-</div>
-<div id='map' style='width: 100%; height: 500px;' />
-<script>
-L.mapbox.accessToken = 'pk.eyJ1IjoiYnJyZW5hdCIsImEiOiJjaW5pbGN2d2owMDNtd2RseXV2MTM1cWRmIn0.Z2EiCqAUqqVqVbrqCg7GfQ';
-var map = L.mapbox.map('map', 'mapbox.streets')
-    .setView([53.197086,50.117306], 16);
-    map.scrollWheelZoom.disable();
-var myLayer = L.mapbox.featureLayer().addTo(map);
-
-var geoJson = [{
-    "type": "Feature",
-    "geometry": {
-        "type": "Point",
-        "coordinates": [50.117306,53.197086]
-    },
-    "properties": {
-        "title": "Genesis Media Group",
-        description: 'ул. Ульяновская, 52',
-        "icon": {
-            "iconUrl": "img/map_point.png",
-            "iconSize": [152, 71], // size of the icon
-            "iconAnchor": [0, 71], // point of the icon which will correspond to marker's location
-            "popupAnchor": [76, -50], // point from which the popup should open relative to the iconAnchor
-            "className": "dot"
-        }
-    }
-}];
-
-// Set a custom icon on each marker based on feature properties.
-myLayer.on('layeradd', function(e) {
-    var marker = e.layer,
-        feature = marker.feature;
-
-    marker.setIcon(L.icon(feature.properties.icon));
-});
-
-// Add features to the map.
-myLayer.setGeoJSON(geoJson);
-</script>
-
-</div>
-<div id="bottom_nav">
-	<div class="container">
-			<h3>Оставьте заявку</h3>
-			<span class="btngroupfooter">
-			<form class="form-inline">
-			  <div class="form-group">
-			    <input type="text" class="form-control" id="" placeholder="НОМЕР ТЕЛЕФОНА">
-			  </div>
-			  <div class="form-group">
-			    <input type="text" class="form-control" id="" placeholder="ИМЯ/ОРГАНИЗАЦИЯ">
-			  </div>
-			</form>
-			<form class="form-inline">
-			  <div class="form-group">
-			    <input type="email" class="form-control" id="" placeholder="EMAIL">
-			  </div>
-			  <div class="form-group">
-			    <input type="text" class="form-control" id="" placeholder="ТЕМА СООБЩЕНИЯ">
-			  </div>
-			</form>
-			<form class="form-inline">
-			  <div class="form-group">
-			    <input type="text" class="form-control bigtext" id="" placeholder="">
-			  </div>
-			</form>
-			<button type="submit" class="form-control pull-right">ОТПРАВИТЬ</button>
-			</span>
+	<div class="about">
+		<img class="about_img" src="img/about_bg.jpg" alt="">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 text-left">
+					<p><span>Рекламное агентство IQ</span> – первое и единственное в России агентство, специализирующееся на рекламе в местах элитного отдыха. География агентства насчитывает более 2000 премиальных конструкций в местах элитного отдыха Санкт-Петербурга, Сочи. Большинство из них находится в собственности компании. Кроме того, сеть агентства охватывает рекламные площади на горнолыжных курортах Франции, Швейцарии и Австрии.</p>
+					<p>Компания работает на российском рынке с 1999 года. Мы предлагаем нашим клиентам уникальные условия для размещения рекламы, предоставляя возможность эксклюзивного контакта с избранной аудиторией. Более 15 лет мы  успешно развиваем и расширяем свою сеть присутствия в лучших местах отдыха премиум-сегмента.</p>
+				</div>
+				<div class="col-sm-4 about_thumb text-center">
+					<div class="about_thumb_number">130</div>
+					<div class="about_thumb_text">клиентов</div>
+					<p>за последние 2 года</p>
+				</div>
+				<div class="col-sm-4 about_thumb text-center">
+					<div class="about_thumb_number">54</div>
+					<div class="about_thumb_text">постоянных <br>клиента</div>
+					<p>на сегодняшний день</p>
+				</div>
+				<div class="col-sm-4 about_thumb text-center">
+					<div class="about_thumb_number">12</div>
+					<div class="about_thumb_text">лет опыта</div>
+					<p>на рынке рекламных услуг</p>
+				</div><br>
+				<div class="col-sm-12 our_team">
+					<h2>Наша команда</h2>
+					<div class="row">
+						<h3>Руководство</h3>
+						<div class="our_item col-sm-3 col-xs-12"><img src="img/team/thumb1.png" alt=""><div class="our_hover">Ирина Медведева <br><span>PR-менеджер</span></div></div>
+						<div class="our_item col-sm-3 col-xs-12"><img src="img/team/thumb1.png" alt=""><div class="our_hover">Ирина Медведева <br><span>PR-менеджер</span></div></div>
+						<div class="our_item col-sm-3 col-xs-12"><img src="img/team/thumb1.png" alt=""><div class="our_hover">Ирина Медведева <br><span>PR-менеджер</span></div></div>
+					</div>
+					<div class="row">
+						<h3>Руководство</h3>
+						<div class="our_item col-sm-3 col-xs-12"><img src="img/team/thumb1.png" alt=""><div class="our_hover">Ирина Медведева <br><span>PR-менеджер</span></div></div>
+						<div class="our_item col-sm-3 col-xs-12"><img src="img/team/thumb1.png" alt=""><div class="our_hover">Ирина Медведева <br><span>PR-менеджер</span></div></div>
+						<div class="our_item col-sm-3 col-xs-12"><img src="img/team/thumb1.png" alt=""><div class="our_hover">Ирина Медведева <br><span>PR-менеджер</span></div></div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 <div id="footer">

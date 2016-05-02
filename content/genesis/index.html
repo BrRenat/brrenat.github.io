@@ -4,34 +4,16 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/normalize.css" type="text/css" />
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
 	<link rel="stylesheet" href="css/grid.css" type="text/css" />
-	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
-	<script src="js/masonry.pkgd.min.js"></script>
-	<script src="js/masonry-docs.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="css/owl.carousel.css" />
-	<script src="js/owl.carousel.js"></script>
-	<script src="js/modernizr.custom.97074.js"></script>
-	<!-- <script src="js/jquery.tubular.1.0.js"></script> -->
 	<link rel="stylesheet" href="css/media.css" type="text/css" />
+	<link rel="stylesheet" href="css/remodal.css">
+ 	<link rel="stylesheet" href="css/remodal-default-theme.css">
+ 	<link rel="stylesheet" href="css/owl.carousel.css" />
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>	
 </head>
-<script>
-	$(document).ready(function(){
-		if ($(window).width() <= '540'){
-			     	$(".owl-carousel").owlCarousel({
-						items: 1
-					});
-					
-			     } else {
-			     	$(".owl-carousel").owlCarousel({
-						items: 4
-					});
-			     };
-	});
-</script>
 <body>
 <div id="header">
 	<div class="container">
@@ -58,7 +40,7 @@
 		      </ul>
 		      <ul class="nav navbar-nav navbar-right">
 		        <li><p>989-33-77</p></li>
-		        <li><a href="#">Заказать звонок</a></li>
+		        <li><a href="#modal1">Заказать звонок</a></li>
 		      </ul>
 		    </div>
 		  </div>
@@ -78,128 +60,122 @@
                         <a href="#">
                         	<img class="service" src="img/thumb/service.jpg" />
                             <div class="orange"><span>Услуги</span></div>
-                            <object type="image/svg+xml" data="img/svg/agreement.svg" class="svg1"></object>
-                            <object type="image/svg+xml" data="img/svg/analysis.svg" class="svg4"></object>
-                            <object type="image/svg+xml" data="img/svg/hourglass.svg" class="svg7"></object>
+                            <object type="image/svg+xml" data="img/svg/arrow.svg" class="svg1"></object>
+                            <object type="image/svg+xml" data="img/svg/technology.svg" class="svg2"></object>
+                            <object type="image/svg+xml" data="img/svg/people.svg" class="svg6"></object>
                         </a>
                     </li>
                     <li class="grid-item grid-item--width1 grid-item--height1">
                         <a href="#">
                             <img class="market" src="img/thumb/market.jpg" />
                             <div class="pink"><span>Реклама в торговых центрах</span></div>
-                            <object type="image/svg+xml" data="img/svg/businessmen.svg" class="svg1"></object>
-                            <object type="image/svg+xml" data="img/svg/handshake.svg" class="svg4"></object>
+                            <object type="image/svg+xml" data="img/svg/signs-2.svg" class="svg6"></object>
+                            <object type="image/svg+xml" data="img/svg/people-1.svg" class="svg4"></object>
                         </a>
                     </li>
                     <li class="grid-item grid-item--width1 grid-item--height1">
                         <a href="#">
                             <img class="outside" src="img/thumb/outside.jpg" />
                             <div class="yellow"><span>Наружная реклама</span></div>
-                            <object type="image/svg+xml" data="img/svg/hot-drink.svg" class="svg1"></object>
-                            <object type="image/svg+xml" data="img/svg/target.svg" class="svg2"></object>
+                            <object type="image/svg+xml" data="img/svg/signs.svg" class="svg1"></object>
+                            <object type="image/svg+xml" data="img/svg/signboard.svg" class="svg2"></object>
                         </a>
                     </li>
                     <li class="grid-item grid-item--width2 grid-item--height2">
                         <a href="#">
                             <img class="smi" src="img/thumb/smi.jpg" />
                             <div class="yellow"><span>Реклама в СМИ</span></div>
-                            <object type="image/svg+xml" data="img/svg/pie-chart.svg" class="svg4"></object>
-                            <object type="image/svg+xml" data="img/svg/briefcase.svg" class="svg6"></object>
+                            <object type="image/svg+xml" data="img/svg/technology-2.svg" class="svg1"></object>
+                            <object type="image/svg+xml" data="img/svg/technology-1.svg" class="svg2"></object>
+                            <object type="image/svg+xml" data="img/svg/tool.svg" class="svg4"></object>
                         </a>
                     </li>
                     <li class="grid-item grid-item--width3 grid-item--height2">
                         <a href="#">
                             <img class="infograph" src="img/thumb/infograph.jpg" />
                             <div class="pink"><span>Инфографика</span></div>
-                            <object type="image/svg+xml" data="img/svg/pie-chart.svg" class="svg4"></object>
-                            <object type="image/svg+xml" data="img/svg/tactics.svg" class="svg6"></object>
-                            <object type="image/svg+xml" data="img/svg/international.svg" class="svg6"></object>
+                            <object type="image/svg+xml" data="img/svg/graphic.svg" class="svg1"></object>
+                            <object type="image/svg+xml" data="img/svg/business.svg" class="svg4"></object>
+                            <object type="image/svg+xml" data="img/svg/time.svg" class="svg2"></object>
                         </a>
                     </li>
                     <li class="grid-item grid-item--width4 grid-item--height2">
                         <a href="#">
                             <img class="pillarce" src="img/thumb/pillarce.jpg" />
                             <div class="green"><span>Реклама на пилларсах</span></div>
-                            <object type="image/svg+xml" data="img/svg/pie-chart.svg" class="svg4"></object>
-                            <object type="image/svg+xml" data="img/svg/lightbulb.svg" class="svg1"></object>
-                            <object type="image/svg+xml" data="img/svg/stapler.svg" class="svg1"></object>
+                            <object type="image/svg+xml" data="img/svg/screen.svg" class="svg4"></object>
+                            <object type="image/svg+xml" data="img/svg/signs-2.svg" class="svg1"></object>
                         </a>
                     </li>
                     <li class="grid-item grid-item--width4 grid-item--height2">
                         <a href="#">
                             <img class="press" src="img/thumb/press.jpg" />
                             <div class="yellow"><span>Реклама в прессе</span></div>
-                            <object type="image/svg+xml" data="img/svg/identity.svg" class="svg4"></object>
-                            <object type="image/svg+xml" data="img/svg/success.svg" class="svg6"></object>
+                            <object type="image/svg+xml" data="img/svg/interface.svg" class="svg5"></object>
+                            <object type="image/svg+xml" data="img/svg/interface-2.svg" class="svg6"></object>
                         </a>
                     </li>
                     <li class="grid-item grid-item--width5 grid-item--height1">
                         <a href="#">
                             <img class="typograf" src="img/thumb/typograf.jpg" />
                             <div class="pink"><span>Типография</span></div>
-                            <object type="image/svg+xml" data="img/svg/agreement.svg" class="svg1"></object>
-                            <object type="image/svg+xml" data="img/svg/prize.svg" class="svg4"></object>
-                            <object type="image/svg+xml" data="img/svg/clock.svg" class="svg7"></object>
+                            <object type="image/svg+xml" data="img/svg/typography.svg" class="svg1"></object>
+                            <object type="image/svg+xml" data="img/svg/circular.svg" class="svg6"></object>
+                            <object type="image/svg+xml" data="img/svg/food.svg" class="svg2"></object>
                         </a>
                     </li>
                     <li class="grid-item grid-item--width6 grid-item--height1">
                         <a href="#">
                             <img class="pr" src="img/thumb/pr.jpg" />
                             <div class="green"><span>PR-компания</span></div>
-                            <object type="image/svg+xml" data="img/svg/agreement.svg" class="svg1"></object>
-                            <object type="image/svg+xml" data="img/svg/analysis.svg" class="svg4"></object>
+                            <object type="image/svg+xml" data="img/svg/video.svg" class="svg1"></object>
+                            <object type="image/svg+xml" data="img/svg/people-1.svg" class="svg2"></object>
                         </a>
                     </li>
                     <li class="grid-item grid-item--width5 grid-item--height1">
                         <a href="#">
                             <img class="design" src="img/thumb/design.jpg" />
                             <div class="orange"><span>Дизайн</span></div>
-                            <object type="image/svg+xml" data="img/svg/hot-drink.svg" class="svg1"></object>
-                            <object type="image/svg+xml" data="img/svg/target.svg" class="svg2"></object>
+                            <object type="image/svg+xml" data="img/svg/monitor.svg" class="svg6"></object>
+                            <object type="image/svg+xml" data="img/svg/pencil.svg" class="svg1"></object>
                         </a>
                     </li>
                     <li class="grid-item grid-item--width4 grid-item--height2">
                         <a href="#">
                             <img class="cinema" src="img/thumb/cinema.jpg" />
                             <div class="yellow"><span>Реклама в кинотеатрах</span></div>
-                            <object type="image/svg+xml" data="img/svg/identity.svg" class="svg4"></object>
-                            <object type="image/svg+xml" data="img/svg/success.svg" class="svg6"></object>
+                            <object type="image/svg+xml" data="img/svg/food-1.svg" class="svg2"></object>
+                            <object type="image/svg+xml" data="img/svg/cinema.svg" class="svg3"></object>
+                            <object type="image/svg+xml" data="img/svg/interface.svg" class="svg5"></object>
                         </a>
                     </li>
                     <li class="grid-item grid-item--width4 grid-item--height2">
                         <a href="#">
                             <img class="promo" src="img/thumb/promo.jpg" />
                             <div class="green"><span>BTL и промоакции</span></div>
-                            <object type="image/svg+xml" data="img/svg/identity.svg" class="svg4"></object>
-                            <object type="image/svg+xml" data="img/svg/success.svg" class="svg6"></object>
+                            <object type="image/svg+xml" data="img/svg/people-1.svg" class="svg3"></object>
+                            <object type="image/svg+xml" data="img/svg/people-2.svg" class="svg2"></object>
+                            <object type="image/svg+xml" data="img/svg/transport.svg" class="svg5"></object>
                         </a>
                     </li>
                     <li class="grid-item grid-item--width3 grid-item--height3">
                         <a href="#">
                             <img class="internet" src="img/thumb/internet.jpg" />
                             <div class="orange"><span>Реклама в интернете</span></div>
-                            <object type="image/svg+xml" data="img/svg/agreement.svg" class="svg1"></object>
-                            <object type="image/svg+xml" data="img/svg/analysis.svg" class="svg4"></object>
-                            <object type="image/svg+xml" data="img/svg/hourglass.svg" class="svg7"></object>
+                            <object type="image/svg+xml" data="img/svg/technology-4.svg" class="svg1"></object>
+                            <object type="image/svg+xml" data="img/svg/technology-3.svg" class="svg4"></object>
                         </a>
                     </li>
                     <li class="grid-item grid-item--width2 grid-item--height3">
                         <a href="#">
                             <img class="more" src="img/thumb/more.jpg" />
                             <div class="pink"><span>подробнее об услугах</span></div>
-                            <object type="image/svg+xml" data="img/svg/hot-drink.svg" class="svg1"></object>
-                            <object type="image/svg+xml" data="img/svg/target.svg" class="svg2"></object>
+                            <object type="image/svg+xml" data="img/svg/three.svg" class="svg1"></object>
+                            <object type="image/svg+xml" data="img/svg/people-2.svg" class="svg2"></object>
                         </a>
                     </li>
     </ul>
-	<script type="text/javascript" src="js/jquery.hoverdir.js"></script>
-	        <script type="text/javascript">
-	            $(function () {
 
-	                $(' #da-thumbs > li ').hoverdir();
-
-	            });
-	</script>
 </div>
 <div id="wrapper">
 	<div class="index_title graybg">
@@ -212,21 +188,26 @@
 					</div>
 				</div>
 				<div class="col-sm-6">
-					<select class="form-control">
-					  <option>ИНФОГРАФИКА</option>
-					  <option>ИНФОГРАФИКА1</option>
-					  <option>ИНФОГРАФИКА2</option>
+					<select class="form-control" id="owl_filter">
+					  <option>all</option>
+						<option>color</option>
+						<option>white</option>
 					</select>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="owl-carousel">
-		  <div><img src="img/thumb/1.jpg" alt=""></div>
-		  <div><img src="img/thumb/2.jpg" alt=""></div>
-		  <div><img src="img/thumb/3.jpg" alt=""></div>
-		  <div><img src="img/thumb/4.jpg" alt=""></div>
+			<div class="color"><img src="img/thumb/1.jpg" alt=""></div>
+			<div class="white"><img src="img/thumb/2.jpg" alt=""></div>
+			<div class="color"><img src="img/thumb/3.jpg" alt=""></div>
+			<div class="white"><img src="img/thumb/4.jpg" alt=""></div>
+			<div class="white"><img src="img/thumb/2.jpg" alt=""></div>
+			<div class="color"><img src="img/thumb/3.jpg" alt=""></div>
+			<div class="white"><img src="img/thumb/4.jpg" alt=""></div>
+			<div class="color"><img src="img/thumb/3.jpg" alt=""></div>
 	</div>
+	<div id="owl_hide" class="hide"></div>
 	<div class="index_title">
 		<div class="container">
 			<div class="row">
@@ -284,31 +265,29 @@
 	<div class="container">
 		<h2>genesis <br>media group</h2>
 		<span class="btngroupfooter">
-			<form class="form-inline">
+			<form class="form-inline" id="main_form" role="search" method="post" enctype="text/plain">
 			  <div class="form-group">
-			    <input type="text" class="form-control" id="" placeholder="НОМЕР ТЕЛЕФОНА">
+			    <input type="text" class="form-control" name="phone" placeholder="НОМЕР ТЕЛЕФОНА">
 			  </div>
 			  <div class="form-group">
-			    <input type="text" class="form-control" id="" placeholder="ИМЯ/ОРГАНИЗАЦИЯ">
+			    <input type="text" class="form-control" name="name" placeholder="ИМЯ/ОРГАНИЗАЦИЯ">
 			  </div>
 			</form>
 			<form class="form-inline">
 			  <div class="form-group">
-			    <input type="email" class="form-control" id="" placeholder="EMAIL">
+			    <input type="email" class="form-control" name="email" placeholder="EMAIL">
 			  </div>
 			  <div class="form-group">
 			    <select class="form-control">
-				  <option>УСЛУГА</option>
-				  <option>УСЛУГА1</option>
-				  <option>УСЛУГА2</option>
-				  <option>УСЛУГА3</option>
-				  <option>УСЛУГА4</option>
-				</select>
+					  <option>УСЛУГА</option>
+					  <option>УСЛУГА1</option>
+					  <option>УСЛУГА2</option>
+					  <option>УСЛУГА3</option>
+					  <option>УСЛУГА4</option>
+					</select>
 			  </div>
 			</form>
-			<button type="submit" class="form-control pull-right">ОТПРАВЬТЕ ЗАЯВКУ</button>
-			
-			
+			<button type="submit" class="form-control pull-right">ОТПРАВЬТЕ ЗАЯВКУ</button>	
 		</span>
 	</div>
 </div>
@@ -335,12 +314,42 @@
 			</div>
 			<div class="rightside pull-right">
 				<p>989-33-77</p>
-				<a href="#">заказать звонок</a>
+				<a href="#modal1">заказать звонок</a>
 				<p><span>г.Самара, пр.Мальцева 1</span></p>
 				<a href="#">fresh-promotion@yandex.ru</a>
 			</div>
 		</div>
 	</div>	
 </div>
+<div class="remodal" data-remodal-id="modal1" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+		<div class="remodalBorder">
+			<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+				<form id="form7" method="post" enctype="multipart/form-data">
+				  <div class="form-group">
+				  	<h4>МЫ ВАМ ПЕРЕЗВОНИМ</h4>
+				    <label for="#">Ваше имя</label>
+				    <input type="name" class="form-control" placeholder="" name="name" required>
+				  </div>
+				  <div class="form-group">
+				    <label for="#">Ваш телефон</label>
+				    <input type="phone" class="form-control" id="#" placeholder="" name="phone" required>
+				  </div>
+				  <button type="submit" class="btn btn-default">оставить заявку</button>
+				</form>
+			</div>
+</div>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/masonry-docs.min.js"></script>	
+<script src="js/owl.carousel.js"></script>
+<script src="js/mail.js"></script>
+<script src="js/modernizr.custom.97074.js"></script>
+<script src="js/remodal.min.js"></script>
+<script src="js/filter.js"></script>
+<script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+<script type="text/javascript">
+	$(function () {
+	$(' #da-thumbs > li ').hoverdir();
+	});
+</script>
 </body>
 </html>

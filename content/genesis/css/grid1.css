@@ -33,11 +33,16 @@
   text-decoration: none;
 }
 
-.grid1-item--width1 { width:  50%; }
+/*.grid1-item--width1 { width:  50%; }
 .grid1-item--width2 { width:  25%; }
 
 .grid1-item--height1 { height: 50%; }
-.grid1-item--height2 { height: 25%; }
+.grid1-item--height2 { height: 25%; }*/
+
+.grid1-item {
+  width:  25%;
+  height: 25%;
+}
 
 /*.grid-item--height1 { height: 440px; }
 .grid-item--height2 { height: 220px; }*/

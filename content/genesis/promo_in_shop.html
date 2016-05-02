@@ -17,8 +17,14 @@
  	<script src="js/remodal.min.js"></script>
 </head>
 <script>
-	$(document).ready(function(){
-  $('.owl-carousel').owlCarousel();
+$(document).ready(function(){
+		if ($(window).width() <= '570'){
+			     	$(".owl-carousel").owlCarousel({
+						items: 2
+					})
+			     } $(".owl-carousel").owlCarousel({
+						items: 4
+					});
 });
 </script>
 <body>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/normalize.css" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/grid.css" type="text/css" />
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="js/masonry-docs.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/owl.carousel.css" />
+	<script src="js/owl.carousel.js"></script>
+	<script src="js/modernizr.custom.97074.js"></script>
+	<script src="js/filter.js"></script>
+	<!-- <script src="js/jquery.tubular.1.0.js"></script> -->
+	<link rel="stylesheet" href="css/media.css" type="text/css" />
+</head>
+<script>
+	// $(document).ready(function(){
+	// 	if ($(window).width() <= '540'){
+	// 		     	$(".owl-carousel").owlCarousel({
+	// 					items: 1
+	// 				});
+					
+	// 		     } else {
+	// 		     	$(".owl-carousel").owlCarousel({
+	// 					items: 4
+	// 				});
+	// 		     };
+	// });
+</script>
+<body>
+<div class="owl-carousel" id="your-carousel">
+	<div class="color"><img src="img/thumb/1.jpg" alt="">1</div>
+	<div class="white"><img src="img/thumb/2.jpg" alt="">2</div>
+	<div class="color"><img src="img/thumb/3.jpg" alt="">3</div>
+	<div class="white"><img src="img/thumb/4.jpg" alt="">4</div>
+	<div class="white"><img src="img/thumb/2.jpg" alt="">5</div>
+	<div class="color"><img src="img/thumb/3.jpg" alt="">6</div>
+	<div class="white"><img src="img/thumb/4.jpg" alt="">7</div>
+	<div class="color"><img src="img/thumb/3.jpg" alt="">8</div>
+</div>
+<select class="form-control" id="owl_filter">
+	<option>all</option>
+	<option>color</option>
+	<option>white</option>
+</select>
+<a class="btn btn-danger" href="#" id="check">check</a>
+<a class="btn btn-danger" href="#" id="reload">reload</a>
+<a class="btn btn-danger" href="#" id="remove">remove</a>
+<div id="owl_hide" class="hide"></div>
+<script src="js/filter.js"></script>
+</body>
+</html>
