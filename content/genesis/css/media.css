@@ -211,10 +211,25 @@
 	#bottom_nav {
 		padding-top: 100px;
 	}
+	img.about {
+    right: auto;
+    left: 0;
+	}
+	.promocinema .btn-primary {
+    background: none;
+    color: #fff;
+	}
+	.promo_item {
+		width: 50%;
+		float: left;
+	}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 540px) {
+	.promo_item {
+		width: 100%;
+	}
 	.leftside {
 		display: block;
 		text-align: center;
