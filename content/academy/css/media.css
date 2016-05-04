@@ -12,7 +12,7 @@
 		font-size: 25px;
 	}
 	.top img {
-		width: 200px;
+		width: 280px;
 	}
 	.middle ul, .middle p {
 		width: 80%;
@@ -28,7 +28,7 @@
 	}
 	#social {
 		padding: 20px;
-	} 
+	}
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
@@ -65,6 +65,9 @@
 	}
 	#social a {
 		margin: 20px;
+	}
+	.top ul {
+		width: 50%;
 	}  
 }
 @media only screen and (max-width : 650px) {
@@ -92,9 +95,6 @@
 @media only screen and (max-width : 500px) {
 	.top h1 {
 		font-size: 25px;
-	}
-	.top ul {
-		margin-top: 20px;
 	}
 	.top ul li{
 		font-size: 15x;
@@ -142,5 +142,13 @@
 	.btn {
 		font-size: 19px;
 		padding: 6px;
+	}
+	.top ul {
+		margin-top: 20px;
+		margin-bottom: 250px;
+		width: 100%;
+	}
+	.top img {
+		width: 200px;
 	}
 }
