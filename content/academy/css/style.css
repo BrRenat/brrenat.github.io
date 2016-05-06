@@ -17,6 +17,9 @@
 *:focus {
 	outline: none;
 }
+body {
+	min-width: 320px;
+}
 header {
 	background: url(../img/header_bg.png) bottom repeat-x;
 	padding: 10px;
@@ -45,7 +48,15 @@ header.gray{
 	display: inline-block;
 	text-align: center;
 }
-
+.top h1 span.line {
+	display: inline-block;
+	height: 3px;
+	width: 165px;
+	margin: 0px 10px;
+	background: #c2357a;
+	position: relative;
+	top:-13px;
+}
 .top ul {
 	padding: 0;
 	margin: 60px 0px;
@@ -105,6 +116,16 @@ header.gray{
 	background: #5e5e5e;
 	padding: 0 45px;
 }
+.middle h1 span.line {
+	display: inline-block;
+	height: 2px;
+	width: 57px;
+	margin: 0px 10px;
+	background: #5e5e5e;
+	position: relative;
+	top:-9px;
+	padding: 0;
+}
 .middle ul {
 	width: 50%;
   margin: 30px auto;
@@ -142,6 +163,7 @@ header.gray{
 	height: 131px;
 	background: url(../img/present.png);
 	margin: 20px auto;
+	margin-bottom: 50px;
 	color: #fff;
 	padding-top: 65px;
 	text-align: center;
@@ -278,6 +300,15 @@ footer {
 	display: block;
 	width: 400px;
 	text-align: center;
+}
+#thx h1 span.line {
+	display: inline-block;
+	height: 3px;
+	width: 50px;
+	margin: 0px 10px;
+	background: #c2357a;
+	position: relative;
+	top:-13px;
 }
 #thx p {
 	font-family: RobotoLight;

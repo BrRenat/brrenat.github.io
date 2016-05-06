@@ -8,6 +8,12 @@
 		margin-top: 20px;
 		font-size: 30px;
 	}
+	.top h1 span.line {
+		height: 2px;
+		width: 130px;
+		margin: 0px 10px;
+		top:-10px;
+	}
 	.top ul li{
 		font-size: 25px;
 	}
@@ -96,6 +102,10 @@
 	.top h1 {
 		font-size: 25px;
 	}
+	.top h1 span.line {
+		width: 105px;
+		top:-9px;
+	}
 	.top ul li{
 		font-size: 15x;
 	}
@@ -150,5 +160,13 @@
 	}
 	.top img {
 		width: 200px;
+	}
+}
+@media only screen and (max-width : 400px) {
+	.top h1 span.line {
+		width: 60px;
+	}
+	#thx h1 span.line {
+		width: 22px;
 	}
 }

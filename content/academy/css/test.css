@@ -13,6 +13,7 @@
 }
 .test {
 	background: url(../img/table.png) bottom center no-repeat;
+	background-size: 100% auto;
 	height: 540px;
 	position: relative;
 }
@@ -65,7 +66,6 @@
 	font-family: RobotoLight;
 	padding-top: 20px;
 	margin: 0 auto;
-	padding-left: 74px;
 }
 .content {
 	width: 720px;
