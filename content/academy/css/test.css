@@ -32,7 +32,8 @@
 	background: #373737;
 	font-size: 46px;
 	color: #fff;
-	font-family: RobotoLight;
+	font-family: Roboto;
+	font-weight: 300;
 	float: left;
 	padding-top: 15px;
 	text-align: center;
@@ -47,7 +48,8 @@
 	text-align: center;
 	font-size: 15px;
 	color: #373737;
-	font-family: RobotoLight;
+	font-family: Roboto;
+	font-weight: 300;
 	-ms-transform: rotate(270deg);
 	-o-transform: rotate(270deg);
 	-moz-transform: rotate(270deg);
@@ -63,7 +65,8 @@
 	font-size: 18px;
 	color: #373737;
 	text-transform: uppercase;
-	font-family: RobotoLight;
+	font-family: Roboto;
+	font-weight: 300;
 	padding-top: 20px;
 	margin: 0 auto;
 }
@@ -122,7 +125,8 @@
 	left:50%;
 	margin-left: -150px;
 	z-index: 1002;
-	font-family: RobotoLight;
+	font-family: Roboto;
+	font-weight: 300;
 }
 #alert:hover {
 	cursor: pointer;
@@ -135,7 +139,8 @@
 }
 a#next {
 	color: #fff;
-	font-family: RobotoLight;
+	font-family: Roboto;
+	font-weight: 300;
 	font-size: 16px;
 	padding-top: 8px;
 }
