@@ -1,6 +1,15 @@
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
-	
+@media only screen and (max-width : 1920px) {
+	.top h1 {
+		margin-left: 50px;
+	}
+	.top ul {
+		margin-left: 50px;
+	}
+	.top p {
+		margin-right: 60px;
+		font-size: 13px;
+	}
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
@@ -95,6 +104,12 @@
 	}
 	#social a {
 		margin: 10px;
+	}
+	.top h1 {
+		margin-left: 0px;
+	}
+	.top ul {
+		margin-left: 0px;
 	} 
 }
 /* Extra Small Devices, Phones */
