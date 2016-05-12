@@ -151,6 +151,7 @@
 	.text {
 		font-size: 15px;
 		padding-top: 5px;
+		padding-left: 68px;
 	}
 	.form-control, .btn {
 		width: 90%;

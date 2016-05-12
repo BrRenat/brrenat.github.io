@@ -50,7 +50,7 @@ header.gray{
 	position: relative;
 }
 .top ul li{
-	font-size: 30px;
+	font-size: 20px;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 	color: #000;
@@ -127,10 +127,10 @@ header.gray{
 	padding: 5px 0px;
 }
 .middle ul li span{
-	color: #000;
+	color: #333;
 }
 .middle p {
-	width: 50%;
+	width: 43%;
 	font-size: 20px;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
@@ -155,10 +155,11 @@ header.gray{
 	margin: 20px auto;
 	margin-bottom: 50px;
 	color: #fff;
-	padding-top: 65px;
+	padding-top: 60px;
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
+	font-size: 16px;
 }
 #test_complete {
 	background: url(../img/test_complete.jpg);
@@ -221,7 +222,7 @@ header.gray{
 	color: #6c6c6c;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
-	font-size: 15px;
+	font-size: 20px;
 	padding-top: 10px;
 }
 .lesson_content {
