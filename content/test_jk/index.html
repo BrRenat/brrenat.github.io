@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="js/owl.carousel.js"></script>
+</head>
+<body>
+<section id="content">
+	<div class="container">
+		<h1>Свадебные распорядители</h1>
+		<div class="row owl-carousel owl-theme">
+			<div class="col-sm-3">
+				<div class="persona">
+					<img src="img/persona1.jpg" alt="">
+					<h2>Мария Рыжева</h2>
+					<span>координатор</span>
+					<p>Я организовала уже 34 свадьбы. Невесты говорят, что у меня хорошо получается. Была бы рада помочь и вам.</p>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="persona">
+					<img src="img/persona2.jpg" alt="">
+					<h2>Денис Кривов</h2>
+					<span>PR менеджер</span>
+					<p>Мне нравится видеть сияющие счастьем лица невест во время свадеб.</p>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="persona">
+					<img src="img/persona3.jpg" alt="">
+					<h2>Екатерина Пирка</h2>
+					<span>Event менеджер</span>
+					<p>Нет ничего приятнее ощущать, что твоя работа дарит радость.</p>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="persona">
+					<img src="img/persona4.jpg" alt="">
+					<h2>Катя Голованова</h2>
+					<span>Event менеджер</span>
+					<p>Нет ничего приятнее ощущать, что твоя работа дарит радость.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<script>
+	$( document ).ready(function() {
+		owlCustomLoad();
+	});
+	function owlCustomLoad() {
+		if ($(window).width() <= '767') {
+			$('.owl-carousel').owlCarousel({
+						items: 1,
+						nav: true,
+						navText: [ '', '' ],
+						loop: true
+					});
+		} else {
+			$('.owl-carousel').show();
+		}
+	}
+</script>
+</body>
+</html>
