@@ -665,7 +665,7 @@ $( document ).ready(function() {
         $('.show-blackberry, .show-ios, .show-android').hide(0);
     }
     
-    $('.back-to-top-badge, .back-to-top').click(function() {
+    $('.back-to-top-badge, .back-to-top, .header-logo').click(function() {
 		$('#content').animate({
 			scrollTop:0
 		}, 500, 'easeInOutQuad');
