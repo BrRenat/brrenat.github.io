@@ -461,7 +461,11 @@ $( document ).ready(function() {
     $('.modal-close').click(function(){return false;});
     
 	$('.simple-modal').click(function() {
-		$('.simple-modal-content').modal();
+        var modal = $(this).data('modal');
+
+        modal = $(modal);
+        
+		modal.modal();
 	});	
     
     $('.social-login-modal').click(function() {

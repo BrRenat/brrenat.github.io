@@ -250,5 +250,32 @@ h4 {
     padding-left: 7px;
 }
 .snap-drawer {
-    width: 270px;
+    width: 266px;
+}
+.map-fullscreen {
+    margin-top: 0px;
+}
+.light_green_nav {
+    border-right:3px solid #64ddae;
+}
+.green_nav {
+    border-right:3px solid #2abb67; 
+}
+.light_blue_nav {
+    border-right:3px solid #64cef1;
+}
+.blue_nav {
+    border-right:3px solid #64adf1;
+}
+.orange_nav {
+    border-right:3px solid #ff8f3c;
+}
+.sidebar-light-clean .menu-item em {
+    padding-left: 20px;
+}
+.dark_orange_nav {
+    border-right:3px solid #ff6a51;
+}
+.red_nav {
+    border-right:3px solid #dd0012;
 }

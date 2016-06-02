@@ -68,13 +68,12 @@
             <div class="sidebar-logo"></div>
             <div class="sidebar-divider no-bottom"></div>
             <div class="sidebar-menu">
-                <div class="has-submenu">
-                    <a class="menu-item show-submenu submenu-active" href="#">
-                        <i class="fa fa-home bg-red-dark"></i>
+                <div class="has-submenu light_green_nav">
+                    <a class="menu-item show-submenu" href="#">
                         <em>Услуги и цены</em>
                         <strong>11</strong>
                     </a> 
-                    <div class="submenu submenu-active">
+                    <div class="submenu">
                         <a class="submenu-item submenu-item-active" href="index.html"><i class="ico bundle-1 pen"></i>Создание сайтов и цены</a>
                         <a class="submenu-item submenu-item-active" href="index.html"><i class="ico bundle-1 target"></i>Продвижение сайтов и цены</a>
                         <a class="submenu-item submenu-item-active" href="index.html"><i class="ico bundle-1 support"></i>Поддержка сайтов и цены</a>
@@ -88,13 +87,12 @@
                         <a class="submenu-item submenu-item-active color-green-light" href="index.html"><i class="ico fa fa-exclamation"></i>Специальные предложения</a>
                     </div>
                 </div>
-                <div class="has-submenu">
-                    <a class="menu-item show-submenu submenu-active" href="#">
-                        <i class="fa fa-home bg-red-dark"></i>
+                <div class="has-submenu light_blue_nav">
+                    <a class="menu-item show-submenu" href="#">
                         <em>Портфолио</em>
                         <strong>5</strong>
                     </a> 
-                    <div class="submenu submenu-active">
+                    <div class="submenu">
                         <a class="submenu-item submenu-item-active" href="index.html">Сайты</a>
                         <a class="submenu-item submenu-item-active" href="index.html">Фирменный стиль</a>
                         <a class="submenu-item submenu-item-active" href="index.html">Группы в социальных сетях</a>
@@ -102,33 +100,27 @@
                         <a class="submenu-item submenu-item-active" href="index.html">Разное</a>
                     </div>
                 </div>
-                <a class="menu-item" href="page-sitemap.html">
-                    <i class="fa fa-sitemap bg-night-dark"></i>
+                <a class="menu-item blue_nav" href="">
                     <em>О компании</em>
                     <i class="fa fa-circle"></i>
                 </a>
-                <a class="menu-item" href="page-sitemap.html">
-                    <i class="fa fa-sitemap bg-night-dark"></i>
+                <a class="menu-item orange_nav" href="">
                     <em>Контакты</em>
                     <i class="fa fa-circle"></i>
                 </a>                   
             </div>
             <p class="sidebar-divider">Свяжитесь с нами</p>
             <div class="sidebar-menu">
-                <a class="menu-item" href="tel:+123 456 7890">
-                    <i class="fa fa-phone bg-green-dark"></i>
+                <a class="menu-item green_nav" href="tel:+123 456 7890">
                     <em>Позвонить</em>
                 </a>                   
-                <a class="menu-item" href="sms:+123 456 7890">
-                    <i class="fa fa-comment-o bg-blue-dark"></i>
+                <a class="menu-item dark_orange_nav" href="sms:+123 456 7890">
                     <em>СМС</em>
                 </a>                 
-                <a class="menu-item" href="mailto:someone@yoursite.com?subject=Message from ThemeForest">
-                    <i class="fa fa-envelope-o bg-magenta-dark"></i>
+                <a class="menu-item blue_nav" href="mailto:someone@yoursite.com?subject=Message from ThemeForest">
                     <em>E-mail</em>
                 </a>     
-                <a class="menu-item close-sidebar" href="#">
-                    <i class="fa fa-times bg-red-dark"></i>
+                <a class="menu-item close-sidebar red_nav" href="#">
                     <em>Закрыть</em>
                 </a>
             </div>
@@ -221,8 +213,15 @@
                 </div>
                 <div class="decoration container"></div>
                 <div class="container-fullscreen no-bottom">
-                    <h4 class="center-text uppercase">мы на карте</h4>
-                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=USQRPDO77iiZR7lfTSQb5X1WA_eMN22d&width=100%&height=500&lang=ru_RU&sourceType=constructor&scroll=false"></script>
+                    <div class="map-fullscreen" data-snap-ignore="true">
+                        <div class="map-text">
+                            <h3>Мы на карте</h3>
+                            <p>Нажмите, чтобы активировать карту</p>
+                        </div>
+                        <a class="deactivate-map button button-red button-fullscreen uppercase" href="#">Отключить карту</a>
+                        <div class="bg-black map-overlay"></div>
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=USQRPDO77iiZR7lfTSQb5X1WA_eMN22d&width=100%&height=500&lang=ru_RU&sourceType=constructor&scroll=false"></script>
+                    </div>
                 </div>
                 <div class="footer-clear disabled"></div>
             </div>
