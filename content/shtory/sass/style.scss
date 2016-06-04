@@ -51,6 +51,9 @@ h2.block-title {
 	margin-top: 100px;
 	margin-bottom: 60px;
 }
+:focus {
+    outline: none !important;
+}
 header {
 	.container {
 		position: relative;
@@ -292,7 +295,10 @@ header {
 		}
 }
 #third-screen {
+	overflow: hidden;
+	height: 600px;
 	.gallery {
+		height: 400px;
 		.gallery-image {
 			height: 400px;
 			width: 100%;
@@ -329,11 +335,9 @@ header {
 			.special {
 				
 				.special-block {
-					display: block;
-					height: 120px;
-					width: 240px;
-					background: url(../img/figure.png);
-					padding: 18px 20px 38px;
+					border: 1px dashed #f169b3;
+					border-radius: 4px;
+					padding: 18px 20px;
 				}
 				p {
 					b {
@@ -342,11 +346,31 @@ header {
 				}
 				
 			}
+			
+		}
+
+	}
+	.owl-carousel {
+		.owl-controls {
+			display: inline-block;
+			position: absolute;
+			right:0;
+			bottom:0;
 			button.custom-btn {
-				width: 240px;
-				position: absolute;
-				left:0px;
-				bottom:0px;
+				/*width: 240px;*/
+			}
+		}
+		.owl-stage-outer {
+			overflow: visible;
+			.owl-stage {
+				height: 400px;
+			}
+		}
+		.owl-item {
+			margin: 0px 10px;
+			opacity: 0.5;
+			&.active {
+				opacity: 1;
 			}
 		}
 	}

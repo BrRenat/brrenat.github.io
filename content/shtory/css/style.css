@@ -45,6 +45,9 @@ h2.block-title {
   margin-top: 100px;
   margin-bottom: 60px; }
 
+:focus {
+  outline: none !important; }
+
 header .container {
   position: relative; }
 header .navbar-default {
@@ -240,48 +243,62 @@ header li.phone {
         margin-left: 90px;
         transform: scale(1, 1); }
 
-#third-screen .gallery .gallery-image {
-  height: 400px;
-  width: 100%;
-  position: relative;
+#third-screen {
   overflow: hidden;
-  display: block;
-  border-radius: 4px; }
-  #third-screen .gallery .gallery-image img {
+  height: 600px; }
+  #third-screen .gallery {
+    height: 400px; }
+    #third-screen .gallery .gallery-image {
+      height: 400px;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      display: block;
+      border-radius: 4px; }
+      #third-screen .gallery .gallery-image img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%; }
+    #third-screen .gallery .gallery-desc {
+      height: 400px;
+      position: relative; }
+      #third-screen .gallery .gallery-desc p {
+        font-family: Museo;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 20px;
+        color: #6d6243; }
+        #third-screen .gallery .gallery-desc p b {
+          font-weight: 700;
+          color: #4e4e4e; }
+        #third-screen .gallery .gallery-desc p a {
+          color: #a75983;
+          text-decoration: underline; }
+          #third-screen .gallery .gallery-desc p a:hover {
+            text-decoration: none; }
+      #third-screen .gallery .gallery-desc .special .special-block {
+        border: 1px dashed #f169b3;
+        border-radius: 4px;
+        padding: 18px 20px; }
+      #third-screen .gallery .gallery-desc .special p b {
+        color: #f169b3; }
+  #third-screen .owl-carousel .owl-controls {
+    display: inline-block;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%; }
-#third-screen .gallery .gallery-desc {
-  height: 400px;
-  position: relative; }
-  #third-screen .gallery .gallery-desc p {
-    font-family: Museo;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 20px;
-    color: #6d6243; }
-    #third-screen .gallery .gallery-desc p b {
-      font-weight: 700;
-      color: #4e4e4e; }
-    #third-screen .gallery .gallery-desc p a {
-      color: #a75983;
-      text-decoration: underline; }
-      #third-screen .gallery .gallery-desc p a:hover {
-        text-decoration: none; }
-  #third-screen .gallery .gallery-desc .special .special-block {
-    display: block;
-    height: 120px;
-    width: 240px;
-    background: url(../img/figure.png);
-    padding: 18px 20px 38px; }
-  #third-screen .gallery .gallery-desc .special p b {
-    color: #f169b3; }
-  #third-screen .gallery .gallery-desc button.custom-btn {
-    width: 240px;
-    position: absolute;
-    left: 0px;
-    bottom: 0px; }
+    right: 0;
+    bottom: 0; }
+    #third-screen .owl-carousel .owl-controls button.custom-btn {
+      /*width: 240px;*/ }
+  #third-screen .owl-carousel .owl-stage-outer {
+    overflow: visible; }
+    #third-screen .owl-carousel .owl-stage-outer .owl-stage {
+      height: 400px; }
+  #third-screen .owl-carousel .owl-item {
+    margin: 0px 10px;
+    opacity: 0.5; }
+    #third-screen .owl-carousel .owl-item.active {
+      opacity: 1; }
 
 #fourth-screen, #six-screen {
   background-color: #f2f2f2;

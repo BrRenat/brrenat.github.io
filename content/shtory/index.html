@@ -6,16 +6,23 @@
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 	<meta name="viewport" content="width=960, initial-scale=0.1, maximum-scale=6">
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/owl.carousel.css" type="text/css" />
+	<link rel="stylesheet" href="css/owl.theme.css" type="text/css" />
+	<link rel="stylesheet" href="css/remodal.css" type="text/css" />
+	<link rel="stylesheet" href="css/remodal-default-theme.css" type="text/css" />
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
 	<link rel="stylesheet" href="css/media.css" type="text/css" />
 	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.js"></script>
+	<script src="js/remodal.js"></script>
+	<script src="js/main.js"></script>
 </head>
 <body>
 <header>
 	<div class="container">
 		<nav class="navbar navbar-default">
-		    <div class="navbar-header">
+		    <!-- <div class="navbar-header">
 		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 		        <span class="sr-only">Toggle navigation</span>
 		        <span class="icon-bar"></span>
@@ -23,11 +30,11 @@
 		        <span class="icon-bar"></span>
 		      </button>
 		      <a class="navbar-brand hidden-md hidden-lg" href="#">Brand</a>
-		    </div>
+		    </div> -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav">
 		        <li class="active"><a href="#">Кто мы</a></li>
-		        <li><a href="#">Еаши проекты</a></li>
+		        <li><a href="#">Наши проекты</a></li>
 		        <li><a href="#">Дизайнерам</a></li>
 		        <li><a href="#">Услуги</a></li>
 		      </ul>
@@ -99,7 +106,7 @@
 <section id="third-screen">
 	<div class="container">
 		<h2 class="text-center block-title">Выполненные проекты</h2>
-		<div class="gallery">
+		<div class="gallery owl-carousel owl-theme">
 			<div class="row">
 				<div class="col-sm-9">
 					<div class="gallery-image">
@@ -118,7 +125,48 @@
 								<p><a href="">Читать далее...</a></p>
 							</div>
 						</div>
-						<button class="custom-btn">Следующий проект</button>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-9">
+					<div class="gallery-image">
+						<img src="img/slide1.jpg" alt="">
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="gallery-desc">
+						<p><b>Мнение эксперта:</b></p>
+						<p>Мы придали больше контраста помещению лекгости и воздушности...</p>
+						<p><a href="">Читать далее...</a></p>
+						<div class="special">
+							<p><b>Отзыв:</b></p>
+							<div class="special-block">
+								<p>Все супер большое спасибо Ирина, вы гений...</p>
+								<p><a href="">Читать далее...</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-9">
+					<div class="gallery-image">
+						<img src="img/slide1.jpg" alt="">
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="gallery-desc">
+						<p><b>Мнение эксперта:</b></p>
+						<p>Мы придали больше контраста помещению лекгости и воздушности...</p>
+						<p><a href="">Читать далее...</a></p>
+						<div class="special">
+							<p><b>Отзыв:</b></p>
+							<div class="special-block">
+								<p>Все супер большое спасибо Ирина, вы гений...</p>
+								<p><a href="">Читать далее...</a></p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -237,5 +285,6 @@
 		</div>
 	</div>
 </footer>		
+
 </body>
 </html>
