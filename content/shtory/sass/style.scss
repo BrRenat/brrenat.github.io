@@ -508,3 +508,18 @@ footer {
 		}
 	}
 }
+.remodal {
+    max-width: 400px;
+    padding-top: 10px;
+    .form-group {
+    	text-align: left;
+    	color: #a75983;
+    	h4 {
+	    	color: #a75983;
+			font-family: Museo;
+			font-weight: 700;
+			font-size: 20px;
+			text-align: center;
+	    }
+    }
+}
