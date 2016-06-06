@@ -5,6 +5,13 @@ $(document).ready(function(){
 						navText: ['','<button class="custom-btn owl-next">Следующий проект</button>'],
 						loop: true
 					});
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 1) {
+            $('#navbar-bg').fadeIn("3000")
+          } else {
+            $('#navbar-bg').fadeOut("3000")
+          }
+        });
 	  $("form").submit(function () {
         // Получение ID формы
         var formID = $(this).attr('id');
