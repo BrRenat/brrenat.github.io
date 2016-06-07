@@ -41,6 +41,7 @@ $(document).ready(function(){
         mask.style.top = 0;
         clearSelection();
     } else {
+        leftPosition -= leftPosition;
         isStop = true;
         document.onmousemove = null;
         console.log(leftPosition);
