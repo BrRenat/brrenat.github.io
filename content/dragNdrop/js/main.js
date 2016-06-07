@@ -32,10 +32,14 @@ $(document).ready(function(){
     // if (leftPosition > leftMax) {
     //     return;
     // };
+    if (leftPosition < leftMax) {
     maskBox.style.width = leftPosition + mask.offsetWidth / 2 + 'px';
     moveAt(e);
     mask.style.top = 0;
     clearSelection();
+    } else {
+        maskBox.style.width = leftMax + 'px';
+    }
   }
 
   // 4. отследить окончание переноса
