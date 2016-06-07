@@ -42,6 +42,7 @@ $(document).ready(function(){
         clearSelection();
     } else {
         document.onmousemove = null;
+        console.log(leftPosition);
     }
   }
 
