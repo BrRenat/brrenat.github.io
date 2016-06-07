@@ -24,6 +24,8 @@ $(document).ready(function(){
   }
 
   // 3, перемещать по экрану
+  var isStop = false;
+  
   document.onmousemove = function(e) {
     var string = mask.style.left,
         leftPosition = string.substr( 0, string.length-2),
@@ -32,13 +34,18 @@ $(document).ready(function(){
     // if (leftPosition > leftMax) {
     //     return;
     // };
-    if (leftPosition < leftMax) {
-    maskBox.style.width = leftPosition + mask.offsetWidth / 2 + 'px';
-    moveAt(e);
-    mask.style.top = 0;
-    clearSelection();
+    if ((leftPosition < leftMax && isStop == false) || (leftPosition >= leftMax && isStop == true)) {
+        isStop = false;
+        maskBox.style.width = leftPosition + mask.offsetWidth / 2 + 'px';
+        moveAt(e);
+        mask.style.top = 0;
+        clearSelection();
     } else {
+        isStop = true;
         maskBox.style.width = leftMax + 'px';
+        moveAt(e);
+        mask.style.top = 0;
+        clearSelection();
     }
   }
 
