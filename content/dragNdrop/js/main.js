@@ -20,7 +20,7 @@ $(document).ready(function(){
   // и сдвинуть на половину ширины/высоты для центрирования
   function moveAt(e) {
     mask.style.left = e.pageX - mask.offsetWidth / 2 + 'px';
-    mask.style.top = e.pageY - mask.offsetHeight / 2 + 'px';
+    mask.style.top = 0;
   }
 
   // 3, перемещать по экрану
@@ -41,11 +41,7 @@ $(document).ready(function(){
         mask.style.top = 0;
         clearSelection();
     } else {
-        isStop = true;
-        maskBox.style.width = leftMax + 'px';
-        // moveAt(e);
-        mask.style.top = 0;
-        clearSelection();
+        document.onmousemove = null;
     }
   }
 
