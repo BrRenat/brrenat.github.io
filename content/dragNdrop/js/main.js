@@ -34,14 +34,13 @@ $(document).ready(function(){
     // if (leftPosition > leftMax) {
     //     return;
     // };
-    if ((leftPosition < leftMax && isStop == false) || (leftPosition >= leftMax && isStop == true)) {
+    if ((leftPosition <= leftMax && isStop == false) || (leftPosition >= leftMax && isStop == true)) {
         isStop = false;
         maskBox.style.width = leftPosition + mask.offsetWidth / 2 + 'px';
         moveAt(e);
         mask.style.top = 0;
         clearSelection();
     } else {
-        leftPosition -= leftPosition;
         isStop = true;
         document.onmousemove = null;
         console.log(leftPosition);
