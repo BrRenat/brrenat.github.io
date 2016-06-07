@@ -43,7 +43,7 @@ $(document).ready(function(){
     } else {
         isStop = true;
         maskBox.style.width = leftMax + 'px';
-        moveAt(e);
+        // moveAt(e);
         mask.style.top = 0;
         clearSelection();
     }
