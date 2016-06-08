@@ -41,8 +41,18 @@
 }
 .homepage-slider-item img{
 	position: absolute;
-	height: 100%;
 	width: auto !important;
+	height: 100% !important;
+}
+@media all and (min-width: 700px) {
+	.homepage-slider-item img{
+		width: 100% !important;
+		height: auto !important;
+	}
+}
+#header-fixed .header-icon-left,
+.header-menu a i {
+	color: #068551 !important;
 }
 .bg-blue {
 	background: #50a3d4;
