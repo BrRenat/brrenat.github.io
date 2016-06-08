@@ -1,0 +1,33 @@
+.gallery-image {
+  height: 400px;
+  width: 757px;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  border-radius: 4px; }
+  .gallery-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: auto !important; }
+  .gallery-image .mask {
+    width: 5%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    display: block; }
+  .gallery-image .mask-arrow {
+    background: url(../img/mask-arrow.png);
+    background-position: center center;
+    background-size: 100% 100%;
+    display: block;
+    width: 48px;
+    height: 400px;
+    position: relative;
+    left: -24px;
+    z-index: 10;
+    float: left; }
+
+/*# sourceMappingURL=style.css.map */
