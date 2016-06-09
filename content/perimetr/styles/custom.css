@@ -214,12 +214,13 @@ ul.preim {
 	color: #000;
 	padding: 0px 23px;
 	margin: 0;
+	height: calc(100vh - 180px);
 }
 ul.preim li {
 	color: #000;
 	font-size: 15px;
 	margin: 0;
-	padding-bottom: 20px;
+	padding-bottom: 1.8vh;
 	line-height: 21px;
 }
 .container.contacts {

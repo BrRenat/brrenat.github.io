@@ -22,17 +22,17 @@ $( document ).ready(function() {
 
         if (link.length > 0 && link != undefined) {
             if (link.is('.hide')) {
-                link.addClass('open').removeClass('hide').show(500);
+                link.addClass('open').removeClass('hide').show();
             } else {
-                link.addClass('hide').removeClass('open').hide(500);
+                link.addClass('hide').removeClass('open').hide();
             }
         }
 
         if (hide.length > 0 && hide != undefined) {
             if (hide.is('.hide')) {
-                hide.addClass('open').removeClass('hide').show(500);
+                hide.addClass('open').removeClass('hide').show();
             } else {
-                hide.addClass('hide').removeClass('open').hide(500);
+                hide.addClass('hide').removeClass('open').hide();
             }
         }
 
