@@ -82,11 +82,8 @@ $( document ).ready(function() {
     $('.open-header-menu, .close-header-menu').click(function(){
        $('.header-menu').toggleClass('header-menu-active'); 
        $('.open-header-menu').toggleClass('header-rotate');
-       // $('#header-fixed').css('position','absolute');
+       $('#header-fixed').toggleClass('fixnavbar');
     });
-    // $('.header-rotate').click(function(){
-    //    $('#header-fixed').css('position','fixed'); 
-    // });
 
     $('.close-header-menu').click(function(){
        $('.header-menu').removeClass('header-menu-active');

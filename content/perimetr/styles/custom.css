@@ -357,3 +357,6 @@ a.anker {
 	margin: 0;
 	font-size: 14px;
 }
+.fixnavbar {
+	position: absolute !important;
+}
