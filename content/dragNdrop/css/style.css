@@ -12,9 +12,9 @@
     display: block;
     width: auto !important; }
   .gallery-image .mask {
-    width: 5%;
+    width: 30px;
     height: 100%;
-    position: relative;
+    position: absolute;
     overflow: hidden;
     float: left;
     display: block; }
@@ -24,9 +24,10 @@
     background-size: 100% 100%;
     display: block;
     width: 48px;
-    height: 400px;
+    height: 100%;
     position: relative;
-    left: -24px;
+    left: 6px;
+    cursor: pointer;
     z-index: 10;
     float: left; }
 

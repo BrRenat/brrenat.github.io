@@ -1,60 +1,48 @@
 $(document).ready(function(){
-    function clearSelection() {
-    if (window.getSelection) {
-      window.getSelection().removeAllRanges();
-    } else { // старый IE
-      document.selection.empty();
-    }
-  }
+  function custom(i) {
     var mask = $('.mask-arrow'),
-        mask = mask[0],
-        maskBox = $('.mask'),
-        maskBox = maskBox[0];
+        mask = mask[i],
+        maskContainer = mask.closest('.gallery-image'),
+        maskBox = $('.mask');
+    maskBox = maskBox[i];
 
     mask.onmousedown = function(e) { 
-    // 1. отследить нажатие
-    mask.style.position = 'absolute';
-    // moveAt(e);
+      var thumbCoords = getCoords(mask);
+      var sliderCoords = getCoords(maskBox);
+      var shiftX = e.pageX - thumbCoords.left;
+    // mask.style.position = 'absolute';
+      document.onmousemove = function custom(e) {
+        var newLeft = e.pageX - shiftX - sliderCoords.left;
+        maskBox.style.width = (newLeft + mask.offsetWidth / 2) + "px";
+        if (newLeft < -mask.offsetWidth / 2) {
+          newLeft = -mask.offsetWidth / 2;
+        };
 
-  // передвинуть мяч под координаты курсора
-  // и сдвинуть на половину ширины/высоты для центрирования
-  function moveAt(e) {
-    mask.style.left = e.pageX - mask.offsetWidth / 2 + 'px';
-    mask.style.top = 0;
+        var rightEdge = maskContainer.offsetWidth - mask.offsetWidth / 2 ;
+        if (newLeft > rightEdge) {
+          newLeft = rightEdge;
+        };
+        mask.style.left = newLeft + 'px';
+        // 4. отследить окончание переноса
+        document.onmouseup = function() {
+          document.onmousemove = null;
+          document.onmouseup = null;
+        };
+        return false;
+      };
+    };
+    function getCoords(elem) { // кроме IE8-
+      var box = elem.getBoundingClientRect();
+      return {
+        top: box.top + pageYOffset,
+        left: box.left + pageXOffset
+      };
+    };
+  mask.ondragstart = function() {
+      return false;
+    };
+   };
+  for (var k = 0; k < $('.gallery-image').length; k++) {
+    custom(k);
   }
-
-  // 3, перемещать по экрану
-  var isStop = false;
-  
-  document.onmousemove = function(e) {
-    var string = mask.style.left,
-        leftPosition = string.substr( 0, string.length-2),
-        leftPosition = Number(leftPosition),
-        leftMax = 400;
-    // if (leftPosition > leftMax) {
-    //     return;
-    // };
-    if ((leftPosition <= leftMax && isStop == false) || (leftPosition >= leftMax && isStop == true)) {
-        isStop = false;
-        maskBox.style.width = leftPosition + mask.offsetWidth / 2 + 'px';
-        moveAt(e);
-        mask.style.top = 0;
-        clearSelection();
-    } else {
-        isStop = true;
-        document.onmousemove = null;
-        console.log(leftPosition);
-    }
-  }
-
-  // 4. отследить окончание переноса
-  mask.onmouseup = function() {
-    document.onmousemove = null;
-    mask.onmouseup = null;
-    clearSelection();
-  }
-}
-mask.ondragstart = function() {
-  return false;
-};
 });
