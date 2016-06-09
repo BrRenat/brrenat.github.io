@@ -12,7 +12,7 @@ $(document).ready(function(){
       var shiftX = e.pageX - thumbCoords.left;
     // mask.style.position = 'absolute';
       document.onmousemove = function custom(e) {
-        var newLeft = e.pageX - shiftX - maskContainer.offsetWidth / 2 - mask.offsetWidth * 2;
+        var newLeft = e.pageX - shiftX - sliderCoords.left;
         maskBox.style.width = (newLeft + mask.offsetWidth / 2) + "px";
         if (newLeft < -mask.offsetWidth / 2) {
           newLeft = -mask.offsetWidth / 2;
@@ -45,13 +45,13 @@ $(document).ready(function(){
   for (var k = 0; k < $('.gallery-image').length; k++) {
     custom(k);
   }
-	  $('.owl-carousel').owlCarousel({
-						items: 1,
-                        touchDrag:false,
+	  $('.owl-carousel').slick({
+                        draggable:false,
                         mouseDrag:false,
-						nav:true,
-						navText: ['','<button class="custom-btn owl-next">Следующий проект</button>'],
-						loop: true
+						arrows:true,
+                        prevArrow: false,
+						nextArrow: '<button class="custom-btn owl-next">Следующий проект</button>',
+						infinite: true
 					});
       $(window).scroll(function () {
           if ($(this).scrollTop() > 1) {

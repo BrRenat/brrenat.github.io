@@ -287,7 +287,7 @@ header li.phone {
         position: absolute;
         overflow: hidden;
         float: left;
-        display: none; }
+        display: block; }
       #third-screen .gallery .gallery-image .mask-arrow {
         background: url(../img/mask-arrow.png);
         background-position: center center;
@@ -472,5 +472,15 @@ footer {
       font-weight: 700;
       font-size: 20px;
       text-align: center; }
-
+.slick-list {
+  overflow: visible;
+}
+.slick-list .row {
+  margin: 0;
+}
+.gallery button.custom-btn {
+  position: absolute;
+  bottom: 0;
+  right: 30px;
+}
 /*# sourceMappingURL=style.css.map */
