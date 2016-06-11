@@ -18,7 +18,8 @@ Zepto(".main").onePageScroll({
    afterMove: function(index) {
    	nextElement = $(document).find("[data-index='" + index + "']");
    	nextElement = nextElement.find('.wrap');
-
+      activePag = $(document).find("a.active");
+      activePag.after().hide()
    	currentElement.animate({scale: 1}, 00, 'ease-out')
    	nextElement.animate({scale: 1}, 300, 'ease-out')
    },   // This option accepts a callback function. The function will be called after the page moves.
