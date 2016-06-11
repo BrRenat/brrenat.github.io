@@ -9,25 +9,26 @@ Zepto(".main").onePageScroll({
    pagination: true,                // You can either show or hide the pagination. Toggle true for show, false for hide.
    updateURL: false,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
    beforeMove: function(index) {
-   	currentElement = $(document).find("[data-index='" + (index - 1) + "']").find('.wrap');
-   	nextElement = $(document).find("[data-index='" + index + "']").find('.wrap');
+      currentElement = $(document).find("[data-index='" + (index - 1) + "']").find('.wrap');
+      nextElement = $(document).find("[data-index='" + index + "']").find('.wrap');
+      currentElement.animate({scale: 0.9}, 300, 'ease-out');
+      nextElement.animate({scale: 0.9}, 0, 'ease-out');
 
-   	currentElement.animate({scale: 0.9}, 300, 'ease-out')
-   	nextElement.animate({scale: 0.9}, 0, 'ease-out')
-   },  // This option accepts a callback function. The function will be called before the page moves.
+      fisrtAct = $(".onepage-pagination").find("[data-index='" + index + "']");
+      fisrtTop = fisrtAct.offset().top;
+      // $(".active-pagination").animate("animationPagination", {duration:800, easing: 'ease-out'});
+      $(".active-pagination").animate({translateY: (fisrtTop + 0.5) + 'px'}, 0, 'ease-out');
+      console.log(fisrtTop);
+   },                               // This option accepts a callback function. The function will be called before the page moves.
    afterMove: function(index) {
-   	nextElement = $(document).find("[data-index='" + index + "']");
-   	nextElement = nextElement.find('.wrap');
-      activePag = $(document).find("a.active");
-      activePag.after().hide()
-   	currentElement.animate({scale: 1}, 00, 'ease-out')
-   	nextElement.animate({scale: 1}, 300, 'ease-out')
-   },   // This option accepts a callback function. The function will be called after the page moves.
+   	currentElement.animate({scale: 1}, 00, 'ease-out');
+   	nextElement.animate({scale: 1}, 300, 'ease-out');
+         
+   },                               // This option accepts a callback function. The function will be called after the page moves.
    loop: false,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
    keyboard: true,                  // You can activate the keyboard controls
    responsiveFallback: false        // You can fallback to normal page scroll by defining the width of the browser in which
                                     // you want the responsive fallback to be triggered. For example, set this to 600 and whenever 
                                     // the browser's width is less than 600, the fallback will kick in.
 });
-
 });

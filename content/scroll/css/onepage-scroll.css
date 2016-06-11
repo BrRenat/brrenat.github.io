@@ -59,33 +59,33 @@ body, .onepage-wrapper, html {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
 }
-
-.onepage-pagination li a.active:after{
-  content: '';
-  position: absolute;
+/*.onepage-pagination li a.active:after*/
+.onepage-pagination .active-pagination{
+  /*content: '';*/
+  position: fixed;
   width: 10px;
   height: 10px;
   border-radius: 20px;
   background: none;
   border: 1px solid black;
-  margin-left: -4px;
-  margin-top: -4px;
-  /*animation: animationPagination linear 0.5s;*/
-  /*animation-delay: 0.5s;*/
-  /*animation-iteration-count: 1;*/
-  /*transform-origin: 50% 50%;*/
+  right: 14px;
+  top: 6px;
+ /* animation: animationPagination linear 0.5s;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;*/
   /*transform:  translate(0px,-64px);*/
 }
 
 @keyframes animationPagination{
   0% {
-    transform:  translate(0px,-64px)  scale(1.00) ;
+    transform:  scale(1.00) ;
   }
   50% {
-    transform:  translate(0px,-32px)  scale(0.2);
+    transform:  scale(0.2);
   }
   100% {
-    transform:  translate(0px,0px)  scale(1.0);
+    transform:  scale(1.0);
   }
 }
 
