@@ -1,0 +1,74 @@
+.nav {
+  display: inline-block;
+  position: fixed;
+  top:40%;
+  right:20px;
+}
+.line {
+  display: block;
+  width: 2px;
+  height: calc(100% - 80px);
+  position: absolute;
+  background: red;
+  z-index: 1;
+  top:40px;
+  left:5px;
+  margin-left: -1px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 2;
+}
+ul li {
+  margin-bottom: 40px;
+}
+ul li span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 40px;
+  background: #000;
+}
+ul li#active span{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left:-5px;
+  top:0;
+}
+.screen {
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  font-size: 40px;
+  color: #000;
+}
+#screen1 {
+  background: #FFE02C;
+}
+#screen2{
+  background: #E85B28;
+}
+#screen3 {
+  background: #C539FF;
+}
+#screen4 {
+  background: #289BE8;
+}
+#screen5 {
+  background: #39FF44;
+}
+#screen6 {
+  background: #7549FF;
+}
+.wrap {
+  background: rgba(0,0,0,0.1);
+  display: block;
+  width: 100%;
+  height: 100%;
+}
