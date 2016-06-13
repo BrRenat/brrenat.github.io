@@ -24,7 +24,6 @@ var currentUl,
 ;(function($){
   $.extend($.fn, {
     onePageScroll: function(options){
-      
       var defaults = {
     		sectionContainer: "section",
     		easing: "ease",
@@ -108,7 +107,7 @@ var currentUl,
       
       $.fn.transformPage = function(settings, pos, index, next_el) {
         var el2 = $(this);
-        
+
       	if (typeof settings.beforeMove == 'function') settings.beforeMove(index, next_el);
 
         el2.animate({
@@ -359,7 +358,6 @@ var currentUl,
   		// Create Pagination and Display Them
       if(settings.pagination == true) {
         $("<ul class='onepage-pagination'>" + paginationList + "</ul>").prependTo("body");
-        $("<div class='active-pagination'></div>").prependTo(".onepage-pagination");
         posTop = (el.find(".onepage-pagination").height() / 2) * -1;
         el.find(".onepage-pagination").css("margin-top", posTop);
       }
@@ -393,6 +391,12 @@ var currentUl,
   		  body.addClass("viewing-page-1");
   			if(settings.pagination == true) $(".onepage-pagination li a[data-index='1']").addClass("active");
   		}
+
+      // Create active-Pagination, Display and move to active position;
+      $("<div class='active-pagination'></div>").prependTo(".onepage-pagination");
+      var loadAct = $(".onepage-pagination li a" + ".active"),
+      loadTop = loadAct.offset().top;
+      $(".active-pagination").animate({translateY: loadTop + 'px'},0);
 
   		function paginationHandler() {
         var page_index = this.dataset.index;

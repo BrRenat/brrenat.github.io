@@ -73,7 +73,7 @@ body, .onepage-wrapper, html {
   animation-delay: 0.5s;
   animation-iteration-count: 1;
   transform-origin: 50% 50%;*/
-  transform:  translate(0px, 30vh);
+  /*transform:  translate(0px, 30vh);*/
 }
 
 @keyframes animationPagination{
