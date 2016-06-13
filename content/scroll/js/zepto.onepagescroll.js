@@ -19,7 +19,8 @@
  * License: GPL v3
  *
  * ========================================================== */
-
+var currentUl,
+    nextUl;
 ;(function($){
   $.extend($.fn, {
     onePageScroll: function(options){
@@ -109,7 +110,7 @@
         var el2 = $(this);
         
       	if (typeof settings.beforeMove == 'function') settings.beforeMove(index, next_el);
-        
+
         el2.animate({
           translate3d: "0, " + pos + "%, 0"
         }, settings.animationTime, settings.easing, function() {
@@ -133,7 +134,11 @@
         var index = $(settings.sectionContainer +".active").data("index"),
   			    current = $(settings.sectionContainer + "[data-index='" + index + "']"),
   			    next = $(settings.sectionContainer + "[data-index='" + (parseInt(index) + 1) + "']"),
-  			    el3 = $(this);
+  			    el3 = $(this),
+            fisrtAct = $(".onepage-pagination li a" + "[data-index='" + index + "']"),
+            secondAct = $(".onepage-pagination li a" + "[data-index='" + (parseInt(index) + 1) + "']"),
+            fisrtTop = fisrtAct.offset().top,
+            secondTop = secondAct.offset().top;
 
         
   			if(next.length < 1) {
@@ -154,6 +159,11 @@
   			if(settings.pagination == true) {
   			  $(".onepage-pagination li a" + "[data-index='" + index + "']").removeClass("active");
   			  $(".onepage-pagination li a" + "[data-index='" + next_index + "']").addClass("active");
+          $(".active-pagination").queueAnim([
+              [ { 'translateY': (fisrtTop + 10) + 'px', 'scale': '0.5' }, 1000, 'ease-out' ],
+              [ { 'translateY': (secondTop - 10) + 'px', 'scale': '0.5' }, 1000, 'ease-out' ],
+              [ { 'translateY': secondTop + 'px', 'scale': '1' }, 1000, 'ease-out' ]
+          ]);
   			}
 
   			document.body.className = document.body.className.replace(/\bviewing-page-\d.*?\b/g, '');
@@ -183,7 +193,11 @@
   		  var index = $(settings.sectionContainer +".active").data("index"),
   			    current = $(settings.sectionContainer + "[data-index='" + index + "']"),
   			    next = $(settings.sectionContainer + "[data-index='" + (parseInt(index) - 1) + "']"),
-  			    el4 = $(this);
+  			    el4 = $(this),
+            fisrtAct = $(".onepage-pagination li a" + "[data-index='" + index + "']"),
+            secondAct = $(".onepage-pagination li a" + "[data-index='" + (parseInt(index) - 1) + "']"),
+            fisrtTop = fisrtAct.offset().top,
+            secondTop = secondAct.offset().top;
 
   			if(next.length < 1) {
   				if (settings.loop == true) {
@@ -202,6 +216,11 @@
   			if(settings.pagination == true) {
   			  $(".onepage-pagination li a" + "[data-index='" + index + "']").removeClass("active");
   			  $(".onepage-pagination li a" + "[data-index='" + next_index + "']").addClass("active");
+          $(".active-pagination").queueAnim([
+               [ { 'translateY': (fisrtTop - 10) + 'px', 'scale': '0.5' }, 1000, 'ease-out' ],
+               [ { 'translateY': (secondTop + 10) + 'px', 'scale': '0.5' }, 1000, 'ease-out' ],
+               [ { 'translateY': secondTop + 'px', 'scale': '1' }, 1000, 'ease-out' ]
+            ]);
   			}
   			document.body.className = document.body.className.replace(/\bviewing-page-\d.*?\b/g, '');
   			body.addClass("viewing-page-"+ next_index);
@@ -228,15 +247,31 @@
   			}
   			var current = $(settings.sectionContainer + ".active"),
   			    next = $(settings.sectionContainer + "[data-index='" + (page_index) + "']"),
-  			    el5 = $(this);
-
+  			    el5 = $(this),
+            fisrtAct = $(".onepage-pagination li a" + ".active"),
+            secondAct = $(".onepage-pagination li a" + "[data-index='" + (page_index) + "']"),
+            fisrtTop = fisrtAct.offset().top,
+            secondTop = secondAct.offset().top;
   			if(next.length > 0) {
   			  var next_index = next.data("index");
   				current.removeClass("active");
   				next.addClass("active");
   				$(".onepage-pagination li a" + ".active").removeClass("active");
   				$(".onepage-pagination li a" + "[data-index='" + (page_index) + "']").addClass("active");
-
+          if (fisrtTop < secondTop) {
+            $(".active-pagination").queueAnim([
+              [ { 'translateY': (fisrtTop + 10) + 'px', 'scale': '0.5' }, 1000, 'ease-out' ],
+              [ { 'translateY': (secondTop - 10) + 'px', 'scale': '0.5' }, 1000, 'ease-out' ],
+              [ { 'translateY': secondTop + 'px', 'scale': '1' }, 1000, 'ease-out' ]
+            ]);
+          } else {
+            $(".active-pagination").queueAnim([
+               [ { 'translateY': (fisrtTop - 10) + 'px', 'scale': '0.5' }, 1000, 'ease-out' ],
+               [ { 'translateY': (secondTop + 10) + 'px', 'scale': '0.5' }, 1000, 'ease-out' ],
+               [ { 'translateY': secondTop + 'px', 'scale': '1' }, 1000, 'ease-out' ]
+            ]);
+          }
+          
   				document.body.className = document.body.className.replace(/\bviewing-page-\d.*?\b/g, '');
   				body.addClass("viewing-page-"+ next_index);
 
@@ -250,7 +285,6 @@
   				lastAnimation = timeNow;
   			}
   		}
-      
       /*-------------------------------------------*/
       /*  Responsive Fallback trigger              */
       /*-------------------------------------------*/

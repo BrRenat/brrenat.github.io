@@ -1,5 +1,4 @@
 $(document).ready(function(){
-var x;
    Zepto(".main").onePageScroll({
 
       sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
@@ -9,45 +8,15 @@ var x;
       animationDelay: 300,
       pagination: true,                // You can either show or hide the pagination. Toggle true for show, false for hide.
       updateURL: false,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
-      beforeMove: function(index) {
-         console.log("before index " + index);
-         x = index;
+      beforeMove: function(index ,next_elm, pos) {
          currentElement = $(document).find("[data-index='" + (index - 1) + "']").find('.wrap');
          nextElement = $(document).find("[data-index='" + index + "']").find('.wrap');
          currentElement.animate({scale: 0.9}, 300, 'ease-out');
          nextElement.animate({scale: 0.9}, 0, 'ease-out');
-
-         if ( event.deltaY < 0 ) {
-            fisrtAct = $(".onepage-pagination").find("[data-index='" + (index + 1) + "']");
-            fisrtTop = fisrtAct.offset().top;
-            secondAct = $(".onepage-pagination").find(".active");
-            secondTop = secondAct.offset().top;
-
-            $(".active-pagination").queueAnim([
-               [ { 'translateY': (fisrtTop - 10) + 'px', 'scale': '0.5' }, 1000, 'ease-out' ],
-               [ { 'translateY': (secondTop + 10) + 'px', 'scale': '0.5' }, 1000, 'ease-out' ],
-               [ { 'translateY': secondTop + 'px', 'scale': '1' }, 1000, 'ease-out' ]
-            ]);
-         } else {
-            fisrtAct = $(".onepage-pagination").find("[data-index='" + (index - 1) + "']");
-            fisrtTop = fisrtAct.offset().top;
-            secondAct = $(".onepage-pagination").find(".active");
-            secondTop = secondAct.offset().top;
-         
-            $(".active-pagination").queueAnim([
-              [ { 'translateY': (fisrtTop + 10) + 'px', 'scale': '0.5' }, 1000, 'ease-out' ],
-              [ { 'translateY': (secondTop - 10) + 'px', 'scale': '0.5' }, 1000, 'ease-out' ],
-              [ { 'translateY': secondTop + 'px', 'scale': '1' }, 1000, 'ease-out' ]
-            ]);
-         };
-         // $(".active-pagination").animate("animationPagination", {duration:800, easing: 'ease-out'});
-         
       },                               // This option accepts a callback function. The function will be called before the page moves.
       afterMove: function(index) {
       	currentElement.animate({scale: 1}, 00, 'ease-out');
       	nextElement.animate({scale: 1}, 300, 'ease-out');
-         console.log("after index " + index);
-         console.log("x index " + x);
       },                               // This option accepts a callback function. The function will be called after the page moves.
       loop: false,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
       keyboard: true,                  // You can activate the keyboard controls
