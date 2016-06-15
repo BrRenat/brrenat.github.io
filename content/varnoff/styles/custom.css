@@ -284,6 +284,9 @@ body.preload {
     width: 100vw;
     overflow: hidden;
 }
+body.preload #header-fixed{
+    z-index: 0;
+}
 .preloader {
   position: absolute;
   display: block;
