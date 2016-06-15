@@ -279,3 +279,54 @@ h4 {
 .red_nav {
     border-right:3px solid #dd0012;
 }
+body.preload {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.preloader {
+  position: absolute;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+svg {
+  position: absolute;
+  top:40%;
+  left:50%;
+  margin-left: -150px;
+  width: 300px;
+}
+.st0 {
+  fill: none;
+  fill-rule: evenodd;
+  stroke: red;
+  /*fill-opacity: 0;*/
+  stroke-dasharray: 0% 100%;
+  /*-webkit-animation: stroke-offset 1s infinite linear alternate;
+          animation: stroke-offset 1s infinite linear alternate;*/
+}
+.left-side, .right-side {
+  display: block;
+  position: absolute;
+  top:0;
+  width: 50vw;
+  display: block;
+  height: 100%;
+  background: #fff;
+  z-index: 9998;
+  transition: all 2s ease 2.5s;
+}
+.right-side {
+  right: 0;
+}
+svg {
+  z-index: 9999;
+  transition: all 2s ease 2.5s;
+}
+body.load .left-side, body.load .right-side {
+  width: 0;
+}
+body.load svg {
+  opacity: 0;
+}
