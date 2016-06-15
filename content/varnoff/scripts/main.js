@@ -32,7 +32,7 @@ $q.fn.loadElements = function() {
                 //     [ { 'stroke-dasharray': 100 + '%' + 0 + '%'}, w1, 'ease-out' ]
                 // ]);
                 $z(".st0").animate({
-                    'stroke-dasharray': x + '%' + (100 - x) + '%' 
+                    'stroke-dasharray': 100 + '%' + 0 + '%' 
                 },w1,'ease');
 
                 console.log({
