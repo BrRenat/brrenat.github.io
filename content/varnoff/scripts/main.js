@@ -44,6 +44,7 @@ $q.fn.loadElements = function() {
                     'w1': w1,
                     'total': total,
                     'thisTime': thisTime,
+                    'timeMove' : timeMove,
                     'full_time': full_time
                 });
 
