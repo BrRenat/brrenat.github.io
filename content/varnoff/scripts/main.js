@@ -1,6 +1,4 @@
-$(document).ready(function(){
-    $( this ).loadElements();
-});
+$( this ).loadElements();
 (function ($z, $q) {
 $q.fn.loadElements = function() {
             var elements = $q(document).find('img, iframe'),
