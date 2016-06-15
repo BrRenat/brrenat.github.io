@@ -44,8 +44,9 @@ $q.fn.loadElements = function() {
                     'thisTime': thisTime,
                     'full_time': full_time
                 });
-            };
 
+            };
+            hz(8000);
             var timeout = setInterval(function() {
                         hz();
 
