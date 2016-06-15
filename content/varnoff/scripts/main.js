@@ -33,7 +33,7 @@ $q.fn.loadElements = function() {
                 // ]);
                 $z(".st0").animate({
                     'stroke-dasharray': 100 + '%' + 0 + '%' 
-                },w1,'ease');
+                }, (full_time + w1) ,'ease');
 
                 console.log({
                     'x': x,
