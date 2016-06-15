@@ -46,7 +46,6 @@ $q.fn.loadElements = function() {
                 });
 
             };
-            hz(8000);
             var timeout = setInterval(function() {
                         hz();
 
@@ -59,7 +58,7 @@ $q.fn.loadElements = function() {
                         clearInterval(timeout);
                         timeout = null;
                         console.log('yaaaa');
-                        hz(2000);
+                        // hz(2000);
                         $(document).hidePreloader()
                     }
                     
