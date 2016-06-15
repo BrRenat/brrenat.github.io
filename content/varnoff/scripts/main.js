@@ -10,7 +10,8 @@ $q.fn.loadElements = function() {
             var count = 0,
                 x = 0,
                 w1 = 0,
-                full_time = 8000;
+                full_time = 8000,
+                timeMove = 0;
 
 
             var hz = function (time) {
@@ -22,6 +23,7 @@ $q.fn.loadElements = function() {
                 w1 = (full_time / 100) * x;
                 
                 w1 = currentTime + w1;
+                timeMove = full_time + w1;
 
                 if (time != undefined) {
                     w1 = time;
@@ -33,7 +35,7 @@ $q.fn.loadElements = function() {
                 // ]);
                 $z(".st0").animate({
                     'stroke-dasharray': 100 + '%' + 0 + '%' 
-                }, (full_time + w1) ,'ease');
+                }, timeMove,'ease');
 
                 console.log({
                     'x': x,
