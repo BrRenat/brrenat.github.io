@@ -1,0 +1,81 @@
+body {
+  overflow: hidden;
+  margin: 0;
+}
+.preloader {
+  position: absolute;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+svg {
+  position: absolute;
+  top:30%;
+  left:50%;
+  margin-left: -300px;
+  width: 600px;
+}
+.st0 {
+  fill: none;
+  fill-rule: evenodd;
+  stroke: red;
+  stroke-dasharray: 0% 100%;
+}
+.st1 {
+  fill: red;
+  opacity: 0;
+  position: relative;
+}
+@keyframes stroke-offset {
+  0% {
+    stroke-dasharray: 0% 100%;
+    stroke-dashoffset: 35%;
+  }
+  100% {
+    stroke-dasharray: 100% 0%;
+  }
+}
+@keyframes stroke-opacity {
+  0% {
+    fill-opacity: 0;
+  }
+  100% {
+    fill-opacity: 1;
+  }
+}
+button#run {
+  position: fixed;
+  top:0;
+  left:50%;
+  z-index: 999999;
+}
+button#stop {
+  position: fixed;
+  top:0;
+  left:60%;
+  z-index: 999999;
+}
+.left-side, .right-side {
+  display: block;
+  position: absolute;
+  top:0;
+  width: 50vw;
+  display: block;
+  height: 100%;
+  background: #fff;
+  z-index: 9998;
+  transition: all 2s ease;
+}
+.right-side {
+  right: 0;
+}
+svg {
+  z-index: 9999;
+  transition: all 2s ease;
+}
+body.load .left-side, body.load .right-side {
+  width: 0;
+}
+body.load svg {
+  opacity: 0;
+}
