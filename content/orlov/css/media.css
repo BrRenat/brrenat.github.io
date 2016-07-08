@@ -1,0 +1,292 @@
+@media only screen and (max-width : 1300px) {
+    .banner__slide-nav-prev {
+        left:30px;
+        margin: 0;
+    }
+    .banner__slide-nav-next {
+        right:30px;
+        margin: 0;
+        left:auto;
+    }
+}
+
+@media only screen and (max-width : 1200px) {
+    .banner__box {
+        left:auto;
+        margin: 0;
+        right:30px;
+    }
+}
+@media only screen and (max-width : 1100px) {
+    .banner .picker {
+        left: 30px;
+        margin-left: 0;
+    }
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1040px) {
+    .header__nav-link {
+        padding: 11px 10px;
+    }
+    .footer__left .social {
+        margin-left: 0;
+    }
+    .footer__left .logo svg {
+        margin-left: 0;
+    }
+    .map__map #map {
+        width: calc(100vw - 75px);
+    }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 920px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .header__nav-first > .header__nav-list:first-child .header__nav-link {
+        padding-left: 5px;
+    }
+    .header__nav-first > .header__nav-list:last-child .header__nav-link {
+        padding-right: 5px;
+    }
+    .header__nav-link {
+        padding: 11px 6px;
+    }
+    .footer__nav-column:last-child {
+        margin-left: 30px;
+    }
+    .footer__nav {
+        margin-left: -85px;
+    }
+    .map__map #map {
+        width: calc(100vw - 45px);
+    }
+}
+@media only screen and (max-width : 825px) {
+    .header__nav-link {
+        font-size: 14px;
+    }
+    .footer__nav-column:last-child {
+        margin-left: 10px;
+    }
+    .footer__nav {
+        margin-left: -32px;
+    }
+    .banner .picker {
+        margin-top:85px;
+    }
+    .content__item-4 {
+        width:50%;
+        margin: 5px 0px !important;
+        padding: 10px !important;
+        float: left;
+    }
+    .content__item-2,
+    .content__item-3 {
+        width:100%;
+        margin: 10px 0px !important;
+        padding: 0 !important;
+    }
+    .no_margin {
+        margin: -2px 0px !important;
+    }
+    .no_padding {
+        padding: 0 !important;
+    }
+    .hide-md {
+        display: none !important;
+    }
+    .uslugi__icon {
+        max-width:300px;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    .uslugi__desc {
+        margin-top:50px;
+        margin-bottom: 15px;
+    }
+    .special__image img {
+        width:100%;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    .header__nav-list {
+        display: inline;
+        text-align: left;
+    }
+    .header__nav--second {
+        position: inherit;
+        top:0;
+    }
+    .header__nav--second .header__nav-list {
+        width:auto;
+    }
+    
+    .navLG {
+        display: none;
+    }
+    .navXS {
+        display: block;
+    }
+    .footer__right {
+        float: inherit;
+    }
+    .sxema {
+        margin-left: 0;
+        text-align: center;
+    }
+    .sxema p {
+        width:100%;
+    }
+    .header__top {
+        display: none;
+    }
+    .map__desc {
+        width:40%;
+    }
+    .banner__slide-item {
+        min-height: 600px;
+        height: 600px;
+    }
+    .banner__slide-nav {
+        display: none !important;
+    }
+    .banner__box {
+        left:30px;
+        top:100px;
+        margin: 0;
+    }
+    .banner .picker {
+        width:100%;
+        position: relative;
+        left:auto;
+        top:auto;
+        margin: 0;
+    }
+    .picker__box-area label input {
+        width:50%;
+    }
+}
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 650px) {
+    .footer__left {
+        width: 100%;
+        text-align: left;
+    }
+    .footer__left .logo {
+        margin-left: 38px;
+    }
+    .footer__nav {
+        margin-left: 0;
+    }
+    .map__desc {
+        display: none;
+    }
+    .content__item-4 {
+        width:100%;
+    }
+    .banner__box {
+        display: none;
+    }
+    .page__section-text-title {
+        font-size: 16px;
+        width: 40%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .special {
+        height: 130px;
+    }
+    .special:after {
+        content:'';
+        display: block;
+        width:100%;
+        height:100%;
+        background: linear-gradient(to top, black 0%, transparent 100%);
+        position: absolute;
+        top:0;
+        left:0;
+    }
+    .special__desc-text {
+        display: inline-block;
+        float: left;
+        line-height: 20px;
+    }
+    .special__desc-link {
+        position: absolute;
+        right: -60px;
+        bottom: 0;
+    }
+    .special__image img {
+        margin-top: -50%;
+    }
+    .special__desc-link a {
+        color: transparent;
+    }
+    .hide-sm {
+        display: none !important;
+    }
+    .footer__left .social {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .footer__left .social__link {
+        display: inline-table;
+        width: 30%;
+        text-align: center;
+    }
+    .footer__left .social__link svg {
+        transform: scale(1.5);
+    }
+    .footer__left .social__link a {
+        display: inline-block;
+    }
+    .slick-prev, .slick-next {
+        display: none !important;
+    }
+}
+@media only screen and (max-width : 450px) {
+    .footer__nav-column:last-child {
+        margin-left: 0px;
+    }
+    .page__section-text-decorate {
+        font-size: 15px;
+    }
+    .page__section-text-decorate span {
+        font-size: 40px;
+    }
+    .page__section-text-title {
+        width: 80%;
+    }
+    .banner__slide-item {
+        min-height: 300px;
+        height: 450px;
+    }
+    .banner__slide-item img {
+        margin-top: -50%;
+    }
+    .container {
+        padding: 0 !important;
+    }
+    .map__map #map {
+        width:calc(100vw - 15px);
+    }
+    .no_margin-XS {
+        margin: 0 !important;
+    }
+    .picker__box-area label input {
+        margin-right: 0;
+    }
+    .picker__box-area label > label.cal {
+        right: 10px;
+    }
+}
