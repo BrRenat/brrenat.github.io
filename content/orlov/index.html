@@ -1,0 +1,740 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Отель Граф Орлов</title>
+    <!--<meta name="viewport" content="width=1920, initial-scale=0.1, maximum-scale=6">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css" >
+    <link rel="stylesheet" href="css/slick.css" type="text/css" >
+    <link rel="stylesheet" href="css/colorbox.css" type="text/css" >
+    <link rel="stylesheet" type="text/css" href="css/flatpickr.min.css">
+    <link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
+    <link rel="stylesheet" href="css/main.css" type="text/css" >
+    <link rel="stylesheet" href="css/media.css" type="text/css" />
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
+    <script src="js/flatpickr.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.colorbox-min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body class="main">
+<div class="header">
+    <div class="header__top">
+        <div class="container">
+            <div class="header__top-left">
+                <div class="language">
+                    <select class="language-select">
+                        <option>ru</option>
+                        <option>en</option>
+                    </select>
+                </div>
+                <div class="social">
+                    <div class="social__link social__link-vk"><a href="#"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 38 21.6" style="enable-background:new 0 0 38 21.6;" xml:space="preserve">
+<path d="M12.6,1.4c0.3-0.7,0.8-1.1,1.5-1.2C14.9,0.1,15.7,0,16.5,0c1.3,0,2.6,0,3.8,0.2c1.4,0.2,1.8,0.6,1.9,2.1
+	c0,1.7-0.1,3.3-0.1,5c0,0.6,0,1.1,0,1.7c0,0.3,0.1,0.7,0.3,1c0.3,0.7,0.8,0.8,1.3,0.3c0.8-0.9,1.7-1.8,2.3-2.9
+	c1-1.7,1.9-3.5,2.7-5.3c0.5-1,0.6-1.1,1.7-1.1c1.9,0,3.9,0,5.8-0.1c1.6,0,2.1,0.6,1.4,2.1c-0.8,1.6-1.9,3.1-2.9,4.6
+	c-0.8,1.2-1.7,2.2-2.5,3.4c-0.8,1.1-0.7,1.7,0.2,2.6c1,1,2.1,2,3,3c0.8,0.8,1.5,1.7,2.1,2.7c0.8,1.2,0.3,2.2-1.2,2.2
+	c-1.9,0.1-3.9,0.1-5.8,0.1c-0.1,0-0.2,0-0.3,0c-1-0.2-1.8-0.8-2.5-1.5c-0.9-1-1.8-2-2.8-2.9c-1-1-1.9-0.7-2.3,0.6
+	c-0.2,0.7-0.3,1.5-0.4,2.2c-0.1,0.9-0.4,1.2-1.3,1.2c-1.1,0-2.3,0-3.4,0c-3-0.2-5.6-1.4-7.8-3.5c-1.6-1.5-2.9-3.3-4.2-5.2
+	c-2.1-3.2-3.8-6.5-5.4-10C-0.2,1.5,0,1,1.1,0.9c1.8-0.1,3.6-0.1,5.4,0c0.7,0,1.2,0.4,1.5,1.1c0.9,2.2,2,4.3,3.3,6.2
+	c0.5,0.7,1,1.4,1.6,1.9c0.7,0.7,1.4,0.5,1.7-0.5c0.2-0.6,0.3-1.3,0.3-1.9c0-1.2,0-2.3,0-3.5C14.8,2.5,14.3,2,12.6,1.4"/>
+</svg></a></div>
+                    <div class="social__link social__link-f"><a href="#"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 20.8 20.8" style="enable-background:new 0 0 20.8 20.8;" xml:space="preserve">
+<path d="M19.7,0H1.1C0.5,0,0,0.5,0,1.1v18.5c0,0.6,0.5,1.1,1.1,1.1h10v-8.1H8.4V9.6h2.7V7.3c0-2.7,1.6-4.1,4-4.1
+	c1.1,0,2.1,0.1,2.4,0.1v2.8l-1.7,0c-1.3,0-1.6,0.6-1.6,1.5v2h3.1l-0.4,3.1h-2.7v8.1h5.3c0.6,0,1.1-0.5,1.1-1.1V1.1
+	C20.8,0.5,20.3,0,19.7,0L19.7,0z M19.7,0"/>
+</svg></a></div>
+                    <div class="social__link social__link-q"><a href="#"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 20 23" style="enable-background:new 0 0 20 23;" xml:space="preserve">
+<path d="M10,0C4.5,0,0,4.5,0,10c0,3.8,2.1,7.1,5.2,8.8l-0.1,4.1L9.8,20c0.1,0,0.1,0,0.2,0c5.5,0,10-4.5,10-10C20,4.5,15.5,0,10,0z
+	 M9.6,16c-0.9,0-1.5-0.7-1.5-1.5c0-0.9,0.6-1.5,1.5-1.5c0.9,0,1.5,0.6,1.5,1.5C11.1,15.4,10.5,16,9.6,16z M11.6,9.7
+	c-0.6,0.7-0.9,1.3-0.9,2.1v0.3H8.5l0-0.4c-0.1-0.9,0.2-1.7,1-2.6c0.5-0.6,1-1.2,1-1.8c0-0.6-0.4-1-1.2-1C8.7,6.3,8,6.5,7.5,6.8L7,5
+	c0.6-0.4,1.6-0.7,2.8-0.7C12,4.3,13,5.5,13,6.9C13,8.2,12.2,9,11.6,9.7z"/>
+</svg></a></div>
+                </div>
+                <div class="address">
+                    <p><span><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 246.9 373.3" style="enable-background:new 0 0 246.9 373.3;" xml:space="preserve">
+<path d="M123.5,0C55.4,0,0,55.4,0,123.5c0,27.4,17.5,72.1,53.5,136.7c25.5,45.7,50.5,83.7,51.6,85.3l18.4,27.8l18.4-27.8
+	c1.1-1.6,26.1-39.7,51.6-85.3c36-64.5,53.5-109.2,53.5-136.7C246.9,55.4,191.5,0,123.5,0L123.5,0z M123.5,186.6
+	c-35.3,0-64-28.7-64-64c0-35.3,28.7-64,64-64c35.3,0,64,28.7,64,64C187.5,158,158.8,186.6,123.5,186.6L123.5,186.6z M123.5,186.6"/>
+</svg></span>
+                    Самара, ул. Куйбышева, 88</p>
+                </div>
+            </div>
+            <div class="header__top-center">
+                <a href=""><div class="logo">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 47.7 54.6" style="enable-background:new 0 0 47.7 54.6;" xml:space="preserve">
+                    <path class="st0" d="M25.9,10.5c5.2,0,10.8,1.2,14.9,3.6c0,0,0.1,0,0.1,0.1v7.7H40c-3.3-8-7.7-9.5-15.1-9.4c-3.6,0-7.9,1.2-11.2,4
+                        c-4,3.4-6.7,9.1-6.7,16c0,7,2.7,12.8,7.3,16.6c2.7,2.2,8,4,11.8,3.8c4-0.1,8.9-1.4,9.7-5.9c0.1-0.8,0.2-1.9,0.2-3.2
+                        c-2.8,2.3-6.3,3.7-10.4,3.9C16.8,48,9.7,41.2,9.7,32.8c0-3.9,1.4-7.8,4-10.5c2.9-2.9,7.2-4.4,11.8-4.4c3.9,0,7.7,1.2,10.5,3.4
+                        c3.4,2.7,5.3,6.8,5.3,11.2l0,0c0,0.7,0,1.4,0,2.1c2.6,0.2,6.3,0.4,6.3,0.4l0,1.6c0,0-4.1,0.1-6.3,0.3c0,1.8-0.1,3.5-0.1,5.3
+                        c0,2.2,0,4.4-0.1,6.7c-0.1,1.3-1.8,2.6-3.1,3.1c0,0-0.1,0-0.1,0c-3.6,1.4-7.7,2.3-12.1,2.5c-5.5,0.3-11.2-0.3-15.3-2.5
+                        C3.9,48.4,0,41.4,0,33.5c0-5.3,1.5-10.8,4.9-14.7C9.6,13.2,17.5,10.5,25.9,10.5L25.9,10.5z M35.5,39.6c0.1-0.8,0.4-2.6-0.5-2.7
+                        c-1.1-0.2-7.5-0.4-7.5-0.4l0-1.6c0,0,7.5-0.4,8.6-0.5c0-0.5,0-1,0-1.5c0-4.1-0.4-7.7-2.8-10.2c-1.9-2-4.6-3.3-8.3-3.3
+                        c-3.7,0-6.4,1.3-8.4,4c-1.8,2.4-2.8,5.5-2.8,9.1c0,7.7,5.8,14.1,11.1,13.9c5.3-0.2,7-1.5,9-3.7C34.6,41.8,35.2,40.8,35.5,39.6
+                        L35.5,39.6z"/>
+                    <path class="st1" d="M7.4,5.3l2.2,1.3L9,4.2l1.9-1.7L8.4,2.3L7.4,0l-1,2.3L3.9,2.5l1.9,1.7L5.3,6.6L7.4,5.3z M7.4,5.3"/>
+                    <path class="st1" d="M17.8,5.3L20,6.6l-0.6-2.5l1.9-1.7l-2.5-0.2l-1-2.3l-1,2.3l-2.5,0.2l1.9,1.7l-0.6,2.5L17.8,5.3z M17.8,5.3"/>
+                    <path class="st1" d="M28.2,5.3l2.2,1.3l-0.6-2.5l1.9-1.7l-2.5-0.2l-1-2.3l-1,2.3l-2.5,0.2l1.9,1.7L26,6.6L28.2,5.3z M28.2,5.3"/>
+                    <path class="st1" d="M38.6,5.3l2.2,1.3l-0.6-2.5l1.9-1.7l-2.5-0.2l-1-2.3l-1,2.3l-2.5,0.2L37,4.2l-0.6,2.5L38.6,5.3z M38.6,5.3"/>
+                    </svg>
+                </div></a>
+            </div>
+            <div class="header__top-right">
+                <div class="order">
+                    <div class="order-phone">8(846)332 32 02</div>
+                    <div class="order-button">
+                        <a class="button" href="#">Заказать звонок</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="header__bottom">
+        <div class="container">
+            <div class="navLG">
+                <ul class="header__nav header__nav-first">
+                <li class="header__nav-list header__nav-list-nav">
+                    <a href="" class="header__nav-link">О гостинице</a>
+                    <ul class="header__nav header__nav--second">
+                        <li class="header__nav-list"><a href="#" class="header__nav-link">Отель</a></li>
+                        <li class="header__nav-list"><a href="#" class="header__nav-link">Акции</a></li>
+                        <li class="header__nav-list"><a href="#" class="header__nav-link">События</a></li>
+                        <li class="header__nav-list"><a href="#" class="header__nav-link">Фотогалерея</a></li>
+                        <li class="header__nav-list"><a href="#" class="header__nav-link">Видеогалерея</a></li>
+                        <li class="header__nav-list"><a href="#" class="header__nav-link">Персонал</a></li>
+                        <li class="header__nav-list"><a href="#" class="header__nav-link">Сервис</a></li>
+                        <li class="header__nav-list"><a href="#" class="header__nav-link">Условия проживания</a></li>
+                        <li class="header__nav-list"><a href="#" class="header__nav-link">Правила заселения\выселения</a></li>
+                        <li class="header__nav-list"><a href="#" class="header__nav-link">Месторасположение</a></li>
+                        <li class="header__nav-list"><a href="#" class="header__nav-link">Отзывы</a></li>
+                        <li class="header__nav-list"><a href="#" class="header__nav-link">3D тур по отелю</a></li>
+                    </ul>
+                </li>
+                <li class="header__nav-list header__nav-list-nav">
+                    <a href="" class="header__nav-link">Номера и цены</a>
+                    <ul class="header__nav header__nav--second">
+                        <li class="header__nav-list"><a href="#" class="header__nav-link">Стандарт 2-х местный</a></li>
+                        <li class="header__nav-list"><a href="#" class="header__nav-link">Студия 2-х местная</a></li>
+                        <li class="header__nav-list"><a href="#" class="header__nav-link">Студия Плюс 2-х местная</a></li>
+                        <li class="header__nav-list"><a href="#" class="header__nav-link">Люкс 4-х местный</a></li>
+                    </ul>
+                </li>
+                <li class="header__nav-list">
+                    <a href="" class="header__nav-link">Бронирование</a>
+                </li>
+                <li class="header__nav-list header__nav-list-nav">
+                    <a href="" class="header__nav-link">Услуги</a>
+                    <ul class="header__nav header__nav--second">
+                        <li class="header__nav-list"><a href="#" class="header__nav-link">Проведение конференций</a></li>
+                        <li class="header__nav-list"><a href="#" class="header__nav-link">Проведение банкетов</a></li>
+                        <li class="header__nav-list"><a href="#" class="header__nav-link">Организация трансфера (с Ж/Д Вокзала и Аэропорта)</a></li>
+                    </ul>
+                </li>
+                <li class="header__nav-list">
+                    <a href="" class="header__nav-link">Welness</a>
+                </li>
+                <li class="header__nav-list">
+                    <a href="" class="header__nav-link">Ресторан</a>
+                </li>
+                <li class="header__nav-list">
+                    <a href="" class="header__nav-link">Бар & лобби</a>
+                </li>
+                <li class="header__nav-list">
+                    <a href="" class="header__nav-link">Контакты</a>
+                </li>
+            <span class="active-point"></span>
+            </ul>
+            </div>
+        </div>
+        <div class="navXS">
+                <div class="navXS__head"><a href=""><div class="logo">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     viewBox="0 0 47.7 54.6" style="enable-background:new 0 0 47.7 54.6;" xml:space="preserve">
+                    <path class="st0" d="M25.9,10.5c5.2,0,10.8,1.2,14.9,3.6c0,0,0.1,0,0.1,0.1v7.7H40c-3.3-8-7.7-9.5-15.1-9.4c-3.6,0-7.9,1.2-11.2,4
+                        c-4,3.4-6.7,9.1-6.7,16c0,7,2.7,12.8,7.3,16.6c2.7,2.2,8,4,11.8,3.8c4-0.1,8.9-1.4,9.7-5.9c0.1-0.8,0.2-1.9,0.2-3.2
+                        c-2.8,2.3-6.3,3.7-10.4,3.9C16.8,48,9.7,41.2,9.7,32.8c0-3.9,1.4-7.8,4-10.5c2.9-2.9,7.2-4.4,11.8-4.4c3.9,0,7.7,1.2,10.5,3.4
+                        c3.4,2.7,5.3,6.8,5.3,11.2l0,0c0,0.7,0,1.4,0,2.1c2.6,0.2,6.3,0.4,6.3,0.4l0,1.6c0,0-4.1,0.1-6.3,0.3c0,1.8-0.1,3.5-0.1,5.3
+                        c0,2.2,0,4.4-0.1,6.7c-0.1,1.3-1.8,2.6-3.1,3.1c0,0-0.1,0-0.1,0c-3.6,1.4-7.7,2.3-12.1,2.5c-5.5,0.3-11.2-0.3-15.3-2.5
+                        C3.9,48.4,0,41.4,0,33.5c0-5.3,1.5-10.8,4.9-14.7C9.6,13.2,17.5,10.5,25.9,10.5L25.9,10.5z M35.5,39.6c0.1-0.8,0.4-2.6-0.5-2.7
+                        c-1.1-0.2-7.5-0.4-7.5-0.4l0-1.6c0,0,7.5-0.4,8.6-0.5c0-0.5,0-1,0-1.5c0-4.1-0.4-7.7-2.8-10.2c-1.9-2-4.6-3.3-8.3-3.3
+                        c-3.7,0-6.4,1.3-8.4,4c-1.8,2.4-2.8,5.5-2.8,9.1c0,7.7,5.8,14.1,11.1,13.9c5.3-0.2,7-1.5,9-3.7C34.6,41.8,35.2,40.8,35.5,39.6
+                        L35.5,39.6z"/>
+                    <path class="st1" d="M7.4,5.3l2.2,1.3L9,4.2l1.9-1.7L8.4,2.3L7.4,0l-1,2.3L3.9,2.5l1.9,1.7L5.3,6.6L7.4,5.3z M7.4,5.3"/>
+                    <path class="st1" d="M17.8,5.3L20,6.6l-0.6-2.5l1.9-1.7l-2.5-0.2l-1-2.3l-1,2.3l-2.5,0.2l1.9,1.7l-0.6,2.5L17.8,5.3z M17.8,5.3"/>
+                    <path class="st1" d="M28.2,5.3l2.2,1.3l-0.6-2.5l1.9-1.7l-2.5-0.2l-1-2.3l-1,2.3l-2.5,0.2l1.9,1.7L26,6.6L28.2,5.3z M28.2,5.3"/>
+                    <path class="st1" d="M38.6,5.3l2.2,1.3l-0.6-2.5l1.9-1.7l-2.5-0.2l-1-2.3l-1,2.3l-2.5,0.2L37,4.2l-0.6,2.5L38.6,5.3z M38.6,5.3"/>
+                    </svg>
+                </div></a><div class="target_nav">
+  <span></span>
+  <span></span>
+  <span></span></div></div>
+                <ul class="header__nav header__nav-first">
+                    <li class="header__nav-list header__nav-list-nav">
+                        <div class="target_nav">
+  <span></span>
+  <span></span>
+  <span></span></div>
+                        <a href="" class="header__nav-link">О гостинице</a>
+                        <ul class="header__nav header__nav--second">
+                            <li class="header__nav-list"><a href="#" class="header__nav-link">Отель</a></li>
+                            <li class="header__nav-list"><a href="#" class="header__nav-link">Акции</a></li>
+                            <li class="header__nav-list"><a href="#" class="header__nav-link">События</a></li>
+                            <li class="header__nav-list"><a href="#" class="header__nav-link">Фотогалерея</a></li>
+                            <li class="header__nav-list"><a href="#" class="header__nav-link">Видеогалерея</a></li>
+                            <li class="header__nav-list"><a href="#" class="header__nav-link">Персонал</a></li>
+                            <li class="header__nav-list"><a href="#" class="header__nav-link">Сервис</a></li>
+                            <li class="header__nav-list"><a href="#" class="header__nav-link">Условия проживания</a></li>
+                            <li class="header__nav-list"><a href="#" class="header__nav-link">Правила заселения\выселения</a></li>
+                            <li class="header__nav-list"><a href="#" class="header__nav-link">Месторасположение</a></li>
+                            <li class="header__nav-list"><a href="#" class="header__nav-link">Отзывы</a></li>
+                            <li class="header__nav-list"><a href="#" class="header__nav-link">3D тур по отелю</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__nav-list header__nav-list-nav">
+                        <div class="target_nav"><span></span>
+  <span></span>
+  <span></span></div>
+                        <a href="" class="header__nav-link">Номера и цены</a>
+                        <ul class="header__nav header__nav--second">
+                            <li class="header__nav-list"><a href="#" class="header__nav-link">Стандарт 2-х местный</a></li>
+                            <li class="header__nav-list"><a href="#" class="header__nav-link">Студия 2-х местная</a></li>
+                            <li class="header__nav-list"><a href="#" class="header__nav-link">Студия Плюс 2-х местная</a></li>
+                            <li class="header__nav-list"><a href="#" class="header__nav-link">Люкс 4-х местный</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__nav-list">
+                        <a href="" class="header__nav-link">Бронирование</a>
+                    </li>
+                    <li class="header__nav-list header__nav-list-nav">
+                        <div class="target_nav"><span></span>
+  <span></span>
+  <span></span></div>
+                        <a href="" class="header__nav-link">Услуги</a>
+                        <ul class="header__nav header__nav--second">
+                            <li class="header__nav-list"><a href="#" class="header__nav-link">Проведение конференций</a></li>
+                            <li class="header__nav-list"><a href="#" class="header__nav-link">Проведение банкетов</a></li>
+                            <li class="header__nav-list"><a href="#" class="header__nav-link">Организация трансфера (с Ж/Д Вокзала и Аэропорта)</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__nav-list">
+                        <a href="" class="header__nav-link">Welness</a>
+                    </li>
+                    <li class="header__nav-list">
+                        <a href="" class="header__nav-link">Ресторан</a>
+                    </li>
+                    <li class="header__nav-list">
+                        <a href="" class="header__nav-link">Бар & лобби</a>
+                    </li>
+                    <li class="header__nav-list">
+                        <a href="" class="header__nav-link">Контакты</a>
+                    </li>
+                    <span class="active-point"></span>
+                </ul>
+            </div>
+    </div>
+</div>
+
+<div class="banner">
+    <div class="banner__slide">
+        <div class="banner__slide-item">
+            <img src="images/slider1+.jpg" alt="">
+            <div class="banner__box">
+                <div class="banner__box-text">
+                    <symbol>
+                        <text text-anchor="middle" x="50%" y="50%" dy=".35em">
+                            Hotel <br> Graf Orlov
+                        </text>
+                    </symbol>
+                </div>
+            </div>
+        </div>
+        <div class="banner__slide-item">
+            <img src="images/slider2+.jpg" alt="">
+            <div class="banner__box">
+                <div class="banner__box-text">
+                    <symbol>
+                        <text text-anchor="middle" x="50%" y="50%" dy=".35em">
+                            Hotel <br> Graf Orlov
+                        </text>
+                    </symbol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="picker">
+        <div class="picker__title">
+            Бронирование номеров
+        </div>
+        <div class="picker__box">
+            <div class="picker__box-area">
+                <label>Дата заезда <input id='check_in_date' class='calendar' placeholder=""><label class="cal"
+                                                                                                    for="check_in_date"></label></label>
+                <label>Дата выезда <input id='check_out_date' class='calendar' placeholder=""><label class="cal"
+                                                                                                     for="check_out_date"></label></label>
+            </div>
+            <div class="picker__box-btn"><button class="button" href="#">Показать номера и цены</button></div>
+        </div>
+    </div>
+</div>
+
+<div class="page">
+    <div class="page__section-bg-white">
+        <div class="container">
+            <p class="page__section-text-decorate"><span>Отель “Граф Орлов”</span> - гостеприимство, изысканность, элегантность</p>
+            <h1 class="page__section-text-title">В нашем отеле Вы можете найти:</h1>
+            <div class="page__section-content">
+                <div class="content__row">
+                    <div class="content__item content__item-3 no_margin">
+                        <div class="special">
+                            <div class="special__image">
+                                <img src="images/pic1.jpg" alt="Номера от стандартного до люкса">
+                            </div>
+                            <div class="special__desc">
+                                <div class="special__desc-text">Номера<br> от стандартного<br> до люкса</div>
+                                <div class="special__desc-link"><a href="#"><span></span>Подробнее</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content__item content__item-3 no_margin">
+                        <div class="special">
+                            <div class="special__image">
+                                <img src="images/pic2.jpg" alt="Ресторан">
+                            </div>
+                            <div class="special__desc">
+                                <div class="special__desc-text">Ресторан</div>
+                                <div class="special__desc-link"><a href="#"><span></span>Подробнее</a></div>
+                                <div class="special__desc-text hide-md">Бар & лобби</div>
+                                <div class="special__desc-link hide-md"><a href="#"><span></span>Подробнее</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content__item content__item-3 no_margin">
+                        <div class="special">
+                            <div class="special__image">
+                                <img src="images/pic3.jpg" alt="WELNESS">
+                            </div>
+                            <div class="special__desc">
+                                <div class="special__desc-text">WELNESS - <br>тренажерный зал <br>и сауна</div>
+                                <div class="special__desc-link"><a href="#"><span></span>Подробнее</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1 class="page__section-text-title">Мы предоставляем услуги:</h1>
+    <div class="page__section-bg-blue">
+        <div class="container">
+            <div class="page__section-content">
+                <div class="content__row">
+                    <div class="content__item content__item-4">
+                        <a href=""><div class="uslugi">
+                            <div class="uslugi__icon">
+                                <object type="image/svg+xml" data="images/svg_icon/transfer.svg" class="uslugi__icon-svg uslugi__icon-svg-transfer"></object>
+                            </div>
+                            <div class="uslugi__desc">Организация <br> трансфера</div>
+                        </div></a>
+                    </div>
+                    <div class="content__item content__item-4">
+                        <a href=""><div class="uslugi">
+                            <div class="uslugi__icon">
+                                <div class="uslugi__icon">
+                                    <object type="image/svg+xml" data="images/svg_icon/conference.svg" class="uslugi__icon-svg uslugi__icon-svg-conference"></object>
+                                </div>
+                            </div>
+                            <div class="uslugi__desc">Проведение <br>конференций</div>
+                        </div></a>
+                    </div>
+                    <div class="content__item content__item-4">
+                        <a href=""><div class="uslugi">
+                            <div class="uslugi__icon">
+                                <div class="uslugi__icon">
+                                    <object type="image/svg+xml" data="images/svg_icon/banquet.svg" class="uslugi__icon-svg uslugi__icon-svg-banquet"></object>
+                                </div>
+                            </div>
+                            <div class="uslugi__desc">Проведение <br>банкетов</div>
+                        </div></a>
+                    </div>
+                    <div class="content__item content__item-4">
+                        <a href=""><div class="uslugi">
+                            <div class="uslugi__icon">
+                                <div class="uslugi__icon">
+                                    <object type="image/svg+xml" data="images/svg_icon/wifi.svg" class="uslugi__icon-svg uslugi__icon-svg-wifi"></object>
+                                </div>
+                            </div>
+                            <div class="uslugi__desc">Бесплатый <br>интернет</div>
+                        </div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page__section-bg-white">
+        <h1 class="page__section-text-title">Фотогаллерея</h1>
+        <div class="container">
+            <div class="page__section-content">
+                <div class="content__row gallery">
+                    <div class="content__item content__item-4">
+                        <div class="gallery__item">
+                            <a class="gallery__item-link" href="images/pic4.jpg"><img data-lazy="images/pic4.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="content__item content__item-4">
+                        <div class="gallery__item">
+                            <a class="gallery__item-link" href="images/pic5.jpg"><img data-lazy="images/pic5.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="content__item content__item-4">
+                        <div class="gallery__item">
+                            <a class="gallery__item-link" href="images/pic6.jpg"><img data-lazy="images/pic6.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="content__item content__item-4">
+                        <div class="gallery__item">
+                            <a class="gallery__item-link" href="images/pic7.jpg"><img data-lazy="images/pic7.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="content__item content__item-4">
+                        <div class="gallery__item">
+                            <a class="gallery__item-link" href="images/pic6.jpg"><img data-lazy="images/pic6.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="content__item content__item-4">
+                        <div class="gallery__item">
+                            <a class="gallery__item-link" href="images/pic7.jpg"><img data-lazy="images/pic7.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page__section-bg-white">
+        <h1 class="page__section-text-title">Отзывы</h1>
+        <div class="container">
+            <div class="page__section-content">
+                <div class="content__row feedback_gallery">
+                    <div class="content__item content__item-4">
+                        <div class="feedback">
+                            <h2>Елена И.</h2>
+                            <p>Добрый день! Отмечали свадьбу в ресторане
+                                вашего отеля 06.06.2015г., всё прошло просто замечательно!
+                                Еда вкусная, красивая сервировка, официанты большие молодцы,
+                                очень внимательные и расторопные, особенно
+                                хотелось бы выразить благодарность...</p>
+                            <span></span>
+                            <div class="feedback-link"><span></span>Подробнее</div>
+                        </div>
+                    </div>
+                    <div class="content__item content__item-4">
+                        <div class="feedback">
+                            <h2>Елена И.</h2>
+                            <p>Добрый день! Отмечали свадьбу в ресторане
+                                вашего отеля 06.06.2015г., всё прошло просто замечательно!
+                                Еда вкусная, красивая сервировка, официанты большие молодцы,
+                                очень внимательные и расторопные, особенно
+                                хотелось бы выразить благодарность...</p>
+                            <span></span>
+                            <div class="feedback-link"><span></span>Подробнее</div>
+                        </div>
+                    </div>
+                    <div class="content__item content__item-4">
+                        <div class="feedback">
+                            <h2>Елена И.</h2>
+                            <p>Добрый день! Отмечали свадьбу в ресторане
+                                вашего отеля 06.06.2015г., всё прошло просто замечательно!
+                                Еда вкусная, красивая сервировка, официанты большие молодцы,
+                                очень внимательные и расторопные, особенно
+                                хотелось бы выразить благодарность...</p>
+                            <span></span>
+                            <div class="feedback-link"><span></span>Подробнее</div>
+                        </div>
+                    </div>
+                    <div class="content__item content__item-4">
+                        <div class="feedback">
+                            <h2>Елена И.</h2>
+                            <p>Добрый день! Отмечали свадьбу в ресторане
+                                вашего отеля 06.06.2015г., всё прошло просто замечательно!
+                                Еда вкусная, красивая сервировка, официанты большие молодцы,
+                                очень внимательные и расторопные, особенно всё прошло просто замечательно!
+                                Еда вкусная, красивая сервировка, официанты большие молодцы,
+                                очень внимательные и расторопные, особенновсё прошло просто замечательно!
+                                Еда вкусная, красивая сервировка, официанты большие молодцы,
+                                очень внимательные и расторопные, особенно
+                                хотелось бы выразить благодарность...</p>
+                            <span></span>
+                            <div class="feedback-link"><span></span>Подробнее</div>
+                        </div>
+                    </div>
+
+                    <div class="content__item content__item-4">
+                        <div class="feedback">
+                            <h2>Елена И.</h2>
+                            <p>Добрый день! Отмечали свадьбу в ресторане
+                                вашего отеля 06.06.2015г., всё прошло просто замечательно!
+                                Еда вкусная, красивая сервировка, официанты большие молодцы,
+                                очень внимательные и расторопные, особенно
+                                хотелось бы выразить благодарность...</p>
+                            <span></span>
+                            <div class="feedback-link"><span></span>Подробнее</div>
+                        </div>
+                    </div>
+                    <div class="content__item content__item-4">
+                        <div class="feedback">
+                            <h2>Елена И.</h2>
+                            <p>Добрый день! Отмечали свадьбу в ресторане
+                                вашего отеля 06.06.2015г., всё прошло просто замечательно!
+                                Еда вкусная, красивая сервировка, официанты большие молодцы,
+                                очень внимательные и расторопные, особенно
+                                хотелось бы выразить благодарность...</p>
+                            <span></span>
+                            <div class="feedback-link"><span></span>Подробнее</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page__section-bg-white">
+        <h1 class="page__section-text-title">События</h1>
+        <div class="container">
+            <div class="page__section-content">
+                <div class="content__row">
+                    <div class="content__item content__item-2">
+                        <div class="news">
+                            <div class="news__image">
+                                <img src="images/pic8.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content__item content__item-2">
+                        <div class="news">
+                            <div class="news__desc">
+                                <div class="news__desc-data">1/06/2016</div>
+                                <div class="news__desc-title"><a href="">Летнее событие</a></div>
+                                <div class="news__desc-text">Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page__section-bg-white no_margin-XS">
+        <div class="container">
+            <div class="page__section-content">
+                <div class="content__row">
+                    <div class="content__item content__item-1">
+                        <div class="map">
+                            <div class="map__desc">
+                                <h3>Узнайте как добраться до нас:</h3>
+                                <a class="map__desc-link-plane" href=""><object type="image/svg+xml" data="images/svg_icon/airplane.svg" class="map__desc-link-svg map__desc-link-svg-plane"></object>от аэропорта</a>
+                                <a class="map__desc-link-train" href=""><object type="image/svg+xml" data="images/svg_icon/train.svg" class="map__desc-link-svg map__desc-link-svg-train"></object>от ж/д вокзала</a>
+                            </div>
+                            <div class="map__map">
+                                <div id='map'>
+                                    <script>
+                                        L.mapbox.accessToken = 'pk.eyJ1IjoiYnJyZW5hdCIsImEiOiJjaW5pbGN2d2owMDNtd2RseXV2MTM1cWRmIn0.Z2EiCqAUqqVqVbrqCg7GfQ';
+                                        var map = L.mapbox.map('map', 'mapbox.streets')
+                                                .setView([53.1889568,50.0891528], 30);
+                                        map.scrollWheelZoom.disable();
+                                        var myLayer = L.mapbox.featureLayer().addTo(map);
+                                        var geoJson = [{
+                                            "type": "Feature",
+                                            "geometry": {
+                                                "type": "Point",
+                                                "coordinates": [50.0891528,53.1889568]
+                                            },
+                                            "properties": {
+                                                "title": "Отель “Граф Орлов”",
+                                                description: 'Самара, ул. Куйбышева, 88',
+                                                "icon": {
+                                                    "iconUrl": "images/location-map.png",
+                                                    "iconSize": [212, 133], // size of the icon
+                                                    "iconAnchor": [-78, 50], // point of the icon which will correspond to marker's location
+                                                    "popupAnchor": [192, -18], // point from which the popup should open relative to the iconAnchor
+                                                    "className": "dot"
+                                                }
+                                            }
+                                        }];
+
+                                        // Set a custom icon on each marker based on feature properties.
+                                        myLayer.on('layeradd', function(e) {
+                                            var marker = e.layer,
+                                                    feature = marker.feature;
+
+                                            marker.setIcon(L.icon(feature.properties.icon));
+                                        });
+
+                                        // Add features to the map.
+                                        myLayer.setGeoJSON(geoJson);
+
+                                    </script>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page__section-bg-white no_margin">
+        <div class="container no_padding">
+            <div class="page__section-content">
+                <div class="content__row">
+                    <div class="content__item content__item-2 no_margin">
+                        <img class="promo" src="images/Banner1.jpg" alt="">
+                    </div>
+                    <div class="content__item content__item-2 no_margin">
+                        <img class="promo" src="images/Banner2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="footer__left">
+            <a class="hide-sm" href=""><div class="logo">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 47.7 54.6" style="enable-background:new 0 0 47.7 54.6;" xml:space="preserve">
+                                      <path class="st0" d="M25.9,10.5c5.2,0,10.8,1.2,14.9,3.6c0,0,0.1,0,0.1,0.1v7.7H40c-3.3-8-7.7-9.5-15.1-9.4c-3.6,0-7.9,1.2-11.2,4
+                        c-4,3.4-6.7,9.1-6.7,16c0,7,2.7,12.8,7.3,16.6c2.7,2.2,8,4,11.8,3.8c4-0.1,8.9-1.4,9.7-5.9c0.1-0.8,0.2-1.9,0.2-3.2
+                        c-2.8,2.3-6.3,3.7-10.4,3.9C16.8,48,9.7,41.2,9.7,32.8c0-3.9,1.4-7.8,4-10.5c2.9-2.9,7.2-4.4,11.8-4.4c3.9,0,7.7,1.2,10.5,3.4
+                        c3.4,2.7,5.3,6.8,5.3,11.2l0,0c0,0.7,0,1.4,0,2.1c2.6,0.2,6.3,0.4,6.3,0.4l0,1.6c0,0-4.1,0.1-6.3,0.3c0,1.8-0.1,3.5-0.1,5.3
+                        c0,2.2,0,4.4-0.1,6.7c-0.1,1.3-1.8,2.6-3.1,3.1c0,0-0.1,0-0.1,0c-3.6,1.4-7.7,2.3-12.1,2.5c-5.5,0.3-11.2-0.3-15.3-2.5
+                        C3.9,48.4,0,41.4,0,33.5c0-5.3,1.5-10.8,4.9-14.7C9.6,13.2,17.5,10.5,25.9,10.5L25.9,10.5z M35.5,39.6c0.1-0.8,0.4-2.6-0.5-2.7
+                        c-1.1-0.2-7.5-0.4-7.5-0.4l0-1.6c0,0,7.5-0.4,8.6-0.5c0-0.5,0-1,0-1.5c0-4.1-0.4-7.7-2.8-10.2c-1.9-2-4.6-3.3-8.3-3.3
+                        c-3.7,0-6.4,1.3-8.4,4c-1.8,2.4-2.8,5.5-2.8,9.1c0,7.7,5.8,14.1,11.1,13.9c5.3-0.2,7-1.5,9-3.7C34.6,41.8,35.2,40.8,35.5,39.6
+                        L35.5,39.6z"/>
+                    <path class="st1" d="M7.4,5.3l2.2,1.3L9,4.2l1.9-1.7L8.4,2.3L7.4,0l-1,2.3L3.9,2.5l1.9,1.7L5.3,6.6L7.4,5.3z M7.4,5.3"/>
+                    <path class="st1" d="M17.8,5.3L20,6.6l-0.6-2.5l1.9-1.7l-2.5-0.2l-1-2.3l-1,2.3l-2.5,0.2l1.9,1.7l-0.6,2.5L17.8,5.3z M17.8,5.3"/>
+                    <path class="st1" d="M28.2,5.3l2.2,1.3l-0.6-2.5l1.9-1.7l-2.5-0.2l-1-2.3l-1,2.3l-2.5,0.2l1.9,1.7L26,6.6L28.2,5.3z M28.2,5.3"/>
+                    <path class="st1" d="M38.6,5.3l2.2,1.3l-0.6-2.5l1.9-1.7l-2.5-0.2l-1-2.3l-1,2.3l-2.5,0.2L37,4.2l-0.6,2.5L38.6,5.3z M38.6,5.3"/>
+                    </svg>
+            </div></a>
+            <div class="social">
+                <div class="social__link social__link-vk"><a href="#"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 38 21.6" style="enable-background:new 0 0 38 21.6;" xml:space="preserve">
+<path d="M12.6,1.4c0.3-0.7,0.8-1.1,1.5-1.2C14.9,0.1,15.7,0,16.5,0c1.3,0,2.6,0,3.8,0.2c1.4,0.2,1.8,0.6,1.9,2.1
+	c0,1.7-0.1,3.3-0.1,5c0,0.6,0,1.1,0,1.7c0,0.3,0.1,0.7,0.3,1c0.3,0.7,0.8,0.8,1.3,0.3c0.8-0.9,1.7-1.8,2.3-2.9
+	c1-1.7,1.9-3.5,2.7-5.3c0.5-1,0.6-1.1,1.7-1.1c1.9,0,3.9,0,5.8-0.1c1.6,0,2.1,0.6,1.4,2.1c-0.8,1.6-1.9,3.1-2.9,4.6
+	c-0.8,1.2-1.7,2.2-2.5,3.4c-0.8,1.1-0.7,1.7,0.2,2.6c1,1,2.1,2,3,3c0.8,0.8,1.5,1.7,2.1,2.7c0.8,1.2,0.3,2.2-1.2,2.2
+	c-1.9,0.1-3.9,0.1-5.8,0.1c-0.1,0-0.2,0-0.3,0c-1-0.2-1.8-0.8-2.5-1.5c-0.9-1-1.8-2-2.8-2.9c-1-1-1.9-0.7-2.3,0.6
+	c-0.2,0.7-0.3,1.5-0.4,2.2c-0.1,0.9-0.4,1.2-1.3,1.2c-1.1,0-2.3,0-3.4,0c-3-0.2-5.6-1.4-7.8-3.5c-1.6-1.5-2.9-3.3-4.2-5.2
+	c-2.1-3.2-3.8-6.5-5.4-10C-0.2,1.5,0,1,1.1,0.9c1.8-0.1,3.6-0.1,5.4,0c0.7,0,1.2,0.4,1.5,1.1c0.9,2.2,2,4.3,3.3,6.2
+	c0.5,0.7,1,1.4,1.6,1.9c0.7,0.7,1.4,0.5,1.7-0.5c0.2-0.6,0.3-1.3,0.3-1.9c0-1.2,0-2.3,0-3.5C14.8,2.5,14.3,2,12.6,1.4"/>
+</svg></a></div>
+                <div class="social__link social__link-f"><a href="#"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 20.8 20.8" style="enable-background:new 0 0 20.8 20.8;" xml:space="preserve">
+<path d="M19.7,0H1.1C0.5,0,0,0.5,0,1.1v18.5c0,0.6,0.5,1.1,1.1,1.1h10v-8.1H8.4V9.6h2.7V7.3c0-2.7,1.6-4.1,4-4.1
+	c1.1,0,2.1,0.1,2.4,0.1v2.8l-1.7,0c-1.3,0-1.6,0.6-1.6,1.5v2h3.1l-0.4,3.1h-2.7v8.1h5.3c0.6,0,1.1-0.5,1.1-1.1V1.1
+	C20.8,0.5,20.3,0,19.7,0L19.7,0z M19.7,0"/>
+</svg></a></div>
+                <div class="social__link social__link-q"><a href="#"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 20 23" style="enable-background:new 0 0 20 23;" xml:space="preserve">
+<path d="M10,0C4.5,0,0,4.5,0,10c0,3.8,2.1,7.1,5.2,8.8l-0.1,4.1L9.8,20c0.1,0,0.1,0,0.2,0c5.5,0,10-4.5,10-10C20,4.5,15.5,0,10,0z
+	 M9.6,16c-0.9,0-1.5-0.7-1.5-1.5c0-0.9,0.6-1.5,1.5-1.5c0.9,0,1.5,0.6,1.5,1.5C11.1,15.4,10.5,16,9.6,16z M11.6,9.7
+	c-0.6,0.7-0.9,1.3-0.9,2.1v0.3H8.5l0-0.4c-0.1-0.9,0.2-1.7,1-2.6c0.5-0.6,1-1.2,1-1.8c0-0.6-0.4-1-1.2-1C8.7,6.3,8,6.5,7.5,6.8L7,5
+	c0.6-0.4,1.6-0.7,2.8-0.7C12,4.3,13,5.5,13,6.9C13,8.2,12.2,9,11.6,9.7z"/>
+</svg></a></div>
+            </div>
+        </div>
+        <div class="footer__nav hide-sm">
+            <div class="footer__nav-column">
+                <ul>
+                    <li class="footer__nav-list"><a href="#" class="footer__nav-link">О гостинице</a></li>
+                    <li class="footer__nav-list"><a href="#" class="footer__nav-link">Отель</a></li>
+                    <li class="footer__nav-list"><a href="#" class="footer__nav-link">Акции</a></li>
+                    <li class="footer__nav-list"><a href="#" class="footer__nav-link">События</a></li>
+                    <li class="footer__nav-list"><a href="#" class="footer__nav-link">Фотогалерея</a></li>
+                    <li class="footer__nav-list"><a href="#" class="footer__nav-link">Видеогалерея</a></li>
+                    <li class="footer__nav-list"><a href="#" class="footer__nav-link">Персонал</a></li>
+                    <li class="footer__nav-list"><a href="#" class="footer__nav-link">Сервис</a></li>
+                    <li class="footer__nav-list"><a href="#" class="footer__nav-link">Условия проживания</a></li>
+                    <li class="footer__nav-list"><a href="#" class="footer__nav-link">Правила заселения</a></li>
+                    <li class="footer__nav-list"><a href="#" class="footer__nav-link">Месторасположение</a></li>
+                    <li class="footer__nav-list"><a href="#" class="footer__nav-link">Отзывы</a></li>
+                    <li class="footer__nav-list"><a href="#" class="footer__nav-link">3D тур по отелю</a></li>
+                </ul>
+                <ul>
+                    <li class="footer__nav-list"><a href="" class="footer__nav-link">Ресторан</a></li>
+                    <li class="footer__nav-list"><a href="" class="footer__nav-link">Меню</a></li>
+                    <li class="footer__nav-list"><a href="" class="footer__nav-link">Фотогаллерея</a></li>
+                </ul>
+                <ul>
+                    <li class="footer__nav-list"><a href="" class="footer__nav-link">Бар & Лобби</a></li>
+                    <li class="footer__nav-list"><a href="" class="footer__nav-link">Меню</a></li>
+                    <li class="footer__nav-list"><a href="" class="footer__nav-link">Фотогаллерея</a></li>
+                </ul>
+            </div>
+            <div class="footer__nav-column">
+                <ul>
+                    <li class="footer__nav-list"><a href="" class="footer__nav-link">Услуги</a></li>
+                    <li class="footer__nav-list"><a href="" class="footer__nav-link">Проведение концефернций</a></li>
+                    <li class="footer__nav-list"><a href="" class="footer__nav-link">Проведение банкетов</a></li>
+                    <li class="footer__nav-list"><a href="" class="footer__nav-link">Организация трансфера</a></li>
+                </ul>
+                <ul>
+                    <li class="footer__nav-list"><a href="" class="footer__nav-link">Номера и цены</a></li>
+                    <li class="footer__nav-list"><a href="#" class="footer__nav-link">Стандарт 2-х местный</a></li>
+                    <li class="footer__nav-list"><a href="#" class="footer__nav-link">Студия 2-х местная</a></li>
+                    <li class="footer__nav-list"><a href="#" class="footer__nav-link">Студия Плюс 2-х местная</a></li>
+                    <li class="footer__nav-list"><a href="#" class="footer__nav-link">Люкс 4-х местный</a></li>
+                </ul>
+                <ul>
+                    <li class="footer__nav-list"><a href="" class="footer__nav-link">Бронирование</a></li>
+                    <li class="footer__nav-list"><a href="" class="footer__nav-link">Онлайн-бронирование</a></li>
+                    <li class="footer__nav-list"><a href="" class="footer__nav-link">Общие условия бронирования</a></li>
+                </ul>
+                <ul>
+                    <li class="footer__nav-list"><a href="" class="footer__nav-link">Welness</a></li>
+                    <li class="footer__nav-list"><a href="" class="footer__nav-link">Тренажерный зал</a></li>
+                    <li class="footer__nav-list"><a href="" class="footer__nav-link">Сауна</a></li>
+                </ul>
+                <ul>
+                    <li class="footer__nav-list"><a href="" class="footer__nav-link">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__right">
+            <div class="order">
+                <div class="order-phone">8(846)332 32 02</div>
+                <div class="order-button">
+                    <a class="button" href="#">Заказать звонок</a>
+                </div>
+            </div>
+            <div class="address">
+                <p><span><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 246.9 373.3" style="enable-background:new 0 0 246.9 373.3;" xml:space="preserve">
+<path d="M123.5,0C55.4,0,0,55.4,0,123.5c0,27.4,17.5,72.1,53.5,136.7c25.5,45.7,50.5,83.7,51.6,85.3l18.4,27.8l18.4-27.8
+	c1.1-1.6,26.1-39.7,51.6-85.3c36-64.5,53.5-109.2,53.5-136.7C246.9,55.4,191.5,0,123.5,0L123.5,0z M123.5,186.6
+	c-35.3,0-64-28.7-64-64c0-35.3,28.7-64,64-64c35.3,0,64,28.7,64,64C187.5,158,158.8,186.6,123.5,186.6L123.5,186.6z M123.5,186.6"/>
+</svg></span>
+                    Самара, ул. Куйбышева, 88</p>
+            </div>
+            <div class="sxema hide-sm">
+                <p>Схема проезда:<br><a href="#">от аэропорта</a>,<br><a href="#">от ж/д вокзала</a>
+                </p>
+            </div>
+            <div class="question hide-sm">
+                <h2>У Вас остались вопросы?</h2>
+                <textarea placeholder="Задать вопрос" name="MESSAGE" class="text" rows="5"></textarea>
+                <button type="submit" class="button" href="#">Отправить</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
