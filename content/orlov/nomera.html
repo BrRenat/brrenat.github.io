@@ -19,7 +19,7 @@
     <script src="js/jquery.colorbox-min.js"></script>
     <script src="js/main.js"></script>
 </head>
-<body class="main">
+<body>
 <div class="header">
     <div class="header__top">
         <div class="container">
@@ -138,7 +138,7 @@
                         <li class="header__nav-list"><a href="#" class="header__nav-link">Организация трансфера (с Ж/Д Вокзала и Аэропорта)</a></li>
                     </ul>
                 </li>
-                <li class="header__nav-list  header__nav-list-active">
+                <li class="header__nav-list">
                     <a href="" class="header__nav-link">Welness</a>
                 </li>
                 <li class="header__nav-list">
@@ -184,9 +184,10 @@
                 </div>
                 <ul class="header__nav header__nav-first">
                     <li class="header__nav-list header__nav-list-nav">
-                        <div class="target_nav-XS">
-
-                        </div>
+                        <div class="target_nav">
+  <span></span>
+  <span></span>
+  <span></span></div>
                         <a href="" class="header__nav-link">О гостинице</a>
                         <ul class="header__nav header__nav--second">
                             <li class="header__nav-list"><a href="#" class="header__nav-link">Отель</a></li>
@@ -204,9 +205,9 @@
                         </ul>
                     </li>
                     <li class="header__nav-list header__nav-list-nav">
-                        <div class="target_nav-XS">
-
-                        </div>
+                        <div class="target_nav"><span></span>
+  <span></span>
+  <span></span></div>
                         <a href="" class="header__nav-link">Номера и цены</a>
                         <ul class="header__nav header__nav--second">
                             <li class="header__nav-list"><a href="#" class="header__nav-link">Стандарт 2-х местный</a></li>
@@ -219,8 +220,10 @@
                         <a href="" class="header__nav-link">Бронирование</a>
                     </li>
                     <li class="header__nav-list header__nav-list-nav">
-                        <div class="target_nav-XS">
-
+                        <div class="target_nav">
+                            <span></span>
+                            <span></span>
+                            <span></span>
                         </div>
                         <a href="" class="header__nav-link">Услуги</a>
                         <ul class="header__nav header__nav--second">
@@ -247,137 +250,96 @@
     </div>
 </div>
 
-<div class="banner">
-    <div class="banner__slide">
-        <div class="banner__slide-item">
-            <img src="images/slider1+.jpg" alt="">
-            <div class="banner__box">
-                <div class="banner__box-text">
-                    <symbol>
-                        <text text-anchor="middle" x="50%" y="50%" dy=".35em">
-                            Hotel <br> Graf Orlov
-                        </text>
-                    </symbol>
-                </div>
-            </div>
-        </div>
-        <div class="banner__slide-item">
-            <img src="images/slider2+.jpg" alt="">
-            <div class="banner__box">
-                <div class="banner__box-text">
-                    <symbol>
-                        <text text-anchor="middle" x="50%" y="50%" dy=".35em">
-                            Hotel <br> Graf Orlov
-                        </text>
-                    </symbol>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="picker">
-        <div class="picker__title">
-            Бронирование номеров
-        </div>
-        <div class="picker__box">
-            <div class="picker__box-area">
-                <label>Дата заезда <input id='check_in_date' class='calendar' placeholder=""><label class="cal"
-                                                                                                    for="check_in_date"></label></label>
-                <label>Дата выезда <input id='check_out_date' class='calendar' placeholder=""><label class="cal"
-                                                                                                     for="check_out_date"></label></label>
-            </div>
-            <div class="picker__box-btn"><button class="button" href="#">Показать номера и цены</button></div>
-        </div>
-    </div>
-</div>
 
 <div class="page">
+    <div class="page-title"><h1>Номера</h1></div>
     <div class="page__section-bg-white">
         <div class="container">
-            <p class="page__section-text-decorate"><span>Отель “Граф Орлов”</span> - гостеприимство, изысканность, элегантность</p>
-            <h1 class="page__section-text-title">В нашем отеле Вы можете найти:</h1>
             <div class="page__section-content">
                 <div class="content__row">
-                    <div class="content__item content__item-3 no_margin">
-                        <div class="special">
-                            <div class="special__image">
-                                <img src="images/pic1.jpg" alt="Номера от стандартного до люкса">
-                            </div>
-                            <div class="special__desc">
-                                <div class="special__desc-text">Номера<br> от стандартного<br> до люкса</div>
-                                <div class="special__desc-link"><a href="#"><span></span>Подробнее</a></div>
-                            </div>
+                    <div class="content__item content__item-2">
+                        <div class="number">
+                            <p>Отель Граф Орлов предлагает 23 комфортабельных номера,
+                                некоторые - с видом на Волгу.</p>
+                            <p>Обстановка отеля создает особую атмосферу, в которой объединены элементы традиционно русской культуры и современного европейского дизайна.
+                                Отель оснащен всеми современными удобствами. В деловой командировке или туристической поездке – у нас каждый чувствует себя как дома.</p>
                         </div>
                     </div>
-                    <div class="content__item content__item-3 no_margin">
-                        <div class="special">
-                            <div class="special__image">
-                                <img src="images/pic2.jpg" alt="Ресторан">
-                            </div>
-                            <div class="special__desc">
-                                <div class="special__desc-text">Ресторан</div>
-                                <div class="special__desc-link"><a href="#"><span></span>Подробнее</a></div>
-                                <div class="special__desc-text hide-md">Бар & лобби</div>
-                                <div class="special__desc-link hide-md"><a href="#"><span></span>Подробнее</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content__item content__item-3 no_margin">
-                        <div class="special">
-                            <div class="special__image">
-                                <img src="images/pic3.jpg" alt="WELNESS">
-                            </div>
-                            <div class="special__desc">
-                                <div class="special__desc-text">WELNESS - <br>тренажерный зал <br>и сауна</div>
-                                <div class="special__desc-link"><a href="#"><span></span>Подробнее</a></div>
+                    <div class="content__item content__item-2">
+                        <div class="number">
+                            <div class="picker">
+                                <div class="picker__title">
+                                    Бронирование номеров
+                                </div>
+                                <div class="picker__box">
+                                    <div class="picker__box-area">
+                                        <label>Дата заезда <input id='check_in_date' class='calendar' placeholder=""><label class="cal"
+                                                                                                                            for="check_in_date"></label></label>
+                                        <label>Дата выезда <input id='check_out_date' class='calendar' placeholder=""><label class="cal"
+                                                                                                                             for="check_out_date"></label></label>
+                                    </div>
+                                    <div class="picker__box-btn"><button class="button" href="#">Забронировать</button></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <h1 class="page__section-text-title">Мы предоставляем услуги:</h1>
-    <div class="page__section-bg-blue">
-        <div class="container">
-            <div class="page__section-content">
                 <div class="content__row">
-                    <div class="content__item content__item-4">
-                        <a href=""><div class="uslugi">
-                            <div class="uslugi__icon">
-                                <object type="image/svg+xml" data="images/svg_icon/transfer.svg" class="uslugi__icon-svg uslugi__icon-svg-transfer"></object>
-                            </div>
-                            <div class="uslugi__desc">Организация <br> трансфера</div>
-                        </div></a>
-                    </div>
-                    <div class="content__item content__item-4">
-                        <a href=""><div class="uslugi">
-                            <div class="uslugi__icon">
-                                <div class="uslugi__icon">
-                                    <object type="image/svg+xml" data="images/svg_icon/conference.svg" class="uslugi__icon-svg uslugi__icon-svg-conference"></object>
+                    <div class="content__item content__item-2 content__item-padding">
+                        <div class="number">
+                            <div class="special">
+                                <div class="special__image">
+                                    <img src="images/pic17.jpg" alt="Стандарт 2-х местный">
+                                </div>
+                                <div class="special__desc">
+                                    <div class="special__desc-text">Стандарт 2-х местный</div>
+                                    <div class="special__desc-link"><a href="#"><span></span>Подробнее</a></div>
+                                    <div class="special__desc-price">от <b>4500</b> руб.</div>
                                 </div>
                             </div>
-                            <div class="uslugi__desc">Проведение <br>конференций</div>
-                        </div></a>
+                        </div>
                     </div>
-                    <div class="content__item content__item-4">
-                        <a href=""><div class="uslugi">
-                            <div class="uslugi__icon">
-                                <div class="uslugi__icon">
-                                    <object type="image/svg+xml" data="images/svg_icon/banquet.svg" class="uslugi__icon-svg uslugi__icon-svg-banquet"></object>
+                    <div class="content__item content__item-2 content__item-padding">
+                        <div class="number">
+                            <div class="special">
+                                <div class="special__image">
+                                    <img src="images/pic17.jpg" alt="Стандарт 2-х местный">
+                                </div>
+                                <div class="special__desc">
+                                    <div class="special__desc-text">Стандарт 2-х местный</div>
+                                    <div class="special__desc-link"><a href="#"><span></span>Подробнее</a></div>
+                                    <div class="special__desc-price">от <b>450</b> руб.</div>
                                 </div>
                             </div>
-                            <div class="uslugi__desc">Проведение <br>банкетов</div>
-                        </div></a>
+                        </div>
                     </div>
-                    <div class="content__item content__item-4">
-                        <a href=""><div class="uslugi">
-                            <div class="uslugi__icon">
-                                <div class="uslugi__icon">
-                                    <object type="image/svg+xml" data="images/svg_icon/wifi.svg" class="uslugi__icon-svg uslugi__icon-svg-wifi"></object>
+                    <div class="content__item content__item-2 content__item-padding">
+                        <div class="number">
+                            <div class="special">
+                                <div class="special__image">
+                                    <img src="images/pic17.jpg" alt="Стандарт 2-х местный">
+                                </div>
+                                <div class="special__desc">
+                                    <div class="special__desc-text">Стандарт 2-х местный</div>
+                                    <div class="special__desc-link"><a href="#"><span></span>Подробнее</a></div>
+                                    <div class="special__desc-price">от <b>4500</b> руб.</div>
                                 </div>
                             </div>
-                            <div class="uslugi__desc">Бесплатый <br>интернет</div>
-                        </div></a>
+                        </div>
+                    </div>
+                    <div class="content__item content__item-2 content__item-padding">
+                        <div class="number">
+                            <div class="special">
+                                <div class="special__image">
+                                    <img src="images/pic17.jpg" alt="Стандарт 2-х местный">
+                                </div>
+                                <div class="special__desc">
+                                    <div class="special__desc-text">Стандарт 2-х местный</div>
+                                    <div class="special__desc-link"><a href="#"><span></span>Подробнее</a></div>
+                                    <div class="special__desc-price">от <b>4500</b> руб.</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -423,109 +385,35 @@
         </div>
     </div>
     <div class="page__section-bg-white">
-        <h1 class="page__section-text-title">Отзывы</h1>
-        <div class="container">
-            <div class="page__section-content">
-                <div class="content__row feedback_gallery">
-                    <div class="content__item content__item-4">
-                        <div class="feedback">
-                            <h2>Елена И.</h2>
-                            <p>Добрый день! Отмечали свадьбу в ресторане
-                                вашего отеля 06.06.2015г., всё прошло просто замечательно!
-                                Еда вкусная, красивая сервировка, официанты большие молодцы,
-                                очень внимательные и расторопные, особенно
-                                хотелось бы выразить благодарность...</p>
-                            <span></span>
-                            <div class="feedback-link"><span></span>Подробнее</div>
-                        </div>
-                    </div>
-                    <div class="content__item content__item-4">
-                        <div class="feedback">
-                            <h2>Елена И.</h2>
-                            <p>Добрый день! Отмечали свадьбу в ресторане
-                                вашего отеля 06.06.2015г., всё прошло просто замечательно!
-                                Еда вкусная, красивая сервировка, официанты большие молодцы,
-                                очень внимательные и расторопные, особенно
-                                хотелось бы выразить благодарность...</p>
-                            <span></span>
-                            <div class="feedback-link"><span></span>Подробнее</div>
-                        </div>
-                    </div>
-                    <div class="content__item content__item-4">
-                        <div class="feedback">
-                            <h2>Елена И.</h2>
-                            <p>Добрый день! Отмечали свадьбу в ресторане
-                                вашего отеля 06.06.2015г., всё прошло просто замечательно!
-                                Еда вкусная, красивая сервировка, официанты большие молодцы,
-                                очень внимательные и расторопные, особенно
-                                хотелось бы выразить благодарность...</p>
-                            <span></span>
-                            <div class="feedback-link"><span></span>Подробнее</div>
-                        </div>
-                    </div>
-                    <div class="content__item content__item-4">
-                        <div class="feedback">
-                            <h2>Елена И.</h2>
-                            <p>Добрый день! Отмечали свадьбу в ресторане
-                                вашего отеля 06.06.2015г., всё прошло просто замечательно!
-                                Еда вкусная, красивая сервировка, официанты большие молодцы,
-                                очень внимательные и расторопные, особенно всё прошло просто замечательно!
-                                Еда вкусная, красивая сервировка, официанты большие молодцы,
-                                очень внимательные и расторопные, особенновсё прошло просто замечательно!
-                                Еда вкусная, красивая сервировка, официанты большие молодцы,
-                                очень внимательные и расторопные, особенно
-                                хотелось бы выразить благодарность...</p>
-                            <span></span>
-                            <div class="feedback-link"><span></span>Подробнее</div>
-                        </div>
-                    </div>
-
-                    <div class="content__item content__item-4">
-                        <div class="feedback">
-                            <h2>Елена И.</h2>
-                            <p>Добрый день! Отмечали свадьбу в ресторане
-                                вашего отеля 06.06.2015г., всё прошло просто замечательно!
-                                Еда вкусная, красивая сервировка, официанты большие молодцы,
-                                очень внимательные и расторопные, особенно
-                                хотелось бы выразить благодарность...</p>
-                            <span></span>
-                            <div class="feedback-link"><span></span>Подробнее</div>
-                        </div>
-                    </div>
-                    <div class="content__item content__item-4">
-                        <div class="feedback">
-                            <h2>Елена И.</h2>
-                            <p>Добрый день! Отмечали свадьбу в ресторане
-                                вашего отеля 06.06.2015г., всё прошло просто замечательно!
-                                Еда вкусная, красивая сервировка, официанты большие молодцы,
-                                очень внимательные и расторопные, особенно
-                                хотелось бы выразить благодарность...</p>
-                            <span></span>
-                            <div class="feedback-link"><span></span>Подробнее</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="page__section-bg-white">
-        <h1 class="page__section-text-title">События</h1>
+        <h1 class="page__section-text-title">Welness</h1>
         <div class="container">
             <div class="page__section-content">
                 <div class="content__row">
                     <div class="content__item content__item-2">
                         <div class="news">
                             <div class="news__image">
-                                <img src="images/pic8.jpg" alt="">
+                                <img src="images/pic16.jpg" alt="">
                             </div>
                         </div>
                     </div>
                     <div class="content__item content__item-2">
                         <div class="news">
                             <div class="news__desc">
-                                <div class="news__desc-data">1/06/2016</div>
-                                <div class="news__desc-title"><a href="">Летнее событие</a></div>
-                                <div class="news__desc-text">Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст </div>
+                                <div class="news__desc-title"><a href="">Тренажерный зал</a></div>
+                                <div class="news__desc-text">Текст текст текст текст текст текст текст текст
+                                    текст текст текст текст текст текст текст текст текст текст текст текст текст
+                                    текст текст текст текст текст текст текст текст текст текст текст текст текст
+                                    екст текст текст текст текст текст текст текст текст текст текст текст текст
+                                    текст текст текст текст текст текст текст текст текст текст текст текст
+                                    текст текст текст текст текст текст текст текст текст текст текст текст </div>
+                                <div class="news__desc-title"><a href="">Сауна</a></div>
+                                <div class="news__desc-text">Текст текст текст текст текст текст текст текст
+                                    текст текст текст текст текст текст текст текст текст текст текст текст текст
+                                    текст текст текст текст текст текст текст текст текст текст текст текст текст
+                                    екст текст текст текст текст текст текст текст текст текст текст текст текст
+                                    текст текст текст текст текст текст текст текст текст текст текст текст
+                                    текст текст текст текст текст текст текст текст текст текст текст текст </div>
+                                <a class="button button-block button-dark" href="#">Подробнее</a>
                             </div>
                         </div>
                     </div>

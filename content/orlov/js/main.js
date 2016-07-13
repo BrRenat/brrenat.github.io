@@ -89,7 +89,7 @@ function mainNavActive() {
 };
 
 function mobileNav() {
-    var target = $('.navXS .target_nav'),
+    var target = $('.navXS .target_nav-XS'),
         dropdown = target.parent().find('.header__nav--second'),
         dropdownTarget;
     dropdown.hide();
@@ -110,6 +110,7 @@ function mobileNav() {
     targetHead.on('click', function(){
         dropdownTargetHead = $(this).parent().find('.header__nav-first');
         dropdownHead.toggle();
+        $(this).toggleClass('open');
     });
 };
 
@@ -223,7 +224,31 @@ $(document).on('ready', function(){
         prevArrow: '<span class="banner__slide-nav banner__slide-nav-prev"></span>',
         nextArrow:  '<span class="banner__slide-nav banner__slide-nav-next"></span>'
     });
-    $('a.gallery__item-link').colorbox({rel:'gal'});
+    $('a.gallery__item-link').colorbox({rel:'gal_1'});
+    $('a.hotel__slider-main-link').colorbox({rel:'gal_2'});
+    $('a.restoran__gallery-item-link').colorbox({rel:'gal_3'});
+    $('.hotel__slider-main').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        infinite: false,
+        fade: true,
+        asNavFor: '.hotel__slider-min',
+        prevArrow: '<span class="banner__slide-nav banner__slide-nav-prev"></span>',
+        nextArrow:  '<span class="banner__slide-nav banner__slide-nav-next"></span>'
+    });
+    $('.hotel__slider-min').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: false,
+        asNavFor: '.hotel__slider-main',
+        vertical: true,
+        arrows: false,
+        centerMode: true,
+        verticalSwiping: true,
+        focusOnSelect: true,
+        dots: false
+    });
 });
 
 $(window).on('resize', function(){

@@ -19,7 +19,7 @@
     <script src="js/jquery.colorbox-min.js"></script>
     <script src="js/main.js"></script>
 </head>
-<body class="main">
+<body>
 <div class="header">
     <div class="header__top">
         <div class="container">
@@ -138,7 +138,7 @@
                         <li class="header__nav-list"><a href="#" class="header__nav-link">Организация трансфера (с Ж/Д Вокзала и Аэропорта)</a></li>
                     </ul>
                 </li>
-                <li class="header__nav-list  header__nav-list-active">
+                <li class="header__nav-list">
                     <a href="" class="header__nav-link">Welness</a>
                 </li>
                 <li class="header__nav-list">
@@ -184,9 +184,10 @@
                 </div>
                 <ul class="header__nav header__nav-first">
                     <li class="header__nav-list header__nav-list-nav">
-                        <div class="target_nav-XS">
-
-                        </div>
+                        <div class="target_nav">
+  <span></span>
+  <span></span>
+  <span></span></div>
                         <a href="" class="header__nav-link">О гостинице</a>
                         <ul class="header__nav header__nav--second">
                             <li class="header__nav-list"><a href="#" class="header__nav-link">Отель</a></li>
@@ -204,9 +205,9 @@
                         </ul>
                     </li>
                     <li class="header__nav-list header__nav-list-nav">
-                        <div class="target_nav-XS">
-
-                        </div>
+                        <div class="target_nav"><span></span>
+  <span></span>
+  <span></span></div>
                         <a href="" class="header__nav-link">Номера и цены</a>
                         <ul class="header__nav header__nav--second">
                             <li class="header__nav-list"><a href="#" class="header__nav-link">Стандарт 2-х местный</a></li>
@@ -219,8 +220,10 @@
                         <a href="" class="header__nav-link">Бронирование</a>
                     </li>
                     <li class="header__nav-list header__nav-list-nav">
-                        <div class="target_nav-XS">
-
+                        <div class="target_nav">
+                            <span></span>
+                            <span></span>
+                            <span></span>
                         </div>
                         <a href="" class="header__nav-link">Услуги</a>
                         <ul class="header__nav header__nav--second">
@@ -247,346 +250,113 @@
     </div>
 </div>
 
-<div class="banner">
-    <div class="banner__slide">
-        <div class="banner__slide-item">
-            <img src="images/slider1+.jpg" alt="">
-            <div class="banner__box">
-                <div class="banner__box-text">
-                    <symbol>
-                        <text text-anchor="middle" x="50%" y="50%" dy=".35em">
-                            Hotel <br> Graf Orlov
-                        </text>
-                    </symbol>
-                </div>
-            </div>
-        </div>
-        <div class="banner__slide-item">
-            <img src="images/slider2+.jpg" alt="">
-            <div class="banner__box">
-                <div class="banner__box-text">
-                    <symbol>
-                        <text text-anchor="middle" x="50%" y="50%" dy=".35em">
-                            Hotel <br> Graf Orlov
-                        </text>
-                    </symbol>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="picker">
-        <div class="picker__title">
-            Бронирование номеров
-        </div>
-        <div class="picker__box">
-            <div class="picker__box-area">
-                <label>Дата заезда <input id='check_in_date' class='calendar' placeholder=""><label class="cal"
-                                                                                                    for="check_in_date"></label></label>
-                <label>Дата выезда <input id='check_out_date' class='calendar' placeholder=""><label class="cal"
-                                                                                                     for="check_out_date"></label></label>
-            </div>
-            <div class="picker__box-btn"><button class="button" href="#">Показать номера и цены</button></div>
-        </div>
-    </div>
-</div>
 
 <div class="page">
     <div class="page__section-bg-white">
         <div class="container">
-            <p class="page__section-text-decorate"><span>Отель “Граф Орлов”</span> - гостеприимство, изысканность, элегантность</p>
-            <h1 class="page__section-text-title">В нашем отеле Вы можете найти:</h1>
             <div class="page__section-content">
-                <div class="content__row">
-                    <div class="content__item content__item-3 no_margin">
-                        <div class="special">
-                            <div class="special__image">
-                                <img src="images/pic1.jpg" alt="Номера от стандартного до люкса">
-                            </div>
-                            <div class="special__desc">
-                                <div class="special__desc-text">Номера<br> от стандартного<br> до люкса</div>
-                                <div class="special__desc-link"><a href="#"><span></span>Подробнее</a></div>
-                            </div>
+                <div class="restoran">
+                    <div class="restoran__gallery">
+                        <div class="page-title"><h2>Фотогалерея</h2></div>
+                        <div class="restoran__gallery-item">
+                            <a class="restoran__gallery-item-link" href="images/pic9.jpg"><img src="images/pic9.jpg" alt=""></a>
+                            <a class="restoran__gallery-item-link" href="images/pic9.jpg"><img src="images/pic9.jpg" alt=""></a>
+                            <a class="restoran__gallery-item-link" href="images/pic9.jpg"><img src="images/pic9.jpg" alt=""></a>
+                            <a class="restoran__gallery-item-link" href="images/pic9.jpg"><img src="images/pic9.jpg" alt=""></a>
                         </div>
                     </div>
-                    <div class="content__item content__item-3 no_margin">
-                        <div class="special">
-                            <div class="special__image">
-                                <img src="images/pic2.jpg" alt="Ресторан">
-                            </div>
-                            <div class="special__desc">
-                                <div class="special__desc-text">Ресторан</div>
-                                <div class="special__desc-link"><a href="#"><span></span>Подробнее</a></div>
-                                <div class="special__desc-text hide-md">Бар & лобби</div>
-                                <div class="special__desc-link hide-md"><a href="#"><span></span>Подробнее</a></div>
-                            </div>
+                    <div class="restoran__menu">
+                        <div class="page-title"><h2>Меню</h2></div>
+                        <div class="restoran__menu-list">
+                            <ul>
+                                <li class="restoran__menu-active"><span>Холодные закуски</span></li>
+                                <li><span>Салаты</span></li>
+                                <li><span>Горячие закуски</span></li>
+                                <li><span>Блюда из рыбы</span></li>
+                                <li><span>Блюда на гриле</span></li>
+                                <li><span>Гарниры</span></li>
+                            </ul>
+                            <ul>
+                                <li><span>Паста и ризотто</span></li>
+                                <li><span>Супы</span></li>
+                                <li><span>Блюда из мяса и птицы</span></li>
+                                <li><span>Десерты</span></li>
+                                <li><span>Напитки</span></li>
+                            </ul>
                         </div>
-                    </div>
-                    <div class="content__item content__item-3 no_margin">
-                        <div class="special">
-                            <div class="special__image">
-                                <img src="images/pic3.jpg" alt="WELNESS">
-                            </div>
-                            <div class="special__desc">
-                                <div class="special__desc-text">WELNESS - <br>тренажерный зал <br>и сауна</div>
-                                <div class="special__desc-link"><a href="#"><span></span>Подробнее</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <h1 class="page__section-text-title">Мы предоставляем услуги:</h1>
-    <div class="page__section-bg-blue">
-        <div class="container">
-            <div class="page__section-content">
-                <div class="content__row">
-                    <div class="content__item content__item-4">
-                        <a href=""><div class="uslugi">
-                            <div class="uslugi__icon">
-                                <object type="image/svg+xml" data="images/svg_icon/transfer.svg" class="uslugi__icon-svg uslugi__icon-svg-transfer"></object>
-                            </div>
-                            <div class="uslugi__desc">Организация <br> трансфера</div>
-                        </div></a>
-                    </div>
-                    <div class="content__item content__item-4">
-                        <a href=""><div class="uslugi">
-                            <div class="uslugi__icon">
-                                <div class="uslugi__icon">
-                                    <object type="image/svg+xml" data="images/svg_icon/conference.svg" class="uslugi__icon-svg uslugi__icon-svg-conference"></object>
+                        <div class="restoran__menu-book">
+                            <div class="menu">
+                                <div class="menu-item">
+                                    <div class="menu-cell menu-cell-name">Холодные закуски</div>
+                                    <div class="menu-cell menu-cell-weight">гр</div>
+                                    <div class="menu-cell menu-cell-price">цена</div>
                                 </div>
-                            </div>
-                            <div class="uslugi__desc">Проведение <br>конференций</div>
-                        </div></a>
-                    </div>
-                    <div class="content__item content__item-4">
-                        <a href=""><div class="uslugi">
-                            <div class="uslugi__icon">
-                                <div class="uslugi__icon">
-                                    <object type="image/svg+xml" data="images/svg_icon/banquet.svg" class="uslugi__icon-svg uslugi__icon-svg-banquet"></object>
+                                <div class="menu-item">
+                                    <div class="menu-cell menu-cell-name">Икра лососёвая, подаётся с блинами и сметаной</div>
+                                    <div class="menu-cell menu-cell-weight">50/150/50</div>
+                                    <div class="menu-cell menu-cell-price">590 руб.</div>
                                 </div>
-                            </div>
-                            <div class="uslugi__desc">Проведение <br>банкетов</div>
-                        </div></a>
-                    </div>
-                    <div class="content__item content__item-4">
-                        <a href=""><div class="uslugi">
-                            <div class="uslugi__icon">
-                                <div class="uslugi__icon">
-                                    <object type="image/svg+xml" data="images/svg_icon/wifi.svg" class="uslugi__icon-svg uslugi__icon-svg-wifi"></object>
+                                <div class="menu-item">
+                                    <div class="menu-cell menu-cell-name">Рыбное ассорти из филе палтуса холодного
+                                        копчения, лососины горячего копчения и масляной рыбы холодного копчения</div>
+                                    <div class="menu-cell menu-cell-weight">150/50</div>
+                                    <div class="menu-cell menu-cell-price">990 руб.</div>
                                 </div>
-                            </div>
-                            <div class="uslugi__desc">Бесплатый <br>интернет</div>
-                        </div></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="page__section-bg-white">
-        <h1 class="page__section-text-title">Фотогаллерея</h1>
-        <div class="container">
-            <div class="page__section-content">
-                <div class="content__row gallery">
-                    <div class="content__item content__item-4">
-                        <div class="gallery__item">
-                            <a class="gallery__item-link" href="images/pic4.jpg"><img data-lazy="images/pic4.jpg" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="content__item content__item-4">
-                        <div class="gallery__item">
-                            <a class="gallery__item-link" href="images/pic5.jpg"><img data-lazy="images/pic5.jpg" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="content__item content__item-4">
-                        <div class="gallery__item">
-                            <a class="gallery__item-link" href="images/pic6.jpg"><img data-lazy="images/pic6.jpg" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="content__item content__item-4">
-                        <div class="gallery__item">
-                            <a class="gallery__item-link" href="images/pic7.jpg"><img data-lazy="images/pic7.jpg" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="content__item content__item-4">
-                        <div class="gallery__item">
-                            <a class="gallery__item-link" href="images/pic6.jpg"><img data-lazy="images/pic6.jpg" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="content__item content__item-4">
-                        <div class="gallery__item">
-                            <a class="gallery__item-link" href="images/pic7.jpg"><img data-lazy="images/pic7.jpg" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="page__section-bg-white">
-        <h1 class="page__section-text-title">Отзывы</h1>
-        <div class="container">
-            <div class="page__section-content">
-                <div class="content__row feedback_gallery">
-                    <div class="content__item content__item-4">
-                        <div class="feedback">
-                            <h2>Елена И.</h2>
-                            <p>Добрый день! Отмечали свадьбу в ресторане
-                                вашего отеля 06.06.2015г., всё прошло просто замечательно!
-                                Еда вкусная, красивая сервировка, официанты большие молодцы,
-                                очень внимательные и расторопные, особенно
-                                хотелось бы выразить благодарность...</p>
-                            <span></span>
-                            <div class="feedback-link"><span></span>Подробнее</div>
-                        </div>
-                    </div>
-                    <div class="content__item content__item-4">
-                        <div class="feedback">
-                            <h2>Елена И.</h2>
-                            <p>Добрый день! Отмечали свадьбу в ресторане
-                                вашего отеля 06.06.2015г., всё прошло просто замечательно!
-                                Еда вкусная, красивая сервировка, официанты большие молодцы,
-                                очень внимательные и расторопные, особенно
-                                хотелось бы выразить благодарность...</p>
-                            <span></span>
-                            <div class="feedback-link"><span></span>Подробнее</div>
-                        </div>
-                    </div>
-                    <div class="content__item content__item-4">
-                        <div class="feedback">
-                            <h2>Елена И.</h2>
-                            <p>Добрый день! Отмечали свадьбу в ресторане
-                                вашего отеля 06.06.2015г., всё прошло просто замечательно!
-                                Еда вкусная, красивая сервировка, официанты большие молодцы,
-                                очень внимательные и расторопные, особенно
-                                хотелось бы выразить благодарность...</p>
-                            <span></span>
-                            <div class="feedback-link"><span></span>Подробнее</div>
-                        </div>
-                    </div>
-                    <div class="content__item content__item-4">
-                        <div class="feedback">
-                            <h2>Елена И.</h2>
-                            <p>Добрый день! Отмечали свадьбу в ресторане
-                                вашего отеля 06.06.2015г., всё прошло просто замечательно!
-                                Еда вкусная, красивая сервировка, официанты большие молодцы,
-                                очень внимательные и расторопные, особенно всё прошло просто замечательно!
-                                Еда вкусная, красивая сервировка, официанты большие молодцы,
-                                очень внимательные и расторопные, особенновсё прошло просто замечательно!
-                                Еда вкусная, красивая сервировка, официанты большие молодцы,
-                                очень внимательные и расторопные, особенно
-                                хотелось бы выразить благодарность...</p>
-                            <span></span>
-                            <div class="feedback-link"><span></span>Подробнее</div>
-                        </div>
-                    </div>
-
-                    <div class="content__item content__item-4">
-                        <div class="feedback">
-                            <h2>Елена И.</h2>
-                            <p>Добрый день! Отмечали свадьбу в ресторане
-                                вашего отеля 06.06.2015г., всё прошло просто замечательно!
-                                Еда вкусная, красивая сервировка, официанты большие молодцы,
-                                очень внимательные и расторопные, особенно
-                                хотелось бы выразить благодарность...</p>
-                            <span></span>
-                            <div class="feedback-link"><span></span>Подробнее</div>
-                        </div>
-                    </div>
-                    <div class="content__item content__item-4">
-                        <div class="feedback">
-                            <h2>Елена И.</h2>
-                            <p>Добрый день! Отмечали свадьбу в ресторане
-                                вашего отеля 06.06.2015г., всё прошло просто замечательно!
-                                Еда вкусная, красивая сервировка, официанты большие молодцы,
-                                очень внимательные и расторопные, особенно
-                                хотелось бы выразить благодарность...</p>
-                            <span></span>
-                            <div class="feedback-link"><span></span>Подробнее</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="page__section-bg-white">
-        <h1 class="page__section-text-title">События</h1>
-        <div class="container">
-            <div class="page__section-content">
-                <div class="content__row">
-                    <div class="content__item content__item-2">
-                        <div class="news">
-                            <div class="news__image">
-                                <img src="images/pic8.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content__item content__item-2">
-                        <div class="news">
-                            <div class="news__desc">
-                                <div class="news__desc-data">1/06/2016</div>
-                                <div class="news__desc-title"><a href="">Летнее событие</a></div>
-                                <div class="news__desc-text">Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="page__section-bg-white no_margin-XS">
-        <div class="container">
-            <div class="page__section-content">
-                <div class="content__row">
-                    <div class="content__item content__item-1">
-                        <div class="map">
-                            <div class="map__desc">
-                                <h3>Узнайте как добраться до нас:</h3>
-                                <a class="map__desc-link-plane" href=""><object type="image/svg+xml" data="images/svg_icon/airplane.svg" class="map__desc-link-svg map__desc-link-svg-plane"></object>от аэропорта</a>
-                                <a class="map__desc-link-train" href=""><object type="image/svg+xml" data="images/svg_icon/train.svg" class="map__desc-link-svg map__desc-link-svg-train"></object>от ж/д вокзала</a>
-                            </div>
-                            <div class="map__map">
-                                <div id='map'>
-                                    <script>
-                                        L.mapbox.accessToken = 'pk.eyJ1IjoiYnJyZW5hdCIsImEiOiJjaW5pbGN2d2owMDNtd2RseXV2MTM1cWRmIn0.Z2EiCqAUqqVqVbrqCg7GfQ';
-                                        var map = L.mapbox.map('map', 'mapbox.streets')
-                                                .setView([53.1889568,50.0891528], 30);
-                                        map.scrollWheelZoom.disable();
-                                        var myLayer = L.mapbox.featureLayer().addTo(map);
-                                        var geoJson = [{
-                                            "type": "Feature",
-                                            "geometry": {
-                                                "type": "Point",
-                                                "coordinates": [50.0891528,53.1889568]
-                                            },
-                                            "properties": {
-                                                "title": "Отель “Граф Орлов”",
-                                                description: 'Самара, ул. Куйбышева, 88',
-                                                "icon": {
-                                                    "iconUrl": "images/location-map.png",
-                                                    "iconSize": [212, 133], // size of the icon
-                                                    "iconAnchor": [-78, 50], // point of the icon which will correspond to marker's location
-                                                    "popupAnchor": [192, -18], // point from which the popup should open relative to the iconAnchor
-                                                    "className": "dot"
-                                                }
-                                            }
-                                        }];
-
-                                        // Set a custom icon on each marker based on feature properties.
-                                        myLayer.on('layeradd', function(e) {
-                                            var marker = e.layer,
-                                                    feature = marker.feature;
-
-                                            marker.setIcon(L.icon(feature.properties.icon));
-                                        });
-
-                                        // Add features to the map.
-                                        myLayer.setGeoJSON(geoJson);
-
-                                    </script>
-
+                                <div class="menu-item">
+                                    <div class="menu-cell menu-cell-name">Икра лососёвая, подаётся с блинами и сметаной</div>
+                                    <div class="menu-cell menu-cell-weight">50/150/50</div>
+                                    <div class="menu-cell menu-cell-price">590 руб.</div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="menu-cell menu-cell-name">Икра лососёвая, подаётся с блинами и сметаной</div>
+                                    <div class="menu-cell menu-cell-weight">50/150/50</div>
+                                    <div class="menu-cell menu-cell-price">590 руб.</div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="menu-cell menu-cell-name">Икра лососёвая, подаётся с блинами и сметаной</div>
+                                    <div class="menu-cell menu-cell-weight">50/150/50</div>
+                                    <div class="menu-cell menu-cell-price">590 руб.</div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="menu-cell menu-cell-name">Рыбное ассорти из филе палтуса холодного
+                                        копчения, лососины горячего копчения и масляной рыбы холодного копчения</div>
+                                    <div class="menu-cell menu-cell-weight">150/50</div>
+                                    <div class="menu-cell menu-cell-price">990 руб.</div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="menu-cell menu-cell-name">Икра лососёвая, подаётся с блинами и сметаной</div>
+                                    <div class="menu-cell menu-cell-weight">50/150/50</div>
+                                    <div class="menu-cell menu-cell-price">590 руб.</div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="menu-cell menu-cell-name">Икра лососёвая, подаётся с блинами и сметаной</div>
+                                    <div class="menu-cell menu-cell-weight">50/150/50</div>
+                                    <div class="menu-cell menu-cell-price">590 руб.</div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="menu-cell menu-cell-name">Икра лососёвая, подаётся с блинами и сметаной</div>
+                                    <div class="menu-cell menu-cell-weight">50/150/50</div>
+                                    <div class="menu-cell menu-cell-price">590 руб.</div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="menu-cell menu-cell-name">Рыбное ассорти из филе палтуса холодного
+                                        копчения, лососины горячего копчения и масляной рыбы холодного копчения</div>
+                                    <div class="menu-cell menu-cell-weight">150/50</div>
+                                    <div class="menu-cell menu-cell-price">990 руб.</div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="menu-cell menu-cell-name">Икра лососёвая, подаётся с блинами и сметаной</div>
+                                    <div class="menu-cell menu-cell-weight">50/150/50</div>
+                                    <div class="menu-cell menu-cell-price">590 руб.</div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="menu-cell menu-cell-name">Икра лососёвая, подаётся с блинами и сметаной</div>
+                                    <div class="menu-cell menu-cell-weight">50/150/50</div>
+                                    <div class="menu-cell menu-cell-price">590 руб.</div>
                                 </div>
                             </div>
                         </div>
+                        <div class="restoran__menu-book_footer"></div>
                     </div>
                 </div>
             </div>
