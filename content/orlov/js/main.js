@@ -227,6 +227,7 @@ $(document).on('ready', function(){
     $('a.gallery__item-link').colorbox({rel:'gal_1'});
     $('a.hotel__slider-main-link').colorbox({rel:'gal_2'});
     $('a.restoran__gallery-item-link').colorbox({rel:'gal_3'});
+    $(".modal_link").colorbox({inline:true, width:"auto"});
     $('.hotel__slider-main').slick({
         slidesToShow: 1,
         slidesToScroll: 1,

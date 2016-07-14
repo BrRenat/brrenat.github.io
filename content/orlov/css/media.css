@@ -369,6 +369,9 @@
     .hotel__slider-fix {
         width:300px;
     }
+    .hotel__gallery-head ul {
+        margin: 0;
+    }
     .hotel__gallery-head ul li {
         width: 50%;
     }
@@ -381,5 +384,8 @@
     }
     .restoran__menu-list ul:first-child {
         margin-right: 0;
+    }
+    body {
+        overflow: hidden;
     }
 }

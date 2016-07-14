@@ -90,7 +90,7 @@
                 <div class="order">
                     <div class="order-phone">8(846)332 32 02</div>
                     <div class="order-button">
-                        <a class="button" href="#">Заказать звонок</a>
+                        <a class="button modal_link" href="#order">Заказать звонок</a>
                     </div>
                 </div>
             </div>
@@ -280,9 +280,9 @@
         </div>
         <div class="picker__box">
             <div class="picker__box-area">
-                <label>Дата заезда <input id='check_in_date' class='calendar' placeholder=""><label class="cal"
+                <label>Дата заезда <input type='date' id='check_in_date' class='calendar' placeholder=""><label class="cal"
                                                                                                     for="check_in_date"></label></label>
-                <label>Дата выезда <input id='check_out_date' class='calendar' placeholder=""><label class="cal"
+                <label>Дата выезда <input type='date' id='check_out_date' class='calendar' placeholder=""><label class="cal"
                                                                                                      for="check_out_date"></label></label>
             </div>
             <div class="picker__box-btn"><button class="button" href="#">Показать номера и цены</button></div>
@@ -741,5 +741,24 @@
     </div>
 
 </div>
+<div style="display: none">
+    <div id="order">
+        <div class="picker">
+            <div class="picker__title">
+                Бронирование номеров
+            </div>
+            <div class="picker__box">
+                <div class="picker__box-area">
+                    <label>Дата заезда <input id='check_in_date' class='calendar' placeholder=""><label class="cal"
+                                                                                                        for="check_in_date"></label></label>
+                    <label>Дата выезда <input id='check_out_date' class='calendar' placeholder=""><label class="cal"
+                                                                                                         for="check_out_date"></label></label>
+                </div>
+                <div class="picker__box-btn"><button class="button" href="#">Показать номера и цены</button></div>
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>

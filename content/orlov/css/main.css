@@ -47,7 +47,6 @@ body {
   display: block;
   max-width: 1024px;
   min-width: 320px;
-  overflow: hidden;
   margin: 0 auto;
   padding-left: 30px;
   padding-right: 30px;
@@ -310,7 +309,7 @@ body.main .header {
 
 .social .social__link svg {
   -webkit-filter: drop-shadow(3px 3.8px 1.3px rgba(39, 39, 39, 0.2));
-  filter: url(shadow.svg#drop-shadow);
+  filter: none;
   fill: #fff;
   display: inline-block;
   float: left;
@@ -319,7 +318,7 @@ body.main .header {
   transition: all .5s ease; }
   .social .social__link svg:active {
     -webkit-filter: drop-shadow(0px 0px 0px rgba(39, 39, 39, 0.2));
-    filter: url(shadow.svg#drop-shadow);
+    filter: none;
     fill: #fff; }
 
 .social .social__link-vk svg {
@@ -376,7 +375,7 @@ body.main .header {
       width: 20px;
       fill: #fff;
       -webkit-filter: drop-shadow(3px 3.8px 1.3px rgba(39, 39, 39, 0.2));
-      filter: url(shadow.svg#drop-shadow); }
+      filter: none; }
 
 .logo svg {
   width: 110px; }
@@ -391,7 +390,8 @@ body.main .header {
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
   -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%; }
+          transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%; }
 
 .logo:hover .st1 {
   -webkit-transform: rotateZ(90deg);
@@ -622,7 +622,7 @@ body.main .header {
       font-size: 110px;
       color: #fff;
       -webkit-filter: drop-shadow(0px 3px 4.8px rgba(39, 39, 39, 0.2));
-      filter: url(shadow.svg#drop-shadow); }
+      filter: none; }
 
 .page {
   margin-top: 35px; }
