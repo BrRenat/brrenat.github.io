@@ -330,6 +330,7 @@
         right:0px;
         width:200px;
     }
+
 }
 @media only screen and (max-width : 450px) {
     .footer__nav-column:last-child {
@@ -386,6 +387,19 @@
         margin-right: 0;
     }
     body {
-        overflow: hidden;
+        overflow-x: hidden;
+    }
+    .picker {
+        height:270px;
+    }
+    .picker__box-area label input {
+        width:100%;
+        margin-top: 10px;
+    }
+    .picker__box-area label > label.cal {
+        top: 36px;
+    }
+    .picker__box-btn {
+        margin-top: 60px;
     }
 }
