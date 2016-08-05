@@ -20,6 +20,9 @@ svg {
   fill-rule: evenodd;
   stroke: red;
   stroke-dasharray: 0% 100%;
+  stroke-dasharray: 100% 0% !important;
+  fill: #be0d1d !important;
+  stroke: none !important;
 }
 .st1 {
   fill: red;
@@ -78,4 +81,12 @@ body.load .left-side, body.load .right-side {
 }
 body.load svg {
   opacity: 0;
+}
+.flower-block {
+    position: absolute;
+    top: -90px;
+    left: -62px;
+    -webkit-transform: rotate(-26deg);
+    transform: rotate(-26deg);
+    z-index: 0;
 }
