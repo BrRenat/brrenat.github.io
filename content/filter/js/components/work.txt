@@ -1,0 +1,64 @@
+
+var Filter = React.createClass({
+
+    render: function() {
+        var filterParametr = this.props.filterParametr;
+        var changeHandler = this.props.onChange;
+        return (
+            <label>
+                <input
+                    type="checkbox"
+                    name={'OS1'}
+                    checked={filterParametr.OS1}
+                    onChange={changeHandler}
+                />1
+                <input
+                    type="checkbox"
+                    name={'OS2'}
+                    checked={filterParametr.OS2}
+                    onChange={changeHandler}
+                />2
+            </label>
+        );
+    }
+});
+
+
+var App = React.createClass({
+    getInitialState: function () {
+        return {
+            filterParametr : {
+                OS1 : true,
+                OS2 : false
+            }
+        }
+    },
+    _clickHandler: function() {
+        this.setState({
+            filterParametr: {
+                OS1: false,
+                OS2: false
+            }
+        });
+    },
+    _changeHandler: function(e) {
+        var check = e.target.checked;
+        var target = e.target.name;
+        this.setState(function(){this.state.filterParametr[target] = check})
+    },
+    render: function() {
+        var filterParametr = this.state.filterParametr;
+        var changeHandler = this._changeHandler;
+        return (
+            <div>
+                <Filter onChange={changeHandler} filterParametr={filterParametr} />
+                <button onClick={this._clickHandler}>Clear</button>
+            </div>
+        );
+    }
+});
+
+ReactDOM.render(
+    <App />,
+    document.getElementById('root')
+);
