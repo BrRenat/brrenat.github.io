@@ -221,7 +221,10 @@ var Filter = function (_React$Component2) {
 
         var _this4 = _possibleConstructorReturn(this, (Filter.__proto__ || Object.getPrototypeOf(Filter)).call(this, props));
 
-        _this4.state = { stateFlag: null };
+        _this4.state = {
+            stateFlag: _this4.props.filterParametr.length != 0 ? null : false,
+            btnText: _this4.props.filterParametr.length != 0 ? 'only one' : 'more'
+        };
         _this4._clickHandlerFilter = _this4._clickHandlerFilter.bind(_this4);
         return _this4;
     }
@@ -229,8 +232,10 @@ var Filter = function (_React$Component2) {
     _createClass(Filter, [{
         key: "_clickHandlerFilter",
         value: function _clickHandlerFilter(e) {
-            e.target.disabled = true;
-            this.setState({ stateFlag: false });
+            this.setState({
+                stateFlag: this.state.stateFlag != undefined ? null : false,
+                btnText: this.state.stateFlag != undefined ? 'only one' : 'more'
+            });
         }
     }, {
         key: "render",
@@ -240,6 +245,7 @@ var Filter = function (_React$Component2) {
             var filterPar = this.props.filterParametr;
             var changeHadler = this.props.onChange;
             var stateFlag = this.state.stateFlag;
+            var btnText = this.state.btnText;
             var dFlag = this.props.dFlag;
             var filterValue = this.props.filterValue;
             _.forEach(filterValItem, function (item, index) {
@@ -261,7 +267,12 @@ var Filter = function (_React$Component2) {
                     filterValue,
                     ":"
                 ),
-                filterValTmpl
+                filterValTmpl,
+                React.createElement(
+                    "button",
+                    { onClick: this._clickHandlerFilter },
+                    btnText
+                )
             );
         }
     }]);
@@ -312,7 +323,7 @@ var Article = function (_React$Component3) {
                             null,
                             "Manufacturer: "
                         ),
-                        phone.specs.manufacturer
+                        phone.specs.Manufacturer
                     ),
                     React.createElement(
                         "li",
@@ -427,12 +438,15 @@ var Product = function (_React$Component4) {
                             flag = false;
                             return false;
                         };
-                        if (!_.includes(filterEnable[e], fb)) {
-                            filterEnable[e].push(fb);
-                        }
                         flag = true;
                     });
                     if (flag) {
+                        _.forEach(Object.keys(filterParametr), function (e, key) {
+                            var fb = item.specs[e];
+                            if (!_.includes(filterEnable[e], fb)) {
+                                filterEnable[e].push(fb);
+                            }
+                        });
                         return React.createElement(Article, { key: index, catalog: item });
                     }
                 });
@@ -440,7 +454,7 @@ var Product = function (_React$Component4) {
                 catalogeTemplate = React.createElement(
                     "p",
                     null,
-                    "\u041D\u0435\u0442 \u043F\u043E\u0437\u0438\u0446\u0438\u0439 \u0432 \u043A\u0430\u0442\u0430\u043B\u043E\u0433\u0435"
+                    "Нет позиций в каталоге"
                 );
             }
             if (Object.keys(filterVar).length > 0) {
@@ -451,7 +465,7 @@ var Product = function (_React$Component4) {
                 filterTemplate = React.createElement(
                     "p",
                     null,
-                    "\u041D\u0435\u0442 \u043F\u043E\u0437\u0438\u0446\u0438\u0439 \u0432 \u0444\u0438\u043B\u044C\u0442\u0440\u0435"
+                    "Нет позиций в фильтре"
                 );
             }
             return React.createElement(
@@ -478,7 +492,7 @@ var Product = function (_React$Component4) {
                     React.createElement(
                         "strong",
                         { className: 'news__count ' + (catalog.length > 0 ? '' : 'none') },
-                        "\u0412\u0441\u0435\u0433\u043E \u043F\u043E\u0437\u0438\u0446\u0438\u0439: ",
+                        "Всего позиций: ",
                         catalog.length
                     )
                 )

@@ -197,21 +197,27 @@ class Filter extends React.Component {
     constructor(props) {
         super(props);
 
-        this.state = {stateFlag : null};
+        this.state = {
+            stateFlag : this.props.filterParametr.length != 0 ? null : false,
+            btnText : this.props.filterParametr.length != 0 ? 'only one' : 'more'
+        };
         this. _clickHandlerFilter = this. _clickHandlerFilter.bind(this);
     }
     _clickHandlerFilter(e) {
-        e.target.disabled = true;
-        this.setState({stateFlag : false})
+        this.setState({
+            stateFlag : this.state.stateFlag != undefined ? null : false,
+            btnText : this.state.stateFlag != undefined ? 'only one' : 'more'
+        })
     }
     render () {
-        var filterValTmpl = [];
-        var filterValItem = this.props.filterValItem;
-        var filterPar = this.props.filterParametr;
-        var changeHadler = this.props.onChange;
+        let filterValTmpl = [];
+        let filterValItem = this.props.filterValItem;
+        let filterPar = this.props.filterParametr;
+        let changeHadler = this.props.onChange;
         let stateFlag = this.state.stateFlag;
+        let btnText = this.state.btnText;
         let dFlag = this.props.dFlag;
-        var filterValue = this.props.filterValue;
+        let filterValue = this.props.filterValue;
         _.forEach(filterValItem,function(item,index){
             filterValTmpl.push(<FilterVal
                 key = {index}
@@ -226,7 +232,7 @@ class Filter extends React.Component {
             <div className='filter-criteria'>
                 <span>{filterValue}:</span>
                 {filterValTmpl}
-                {/*<button onClick={this._clickHandlerFilter}>Выбрать несколько</button>*/}
+                <button onClick={this._clickHandlerFilter}>{btnText}</button>
             </div>
         )
     }
@@ -240,7 +246,7 @@ class Article extends React.Component {
                 <a href="#" className="product-photo"><img src={phone.image.small} height="130" alt={phone.name}/></a>
                 <h2><a href="">{phone.name}</a></h2>
                 <ul className="product-description">
-                    <li><span>Manufacturer: </span>{phone.specs.manufacturer}</li>
+                    <li><span>Manufacturer: </span>{phone.specs.Manufacturer}</li>
                     <li><span>Storage: </span>{phone.specs.Storage} GB</li>
                     <li><span>OS: </span>{phone.specs.OS}</li>
                     <li><span>Camera: </span>{phone.specs.Camera} Mpx</li>
@@ -297,12 +303,15 @@ class Product extends React.Component {
                         flag = false;
                         return false
                     };
-                    if (!_.includes(filterEnable[e], fb)) {
-                        filterEnable[e].push(fb)
-                    }
-                    flag = true
+                    flag = true;
                 });
                 if (flag) {
+                    _.forEach(Object.keys(filterParametr), (e, key) => {
+                        let fb = item.specs[e];
+                        if (!_.includes(filterEnable[e], fb)) {
+                            filterEnable[e].push(fb)
+                        }
+                    });
                     return (
                         <Article key = {index} catalog = {item} />
                     )
