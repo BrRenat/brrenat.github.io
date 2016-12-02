@@ -12,131 +12,123 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 //Массив товаров
 var my_catalog = [{
     id: 1,
-    name: "Sony Xperia Z3",
+    name: "Model 1",
     price: 899,
     specs: {
-        "Manufacturer": "Sony",
+        "Manufacturer": "Manufacturer 1",
         "Storage": 16,
-        "OS": "Android",
+        "OS": "OS 3",
         "Camera": 15
     },
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem pOSuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
     rating: 4,
     image: {
-        "small": "assets/images/sony-xperia-z3.jpg",
-        "large": "assets/images/sony-xperia-z3-large.jpg"
+        "small": "assets/images/phone.jpg"
     }
 }, {
     id: 2,
-    name: "Iphone 6",
+    name: "Model 2",
     price: 899,
     specs: {
-        "Manufacturer": "Apple",
+        "Manufacturer": "Manufacturer 2",
         "Storage": 16,
-        "OS": "iOS",
+        "OS": "OS 2",
         "Camera": 8
     },
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem pOSuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
     rating: 4,
     image: {
-        "small": "assets/images/iphone6.jpg",
-        "large": "assets/images/iphone6-large.jpg"
+        "small": "assets/images/phone.jpg"
     }
 }, {
     id: 3,
-    name: "HTC One M8",
+    name: "Model 3",
     price: 899,
     specs: {
-        "Manufacturer": "HTC",
+        "Manufacturer": "Manufacturer 1",
         "Storage": 32,
-        "OS": "Android",
+        "OS": "OS 3",
         "Camera": 5
     },
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem pOSuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
     rating: 4,
     image: {
-        "small": "assets/images/htc-one.jpg",
-        "large": "assets/images/htc-one-large.jpg"
+       "small": "assets/images/phone.jpg"
     }
 }, {
     id: 4,
-    name: "Galaxy Alpha",
+    name: "Model 4",
     price: 899,
     specs: {
-        "Manufacturer": "Samsung",
+        "Manufacturer": "Manufacturer 4",
         "Storage": 32,
-        "OS": "Android",
+        "OS": "OS 2",
         "Camera": 12
     },
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem pOSuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
     rating: 4,
     image: {
-        "small": "assets/images/galaxy-alpha.jpg",
-        "large": "assets/images/galaxy-alpha-large.jpg"
+        "small": "assets/images/phone.jpg"
     }
 }, {
     id: 5,
-    name: "Nokia Lumia",
+    name: "Model 5",
     price: 450,
     specs: {
-        "Manufacturer": "Nokia",
+        "Manufacturer": "Manufacturer 1",
         "Storage": 16,
-        "OS": "Windows",
+        "OS": "OS 1",
         "Camera": 5
     },
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem pOSuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
     rating: 4,
     image: {
-        "small": "assets/images/nokia-lumia.jpg",
-        "large": "assets/images/nokia-lumia-large.jpg"
+       "small": "assets/images/phone.jpg"
     }
 }, {
     id: 6,
-    name: "Zte Nubia",
+    name: "Model 6",
     price: 399,
     specs: {
-        "Manufacturer": "ZTE",
+        "Manufacturer": "Manufacturer 3",
         "Storage": 32,
-        "OS": "Android",
+        "OS": "OS 3",
         "Camera": 12
     },
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem pOSuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
     rating: 4,
     image: {
-        "small": "assets/images/zte-nubia.jpg",
-        "large": "assets/images/zte-nubia-large.jpg"
+        "small": "assets/images/phone.jpg"
     }
 }, {
     id: 7,
-    name: "Samsung Galaxy S5",
+    name: "Model 7",
     price: 399,
     specs: {
         "Manufacturer": "Samsung",
         "Storage": 16,
-        "OS": "Android",
+        "OS": "OS 2",
         "Camera": 15
     },
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem pOSuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
     rating: 4,
     image: {
-        "small": "assets/images/galaxy-s5.jpg",
-        "large": "assets/images/galaxy-s5-large.jpg"
+       "small": "assets/images/phone.jpg"
     }
 }, {
     id: 8,
-    name: "Iphone 5S",
+    name: "Model 8",
     price: 399,
     specs: {
-        "Manufacturer": "Apple",
+        "Manufacturer": "Manufacturer 2",
         "Storage": 16,
-        "OS": "iOS",
+        "OS": "OS 4",
         "Camera": 8
     },
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem pOSuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.",
     rating: 4,
     image: {
-        "small": "assets/images/iphone5s.jpg",
-        "large": "assets/images/iphone5s-large.jpg"
+        "small": "assets/images/phone.jpg"
     }
 }];
 
