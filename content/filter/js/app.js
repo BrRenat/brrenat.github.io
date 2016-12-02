@@ -105,7 +105,7 @@ var my_catalog = [{
     name: "Model 7",
     price: 399,
     specs: {
-        "Manufacturer": "Samsung",
+        "Manufacturer": "Manufacturer 2",
         "Storage": 16,
         "OS": "OS 2",
         "Camera": 15
