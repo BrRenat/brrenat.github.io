@@ -1,0 +1,286 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-type" content="text/html; charset=utf-8"><meta name="theme-color" content="#3498db"><meta name="viewport" content="width=device-width,initial-scale=1"><title>slide</title><meta property="og:title" content="slide"><meta property="og:type" content="article"><link href="vendor.7.e33a6d212e2acb7e0de5.css" rel="stylesheet"></head><body><div id="root"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="btn-sidebar" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg><article id="webslides"><section class="aligncenter"><div class="card-50"><figure><img src="373f609056c9cb8e0462f6f830412023.webp"></figure><div class="flex-content"><div class="alignleft"><h1>Модули в Node.js и TypeScript</h1><ul><li>Введение</li><li>Странности<ul><li>Зацикленные модули</li><li>Манкипатчинг</li></ul></li><li>Typescript</li></ul></div></div></div></section><section class="aligncenter section-title"><div class="card-50"><div class="flex-content"><div class="alignleft"><h1>Введение</h1><p>ECMAScript Modules vs. CommonJS</p></div></div><figure><img src="f8a46462db8fc96fa6d7ad718508ae65.webp"></figure></div></section><section class="aligncenter section-title"><h1>CommonJS</h1><pre><code class="language-js">// math-module.js
+module.exports.add = (a, b) =&gt; a + b
+</code></pre><pre><code class="language-js">const { add } = require(&#x27;./math-module&#x27;)
+add(3, 7) // 10
+</code></pre></section><section class="aligncenter section-title"><h1>Require</h1><p><img src="fa5a0a5aaf3729e50f675ddb88a87562.webp" alt="require flow"></p></section><section class="aligncenter"><pre><code class="language-js">// index.js
+const _ = require(&#x27;lodash&#x27;)
+</code></pre></section><section class="aligncenter"><pre><code class="language-js">// index.js
+const _ = require(&#x27;lodash&#x27;)
+</code></pre><pre><code>1. node ~/workspace/index.js
+</code></pre></section><section class="aligncenter"><pre><code class="language-js">// index.js
+const _ = require(&#x27;lodash&#x27;)
+</code></pre><pre><code>1. node ~/workspace/index.js
+
+2. Paths [
+  &#x27;~/workspace/node_modules&#x27;,
+  &#x27;~/node_modules&#x27;,
+  &#x27;~/../node_modules&#x27;,
+  &#x27;~/../../node_modules&#x27;
+]
+</code></pre></section><section class="aligncenter"><pre><code class="language-js">// index.js
+const _ = require(&#x27;lodash&#x27;)
+</code></pre><pre><code>1. node ~/workspace/index.js
+
+2. Paths [
+  &#x27;~/workspace/node_modules&#x27;,
+  &#x27;~/node_modules&#x27;,
+  &#x27;~/../node_modules&#x27;,
+  &#x27;~/../../node_modules&#x27;
+]
+
+3. ~/workspace/node_modules/lodash/index.js
+</code></pre></section><section class="aligncenter"><p><img src="fa5a0a5aaf3729e50f675ddb88a87562.webp" alt="require flow"></p></section><section class="aligncenter"><pre><code>module.exports.add = (a, b) =&gt; a + b
+</code></pre><p>В NodeJS выполняется как:</p><pre><code>function (exports, require, module, __filename, __dirname) {
+    module.exports.add = (a, b) =&gt; a + b
+}
+</code></pre></section><section class="aligncenter"><p><img src="fa5a0a5aaf3729e50f675ddb88a87562.webp" alt="require flow"></p></section><section class="aligncenter"><p><img src="fa5a0a5aaf3729e50f675ddb88a87562.webp" alt="require flow"></p><p><code>delete require.cache[&#x27;lodash&#x27;]</code></p></section><section class="aligncenter section-title"><h1>Module</h1><pre><code>module.exports.add = (a, b) =&gt; a + b
+console.log(module)
+
+node ~/workspace/index.js 
+
+Module {
+    id: &#x27;.&#x27;,
+    path: &#x27;~/workspace&#x27;,
+    exports: { add: [Function (anonymous)] },
+    parent: null,
+    filename: &#x27;~/workspace/index.js&#x27;,
+    loaded: false,
+    children: [],
+    paths: [
+        &#x27;~/workspace/node_modules&#x27;,
+        &#x27;~/node_modules&#x27;,
+        &#x27;~/../node_modules&#x27;,
+        &#x27;~/../../node_modules&#x27;
+    ]
+}
+</code></pre></section><section class="aligncenter section-title"><h1>Export</h1><pre><code class="language-js">// math-module.js
+module.exports = (a, b) =&gt; a - b
+module.exports.add = (a, b) =&gt; a + b
+
+// index.js
+const math = require(&#x27;./math-module&#x27;)
+
+math(5, 1) // 4
+math.add(5, 1) // 6
+</code></pre><pre><code class="language-js">// math-module.js
+module.exports.add = (a, b) =&gt; a + b
+module.exports = (a, b) =&gt; a - b
+
+// index.js
+const math = require(&#x27;./math-module&#x27;)
+
+math(5, 1) // 4
+math.add(5, 1) // error
+</code></pre><pre><code class="language-js">// math-module.js
+module.exports = 2
+module.exports.add = (a, b) =&gt; a + b
+
+// index.js
+const math = require(&#x27;./math-module&#x27;)
+
+math // 2
+math.add(5, 1) // error
+</code></pre><pre><code class="language-js">// math-module.js
+exports.add = (a, b) =&gt; a + b
+
+// index.js
+const math = require(&#x27;./math-module&#x27;)
+
+math.add(5, 1) // 6
+</code></pre></section><section class="aligncenter section-title"><h1>ECMAScript</h1></section><section class="aligncenter section-title"><h1><code>import _ from &#x27;lodash&#x27;</code></h1><ul><li>имя модуля <code>lodash</code>, подключается entry point модуля указынный в package.json</li><li>явный путь к модулю <code>lodash/repeat.js</code></li><li>относительные пути к модулю <code>./ ../</code></li><li>абсолютные пути <code>file:///opt/nodejs/config.js</code></li></ul></section><section class="aligncenter"><pre><code class="language-js">// module.mjs
+export default (a, b) =&gt; a - b
+export const add = (a, b) =&gt; a + b
+</code></pre><pre><code class="language-js">// index.mjs
+import math, { add } from &#x27;./module.mjs&#x27;
+
+math(5, 1) // 4
+add(5, 1) // 6
+</code></pre><pre><code class="language-js">(async () =&gt; {
+  const module = await import(`lodash`)
+  console.log(module.default.capitalize(&#x27;test&#x27;)) // Test
+})()
+</code></pre></section><section class="aligncenter"><h1>export / import</h1><pre><code class="language-js">//index.mjs
+export default 1
+export const value = 3
+export { sampleSize as randomItems } from &#x27;lodash&#x27;
+</code></pre><pre><code class="language-js">import m, { value, randomItems } from &#x27;./index.mjs&#x27;
+m // 1
+value // 3
+randomItems([1, 2, 3], 2) // [3, 1]
+
+import * as result from &#x27;./index.mjs&#x27;
+result.default // 1
+result.value // value3
+result.randomItems([1, 2, 3], 2) // [3, 1]
+</code></pre></section><section class="aligncenter section-title"><h1>Для активации необходимо:</h1><ul><li>расширение .mjs (recommended)</li><li>package.json <code>&quot;type&quot;: &quot;module&quot;</code></li><li>flag <code>--input-type=module</code></li></ul><blockquote><p>.mjs всегда загружается как es модуль несмотря на package.json</p></blockquote></section><section class="aligncenter section-title"><h1>Главные различия</h1><ul><li>esm in use strict;</li><li>для es6 расширения должны быть явно указаны, исключением являются сторонние и внутренние модули</li><li>NODE_PATH - переменная которая указывает еще одно место для поиска модуля, в es недоступно, нужно использовать <code>symlinks</code></li><li>нет <code>require, exports, module.exports, __filename, __dirname</code> но можно импортировать из встроенных модулей</li><li>расположение import в коде не зависит от порядка загрузки в отличии от require</li></ul><pre><code class="language-js">import { fileURLToPath } from &#x27;url&#x27;;
+import { dirname } from &#x27;path&#x27;;
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+</code></pre><pre><code class="language-js">import { createRequire } from &#x27;module&#x27;;
+const require = createRequire(import.meta.url);
+
+// sibling-module.js is a CommonJS module.
+const siblingModule = require(&#x27;./sibling-module&#x27;);
+</code></pre><pre><code class="language-js">export default { a: 1 }
+export const val = 3
+
+const res = require(&#x27;./index.mjs&#x27;)
+console.log(res)
+
+// Must use import to load ES Module: /Users/renat/workspace/learning/workshop/modules/index.mjs
+
+(async function() {
+  const res = await import(&#x27;./index.mjs&#x27;);
+  console.log(res);
+})()
+// { default: { a: 1 }, val: 3 }
+</code></pre><pre><code class="language-js">// common.js
+module.exports = {v: 1}
+module.exports.add = (a, b) =&gt; a + b
+
+// index.mjs
+import res from &#x27;./common.js&#x27;
+OK
+</code></pre></section><section class="aligncenter section-title"><h1>Cycles</h1></section><section class="aligncenter"><pre><code class="language-js">// a.js
+const ModuleB = require(&#x27;./b&#x27;)
+
+function ModuleA() {}
+ModuleA.hello = function () {
+  const b = new ModuleB()
+  console.log(&#x27;hello! &#x27; + b.name)
+}
+console.log(&#x27;ModuleA&#x27;)
+
+module.exports = ModuleA
+</code></pre><pre><code class="language-js">// b.js
+const moduleA = require(&#x27;./a&#x27;)
+
+function ModuleB() {
+  this.name = &#x27;ModuleB&#x27;
+}
+
+ModuleB.hello = function () {
+  moduleA.hello()
+}
+
+const b = new ModuleB()
+console.log(b.name) // ModuleB
+
+module.exports = ModuleB
+</code></pre></section><section class="aligncenter"><pre><code class="language-js">// index.js
+const moduleB = require(&#x27;./b&#x27;)
+moduleB.hello()
+</code></pre><pre><code>ModuleA
+ModuleB
+a.js:5
+  const b = new ModuleB()
+            ^
+
+TypeError: ModuleB is not a constructor
+</code></pre></section><section class="aligncenter"><h1>Solution</h1><pre><code class="language-js">// a.js
+const ModuleB = require(&#x27;./b&#x27;)
+
+function ModuleA() {}
+ModuleA.hello = function () {
+  const b = new ModuleB()
+  console.log(&#x27;hello! &#x27; + b.name)
+}
+console.log(&#x27;ModuleA&#x27;)
+
+module.exports = ModuleA
+</code></pre><pre><code class="language-js">// b.js
+function ModuleB() {
+  this.name = &#x27;ModuleB&#x27;
+}
+
+module.exports = ModuleB
+
+const moduleA = require(&#x27;./a&#x27;)
+
+ModuleB.hello = function () {
+  moduleA.hello()
+}
+
+const b = new ModuleB()
+console.log(b.name)
+</code></pre></section><section class="aligncenter"><h1>ECMAScript</h1><pre><code class="language-js">import ModuleB from &#x27;./b.mjs&#x27;
+
+function ModuleA() {}
+ModuleA.hello = function () {
+  const b = new ModuleB()
+  console.log(&#x27;hello! &#x27; + b.name)
+}
+
+export default ModuleA
+</code></pre><pre><code class="language-js">import moduleA from &#x27;./a.mjs&#x27;
+
+function ModuleB() {
+  this.name = &#x27;ModuleB&#x27;
+}
+
+ModuleB.hello = function () {
+  moduleA.hello()
+}
+
+const b = new ModuleB()
+console.log(b.name)
+
+export default ModuleB
+</code></pre><pre><code class="language-js">import moduleB from &#x27;./b.mjs&#x27;
+moduleB.hello()
+</code></pre></section><section class="aligncenter section-title"><h1>Monkey patching</h1><pre><code class="language-js">import _ from &#x27;lodash&#x27;
+import repeat from &#x27;lodash/repeat.js&#x27;
+
+const str = &#x27;tools&#x27;
+
+console.log(_.repeat(str, 2)) // toolstools
+
+_.repeat = function(string, n, ...args) {
+  const separator = &#x27;:&#x27;
+  return repeat(string + separator, n, ...args).replace(new RegExp(separator + &#x27;$&#x27;), &#x27;&#x27;)
+}
+
+console.log(_.repeat(str, 2)) // tools:tools
+</code></pre></section><section class="aligncenter"><pre><code class="language-js">import _ from &#x27;lodash&#x27;
+import &#x27;./index.js&#x27;
+
+const str = &#x27;tools&#x27;
+
+console.log(_.repeat(str, 2)) // tools:tools
+</code></pre></section><section class="aligncenter section-title"><h1>Модули в Typescript</h1><pre><code class="language-typescript">// module.ts
+export = (a, b) =&gt; a + b
+
+// index.ts
+import math = require(&#x27;./module&#x27;)
+</code></pre><pre><code class="language-typescript">// module.ts
+export const add = (a, b) =&gt; a + b
+
+// index.ts
+import { add } from &#x27;./module&#x27;
+</code></pre></section><section class="aligncenter"><h2>Внешние модули</h2><pre><code class="language-js">// math-module.js
+module.exports.add = (a, b) =&gt; a + b
+</code></pre><pre><code class="language-typescript">// index.d.ts
+declare module &quot;math-module&quot; {
+  export function add(a: number, b: number): number
+}
+
+// declare module &quot;math-module&quot;
+</code></pre><pre><code class="language-typescript">// index.ts
+import { add } from &#x27;../math-module&#x27;
+
+console.log(add(1, 2)) // 3
+</code></pre></section><section class="aligncenter"><pre><code class="language-typescript">import { add as esAdd } from &#x27;../../math-module&#x27;
+import add = require(&#x27;../../math-module&#x27;)
+const { add: cAdd } = require(&#x27;../../math-module&#x27;)
+
+console.log(add.add(1, 2)) // 3
+console.log(esAdd(1, 2)) // 3
+console.log(cAdd(1, 2)) // 3
+</code></pre></section><section class="aligncenter"><h2>Укороченные пути к модулям проекта в TypeScript</h2><p><code>import { User } from &#x27;../../user/model&#x27; vs import { User } from &#x27;user/model&#x27;</code></p><pre><code>// tsconfig.json
+{
+    &quot;compilerOptions&quot;: {
+        &quot;baseUrl&quot;: &quot;src&quot;
+    }
+}
+</code></pre></section></article></div><script type="text/javascript" src="runtime.cf8759185ebb1cd9d9d0.bundle.js"></script><script type="text/javascript" src="vendor.7.e33a6d212e2acb7e0de5.bundle.js"></script><script type="text/javascript" src="main.4.641a14c706f4b76b800a.bundle.js"></script></body></html>
